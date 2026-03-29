@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**Rupantar AI** is a documentation and strategic analysis project for an AI-powered agentic ERP platform targeting India's 50 million SMB shops. This is **not a code repository** — it is a strategic thinking workspace containing proposal documents, framing analyses, risk evaluations, and positioning guides prepared for chairman-level review.
+**Rupantar AI** is a documentation and strategic analysis project for an AI-powered agentic ERP platform targeting India's 50 million SMB shops. This is **not a code repository** — it is a strategic thinking workspace containing proposal documents, framing analyses, risk evaluations, positioning guides, and deliverable structure definitions prepared for chairman-level review.
 
 The project is in its **pre-build documentation phase**. No application code exists yet. All work is in the `docs/` directory.
 
@@ -12,11 +12,13 @@ The project is in its **pre-build documentation phase**. No application code exi
 
 ```
 docs/
-  Rupantar_AI_Master_Proposal.md          — The original master proposal (775 lines)
-  Rupantar_AI_Master_Proposal_Analysis.md — Why the proposal was written and for whom
-  Rupantar_AI_Reframed_Objective.md       — Grand "infrastructure-first" positioning
-  Rupantar_AI_Reframed_Objective_Risks.md — Risks of infrastructure framing + mitigations
-  Rupantar_AI_Hybrid_Framing.md           — Recommended hybrid positioning (platform ambition + product execution)
+  Rupantar_AI_Master_Proposal.md              — The original master proposal (775 lines)
+  Rupantar_AI_Master_Proposal_Analysis.md     — Why the proposal was written and for whom
+  Rupantar_AI_Reframed_Objective.md           — Grand "infrastructure-first" positioning
+  Rupantar_AI_Reframed_Objective_Risks.md     — Risks of infrastructure framing + mitigations
+  Rupantar_AI_Hybrid_Framing.md               — Recommended hybrid positioning (platform ambition + product execution)
+  Rupantar_AI_Deliverable_Structure.md        — The deliverable package format (brief + full proposal + appendices)
+  Rupantar_AI_Original_Document_Structure_Analysis.md — Section-by-section breakdown + clarity assessment
 ```
 
 ## Strategic Thinking Progression
@@ -33,11 +35,23 @@ The documents follow a deliberate analytical progression. Future instances shoul
    - Confidence Roadmap (know / believe / test)
    - Platform Readiness Scorecard (measurable criteria before claiming platform status)
    - Value Compounding Model (staircase of value at each scale milestone)
+5. **Deliverable Structure** — Defines the two-file format (executive brief + full proposal), three-tier vertical depth strategy, decision-document flow (What/Why/How/Risks/Ask), and writing rules for the chairman
+6. **Original Document Analysis** — Complete section-by-section breakdown of the master proposal with line references, clarity assessment, and prioritised rewrite recommendations
+
+## What Rupantar Is (Critical Context)
+
+When working on any document in this project, understand that Rupantar is **two things you build** and **one way you distribute them:**
+
+- **The Product** — AI agents running on WhatsApp/voice. Each shop gets a vertical-specific bundle of 3–5 agents (billing, inventory, credit, etc.). Revenue: SaaS subscriptions.
+- **The Platform** — Agent Builder (Library + Visual Flow Builder + Config Studio + Pro Code SDK). Lets trained partners deploy agent bundles without code. Revenue: platform fees + marketplace royalties.
+- **The Distribution** — Partner network (AI Shop Doctors). India's existing field force trained and certified to deploy the product using the platform. NOT a software product — a go-to-market channel.
+
+Do NOT describe these as "three layers" or "three-tier architecture." That framing incorrectly implies the partner network is a technical component. Use "product + platform + distribution."
 
 ## Key Constraints for Document Work
 
 - **Do not modify existing content** when adding to analysis documents unless explicitly asked. Use new sections, subsections, or new files.
-- **Audience**: The chairman of the company — the highest decision maker. Documents should be calibrated for someone who thinks in categories and decades, not sprints and features.
+- **Audience**: The chairman of the company — the highest decision maker. He reads thoroughly and alone before calling a meeting. He does not tolerate fluff and does not like being strung along. Key insights go first, not last.
 - **Language discipline**: When writing in the hybrid framing voice, avoid "infrastructure," "DPI," "backbone," "monopoly" in thesis/core content. Use "platform," "foundation," "digital layer," "ecosystem." These trigger words may appear in comparison tables or when explicitly contrasting framings.
 - **Data integrity**: All market data in the proposal is sourced from public reports (SaaSBoomi, KenResearch, Mordor Intelligence, NPCI, MSME Ministry). Do not fabricate statistics. When uncertain, flag as estimate.
 
