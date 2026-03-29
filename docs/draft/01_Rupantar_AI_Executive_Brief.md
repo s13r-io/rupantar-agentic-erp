@@ -32,6 +32,8 @@ We build two things: (1) AI agents that handle a shopkeeper's entire daily opera
 | Average SMB software spend today | ₹50,000/year; micro shops: ₹0 | KenResearch 2025 |
 | WhatsApp business users in India | 50M+ | Meta public disclosures |
 
+**Rupantar complements India's digital public infrastructure** — UPI handles payments, ONDC handles discovery, ABDM handles health records. We handle the daily operations that none of these address.
+
 ---
 
 ## Section 3: What We Build
@@ -112,7 +114,7 @@ The distribution network already exists. What we build is the training, tools, a
 
 ## Section 7: Why Now
 
-**AI agents have crossed the capability threshold for commercial use.** Current LLMs handle Indian vernacular NLP reliably enough for billing and inventory operations. WhatsApp is universal among Indian SMB owners — 50M+ business users. No incumbent has combined WhatsApp-native, voice-first, AI-agent architecture with partner-led distribution. **The category creation window is open — and it will not stay open forever.**
+**AI agents have crossed the capability threshold for commercial use.** Current LLMs handle Indian vernacular NLP reliably enough for billing and inventory operations. WhatsApp is universal among Indian SMB owners — 50M+ business users. No incumbent has combined WhatsApp-native, voice-first, AI-agent architecture with partner-led distribution. Every platform company — Amazon, UPI — started as a focused product; the platform emerged from scale, not from the initial vision. **The category creation window is open — and it will not stay open forever.**
 
 ---
 
@@ -127,6 +129,47 @@ The distribution network already exists. What we build is the training, tools, a
 | 5 | Competitive entry by well-funded incumbent | 18-month head start + partner network depth = structural moat |
 
 > A detailed analysis of all 10 risks with specific mitigations is available in the complete proposal document.
+
+---
+
+## Section 9: Confidence Roadmap
+
+**Three tiers of certainty — what we know, what we believe, and what we are testing.**
+
+### KNOW — Sourced, Verifiable Data
+
+| Claim | Source |
+|---|---|
+| ~50M SMB shops, 80–85% on paper | MSME Ministry, SaaSBoomi/1Lattice 2025 |
+| SMB digitisation opportunity: $13B | SaaSBoomi/1Lattice 2025 |
+| WhatsApp: 50M+ Indian business users | Meta public disclosures |
+| Tally built ₹900Cr revenue via 50K reseller network | Tally Solutions public financials |
+| Khatabook raised $275M+, couldn't monetise 30M downloads | PitchBook, TechCrunch |
+
+### BELIEVE — Based on Prototypes, Benchmarks, Analogues
+
+| Claim | Basis |
+|---|---|
+| Voice billing accuracy >85% for Hindi/Hinglish | Current LLM benchmarks on Indian vernacular NLP |
+| Partner model produces ₹15K/month at 25 shops | Math validated: commission + activation + customisation + AMC |
+| WhatsApp-native = zero behavioural change | Khatabook's 30M downloads proved shopkeepers adopt WhatsApp-first tools |
+| Partner-supported churn < self-service churn | Tally TDP vs. Vyapar: ~70% less annual churn |
+
+### TEST — Hypotheses for Phase 0–1
+
+| Hypothesis | Success Criteria | Phase |
+|---|---|---|
+| Voice billing works in real shop conditions | >85% auto-completion, <5% manual correction | Phase 0 |
+| Partner economics hold at 25+ shops/partner | 80%+ active partners earning >₹15K/month by month 3 | Phase 0–1 |
+| Cross-vertical retention is measurably higher | Multi-agent shops churn 40%+ less than single-agent | Phase 1 |
+
+---
+
+## The Vision
+
+By 2028, Rupantar operates India's largest distributed AI-powered operational platform for retail and services — 50,000+ certified AI Shop Doctors, 10 lakh+ shops, and a community of 5,000+ template builders. The platform generates revenue from SaaS subscriptions, data intelligence, financial services commissions, and ecosystem partnerships. Each shop that joins makes every other shop's agents more accurate, every partner's deployment faster, and every data insight more valuable.
+
+**We did not set out to build a platform. We built a product that shops loved, partners could deploy, and the market pulled into becoming one. That is the difference between ambition and evidence.**
 
 ---
 
