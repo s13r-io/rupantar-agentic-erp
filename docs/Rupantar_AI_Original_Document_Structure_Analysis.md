@@ -309,7 +309,7 @@ A single section — right after the Core Thesis — that makes two things clear
 
 > **3. Through India's existing field force, not a new one.** We don't hire salespeople. We convert FMCG distributor reps, pharma MRs, Tally resellers, and bank DSAs into certified "AI Shop Doctors" who use the Agent Builder to deploy the product shop by shop — and earn recurring income from every active shop in their portfolio.
 
-Two categories (what we build, how we distribute), three components, under a page. One diagram. After reading that, the chairman knows exactly what Rupantar is, how it makes money, and how it reaches shops. The rest of the document provides the evidence.
+Two categories (what we build, how we distribute), three components, under a page. One diagram. After reading that, the chairman knows exactly what Rupantar AI is, how it makes money, and how it reaches shops. The rest of the document provides the evidence.
 
 **Right now, the document gives the chairman 775 lines of evidence without first telling him what the evidence is for.**
 
@@ -336,7 +336,7 @@ Two categories (what we build, how we distribute), three components, under a pag
 
 | Priority | Change | Rationale |
 |---|---|---|
-| **Critical** | Add a "What Rupantar Is" section (product + platform + distribution) immediately after Core Thesis | Chairman doesn't know what the product is until page 25+ |
+| **Critical** | Add a "What Rupantar AI Is" section (product + platform + distribution) immediately after Core Thesis | Chairman doesn't know what the product is until page 25+ |
 | **Critical** | Restructure as decision document (What → Why → How → Risks → Ask) | Current structure is a product document, not a decision document |
 | **High** | Reduce vertical depth from 20 deep dives to 5 deep dives + insight paragraphs | 67% of document is vertical analysis; structural repetition creates fluff experience |
 | **High** | Add per-phase capital requirement table | Missing from the economics section; chairman needs total investment, not just per-shop |

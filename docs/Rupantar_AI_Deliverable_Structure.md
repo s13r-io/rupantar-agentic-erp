@@ -93,7 +93,7 @@ The standalone brief, included for reference. Chairman can skip if already read 
 
 ### Part 2: The Proposal
 
-#### 2.1 What Rupantar Is
+#### 2.1 What Rupantar AI Is
 **NEW — the single most important section in the document. One page maximum.**
 
 This section answers "what is the thing?" before any evidence, economics, or detail.
