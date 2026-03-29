@@ -20,11 +20,11 @@
 
 > Establishes the narrative foundation: what Rupantar AI is, the opportunity, the product, the platform, and the long-term vision.
 
-- [ ] 2.1 What Rupantar AI Is — NEW (two things we build + one distribution channel, diagram, table)
-- [ ] 2.2 The Opportunity — ADAPT from original Part 1 + Part 2a summary table
-- [ ] 2.3 The Product (AI Agents) — ADAPT from original Part 2 deep dives (synthesis, not individual verticals)
-- [ ] 2.4 The Platform (Agent Builder) — ADAPT from original Part 4 (four-layer architecture, capabilities, competitive diff)
-- [ ] 2.5 The Long-Term Vision — NEW from Hybrid Framing (Two-Horizon, Value Compounding, Scorecard)
+- [x] 2.1 What Rupantar AI Is — NEW (two things we build + one distribution channel, diagram, table)
+- [x] 2.2 The Opportunity — ADAPT from original Part 1 + Part 2a summary table
+- [x] 2.3 The Product (AI Agents) — ADAPT from original Part 2 deep dives (synthesis, not individual verticals)
+- [x] 2.4 The Platform (Agent Builder) — ADAPT from original Part 4 (four-layer architecture, capabilities, competitive diff)
+- [x] 2.5 The Long-Term Vision — NEW from Hybrid Framing (Two-Horizon, Value Compounding, Scorecard)
 
 **Source files**: `Rupantar_AI_Master_Proposal.md`, `Rupantar_AI_Hybrid_Framing.md`
 
@@ -32,10 +32,10 @@
 
 > Backs every claim with data: economics, distribution model, competitive positioning, and moats.
 
-- [ ] 3.1 The Economics — ADAPT from original Part 8 + NEW revenue timeline + NEW capital requirement table
-- [ ] 3.2 The Distribution Model — ADAPT from original Part 5 + flywheel from Part 7
-- [ ] 3.3 Competitive Positioning — PARTIAL ADAPT + NEW (incumbent analysis, WhatsApp-native diff, playbook summary)
-- [ ] 3.4 Moats & Defensibility — ADAPT from original Part 9 (rename Data Flywheel → Multi-Layered Data Advantage)
+- [x] 3.1 The Economics — ADAPT from original Part 8 + NEW revenue timeline + NEW capital requirement table (placed in Section 6.1 as part of The Ask)
+- [x] 3.2 The Distribution Model — ADAPT from original Part 5 + flywheel from Part 7
+- [x] 3.3 Competitive Positioning — PARTIAL ADAPT + NEW (incumbent analysis, WhatsApp-native diff, playbook summary)
+- [x] 3.4 Moats & Defensibility — ADAPT from original Part 9 (rename Data Flywheel → Multi-Layered Data Advantage)
 
 **Source files**: `Rupantar_AI_Master_Proposal.md`, `Rupantar_AI_Hybrid_Framing.md`
 
@@ -43,13 +43,13 @@
 
 > Shows the path: phased implementation, three-tier vertical depth, and platform architecture.
 
-- [ ] 4.1 Implementation Plan — ADAPT from original Part 7 (add Platform Contribution + Capital Required columns)
-- [ ] 4.2 The Verticals — Three-Tier Depth — MAJOR RESTRUCTURE from original Part 2
-  - [ ] 5 T1 deep dives (Kirana OS, Auto Garage, Electronics Repair, Customer Loyalty CRM, WhatsApp Commerce)
-  - [ ] 6 T1 insight paragraphs (Restaurant, Hardware, Billing & POS, Salon, Pharmacy, Fashion)
-  - [ ] 9 table-only verticals (Accounting, Online Store, Education, Inventory, Credit Ledger, B2B, HR, Logistics, Digital Payments)
-  - [ ] Prioritisation framework (preserve entirely from original Part 3)
-- [ ] 4.3 Platform Architecture (Technical Reference) — ADAPT from original Part 4 (expand to reference-grade)
+- [x] 4.1 Implementation Plan — ADAPT from original Part 7 (add Platform Contribution + Capital Required columns)
+- [x] 4.2 The Verticals — Three-Tier Depth — MAJOR RESTRUCTURE from original Part 2
+  - [x] 5 T1 deep dives (Kirana OS, Auto Garage, Electronics Repair, Customer Loyalty CRM, WhatsApp Commerce)
+  - [x] 6 T1 insight paragraphs (Restaurant, Hardware, Billing & POS, Salon, Pharmacy, Fashion)
+  - [x] 9 table-only verticals (Accounting, Online Store, Education, Inventory, Credit Ledger, B2B, HR, Logistics, Digital Payments)
+  - [x] Prioritisation framework (preserve entirely from original Part 3)
+- [x] 4.3 Platform Architecture (Technical Reference) — ADAPT from original Part 4 (expand to reference-grade)
 
 **Source files**: `Rupantar_AI_Master_Proposal.md`
 
@@ -57,8 +57,8 @@
 
 > Demonstrates maturity: top 10 risks with mitigations and explicit scope boundaries.
 
-- [ ] 5.1 Top 10 Risks + Mitigations — NEW (7 from Risk Analysis + 3 additional)
-- [ ] 5.2 What We Will NOT Build — NEW (consumer app, payment gateway, logistics, lending, marketplace + scope prevention principles)
+- [x] 5.1 Top 10 Risks + Mitigations — NEW (7 from Risk Analysis + 3 additional)
+- [x] 5.2 What We Will NOT Build — NEW (consumer app, payment gateway, logistics, lending, marketplace + scope prevention principles)
 
 **Source files**: `Rupantar_AI_Reframed_Objective_Risks.md`, `Rupantar_AI_Hybrid_Framing.md`
 
@@ -66,9 +66,9 @@
 
 > Closes the decision document: capital requirements, milestones, decision gates, and confidence roadmap.
 
-- [ ] 6.1 Per-Phase Capital Requirements — NEW (estimated from team sizing)
-- [ ] 6.2 Milestones and Decision Gates — NEW (go/no-go criteria per phase)
-- [ ] 6.3 Confidence Roadmap — ADAPT from Hybrid Framing Section 3 (Know/Believe/Test table)
+- [x] 6.1 Per-Phase Capital Requirements — NEW (estimated from team sizing)
+- [x] 6.2 Milestones and Decision Gates — NEW (go/no-go criteria per phase)
+- [x] 6.3 Confidence Roadmap — ADAPT from Hybrid Framing Section 3 (Know/Believe/Test table)
 
 **Source files**: `Rupantar_AI_Hybrid_Framing.md`
 
@@ -76,31 +76,31 @@
 
 > Extract and condense Parts 2-6 into a standalone 8-section brief embedded at the top of the Full Proposal.
 
-- [ ] Section 1: What We're Proposing
-- [ ] Section 2: The Opportunity
-- [ ] Section 3: What We Build
-- [ ] Section 4: How We Distribute It
-- [ ] Section 5: The Economics
-- [ ] Section 6: What We Need
-- [ ] Section 7: Why Now
-- [ ] Section 8: Risk Awareness
+- [x] Section 1: What We're Proposing
+- [x] Section 2: The Opportunity
+- [x] Section 3: What We Build
+- [x] Section 4: How We Distribute It
+- [x] Section 5: The Economics
+- [x] Section 6: What We Need
+- [x] Section 7: Why Now
+- [x] Section 8: Risk Awareness
 
 ## Phase 7: Executive Brief Standalone File
 
 > Extract the embedded Executive Brief into its own file.
 
-- [ ] Create `docs/draft/01_Rupantar_AI_Executive_Brief.md` from Full Proposal Part 1
-- [ ] Verify standalone readability (no forward-references to Full Proposal)
+- [x] Create `docs/draft/01_Rupantar_AI_Executive_Brief.md` from Full Proposal Part 1
+- [x] Verify standalone readability (no forward-references to Full Proposal)
 
 ## Phase 8: Appendices
 
 > Reference material for meeting: all 20 verticals, partner programme detail, full economics, competitive playbook, regulatory framework.
 
-- [ ] Appendix A: Full Vertical Deep Dives (All 20) — from original Part 2
-- [ ] Appendix B: Partner Programme Detail — from original Parts 5-6
-- [ ] Appendix C: Unit Economics (All Scenarios) — from original Part 8
-- [ ] Appendix D: Competitive Response Playbook — NEW
-- [ ] Appendix E: Regulatory, Compliance & Data Governance Framework — NEW
+- [x] Appendix A: Full Vertical Deep Dives (All 20) — from original Part 2
+- [x] Appendix B: Partner Programme Detail — from original Parts 5-6
+- [x] Appendix C: Unit Economics (All Scenarios) — from original Part 8
+- [x] Appendix D: Competitive Response Playbook — NEW
+- [x] Appendix E: Regulatory, Compliance & Data Governance Framework — NEW
 
 ---
 
