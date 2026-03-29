@@ -203,63 +203,113 @@ Data note (market share figures are estimates, projections validated against ben
 
 **The document never clearly states what Rupantar IS in one place.**
 
-The product description is scattered across at least five locations, each describing a different facet without connecting them:
+The description is scattered across at least five locations, each describing a different facet without connecting them:
 
-| Where | What It Describes | Layer |
+| Where | What It Describes | Category |
 |---|---|---|
 | Core Thesis (line 16) | "AI Agentic ERP that runs through WhatsApp and voice" | Capability list, not product definition |
 | Part 2 (20 verticals) | 20 different "What We Build" sections | Individual product features per vertical |
-| Part 4 (lines 603–625) | Agent Library, Flow Builder, Config Studio, SDK | The technical platform |
-| Part 5 (lines 637–669) | Partner tiers, income model, training | The distribution system |
-| Part 7 (line 698) | "Billing Agent + Khata Agent + Daily Report Agent" | The first three products |
+| Part 4 (lines 603–625) | Agent Library, Flow Builder, Config Studio, SDK | The platform (deployment tooling) |
+| Part 5 (lines 637–669) | Partner tiers, income model, training | The distribution channel |
+| Part 7 (line 698) | "Billing Agent + Khata Agent + Daily Report Agent" | The first three products being built |
 
 A chairman reading this document has to **assemble the product from fragments across 775 lines.**
 
-### What Is Actually Being Built (Three Layers)
+### What Is Actually Being Built
 
-**Layer 1: The Product (What the Shopkeeper Uses)**
+Rupantar is **two things you build** and **one way you distribute them.**
+
+#### What We Build
+
+**1. The Product — AI Agents (What the Shopkeeper Uses)**
 
 An AI agent — or a bundle of agents — that handles the shopkeeper's daily operations entirely through WhatsApp. The shopkeeper speaks a voice note ("aadha kilo doodh, parle g biscuits, aur Ram ka khata update karo"), and the AI agent processes it into a bill, updates inventory, records the credit, and sends a WhatsApp confirmation. No app. No screen.
 
-The agents are vertical-specific:
+The agents are vertical-specific. Each shop gets a bundle of 3–5 agents, configured for their vertical, running through one WhatsApp number:
 - A kirana shop gets: billing + inventory + credit + procurement + daily report agents
 - A garage gets: job card + parts inventory + customer update + vehicle history agents
 - A pharmacy gets: prescription reader + drug interaction check + expiry watch + refill reminder agents
 
-Each shop gets a bundle of 3–5 agents, configured for their vertical, running through one WhatsApp number.
+This is a **software product**. It generates revenue directly through SaaS subscriptions (₹299–₹1,499/month per shop).
 
-**Layer 2: The Platform (What Partners and Rupantar Use)**
+**2. The Platform — Agent Builder (What Partners Use to Deploy the Product)**
 
-The Agent Builder — a four-layer system that allows non-developer partners to configure, customise, and deploy AI agents for individual shops:
+The Agent Builder — a four-layer system that allows non-developer partners to configure, customise, and deploy AI agent bundles for individual shops:
 
 - **Agent Library:** Pre-built agent templates (160+ nodes) that partners select from
 - **Visual Flow Builder:** Drag-and-drop canvas to connect agents and set triggers
 - **Config Studio:** Mobile wizard to upload shop-specific data (product catalog, supplier contacts, customer list)
 - **Pro Code SDK:** Python/JS for building custom agent nodes for niche use cases
 
-**Layer 3: The Network (How It Reaches Shops)**
+This is a **software platform**. It generates revenue through platform fees (for T2+ builders) and marketplace royalties (when partners publish custom templates). Without it, customising agents for each shop requires an engineer — making per-shop deployment cost prohibitive. With it, a trained non-developer partner deploys a working agent bundle in under 60 minutes.
 
-The AI Shop Doctor partner programme — a tiered network of field salespeople (FMCG reps, pharma MRs, Tally resellers) who are trained, certified, and incentivised to deploy and maintain agents shop by shop, earning recurring income.
+#### How We Distribute It
+
+**3. The Partner Network — AI Shop Doctors (How the Product Reaches Shops)**
+
+India's existing field sales force — FMCG distributor reps (1.5M), pharma MRs (600K), Tally resellers (50K+), fintech POS reps (300K+), bank DSAs (3M+) — trained and certified as "AI Shop Doctors" who use the Agent Builder platform to deploy and maintain AI agent bundles for shops in their area. They earn recurring income (15–30% of subscription revenue) from every active shop in their portfolio.
+
+This is a **go-to-market channel**, not a software product. It involves:
+- A training and certification programme (8 modules, practical assessments)
+- A partner mobile app for onboarding shops (software, but an enabler — not revenue-generating directly)
+- A portfolio health dashboard for tracking shop performance
+- An incentive structure (subscription commission, activation fees, customisation fees, template royalties, AMC)
+
+The partner network doesn't need to be "built" as software — the people already exist. What Rupantar builds is the **training, tools, and incentive structure** that converts them from generic salespeople into AI implementation partners.
+
+#### The Relationship Between the Three
+
+```
+┌─────────────────────────────────────────────────┐
+│                  THE PRODUCT                     │
+│   AI agents running on WhatsApp/voice            │
+│   (what shopkeepers interact with)               │
+│   Revenue: SaaS subscriptions per shop           │
+├─────────────────────────────────────────────────┤
+│                 THE PLATFORM                     │
+│   Agent Builder (Library + Flow + Config + SDK)  │
+│   (what partners use to deploy the product)      │
+│   Revenue: platform fees + marketplace royalties │
+├─────────────────────────────────────────────────┤
+│              THE DISTRIBUTION                     │
+│   AI Shop Doctor partner network                 │
+│   (how the product reaches shops)                │
+│   Cost: training, tools, partner management      │
+│   Revenue: indirectly — enables product sales    │
+└─────────────────────────────────────────────────┘
+```
+
+The chairman's cost model:
+
+| Category | Type | Generates Revenue? | Cost Category |
+|---|---|---|---|
+| Product (AI agents) | Software we build | Yes — SaaS subscriptions | Product development |
+| Platform (Agent Builder) | Software we build | Yes — platform fees, royalties | Product development |
+| Distribution (partner network) | Go-to-market channel | No — indirectly (enables sales) | Sales & marketing |
 
 ### Where Does the Chairman Figure This Out?
 
-Probably around **Part 4 (line 603)** or **Part 5 (line 637)** — roughly 60% through the document. Only then does the reader realise: *"Oh, these aren't 20 separate products. They're all built on one platform, deployed by partners."*
+Probably around **Part 4 (line 603)** or **Part 5 (line 637)** — roughly 60% through the document. Only then does the reader realise: *"Oh, these aren't 20 separate products. They're all built on one platform, deployed through a partner network."*
 
 That's too late. A no-fluff chairman should know what the product is on page 1.
 
 ### What's Missing
 
-A single section — right after the Core Thesis — that says:
+A single section — right after the Core Thesis — that makes two things clear in under a page:
 
-> **Rupantar has three layers:**
->
-> **1. AI Agents (the product)** — Each shop gets a bundle of 3–5 WhatsApp-native AI agents configured for their vertical. The shopkeeper interacts entirely through voice notes, photos, and one-word WhatsApp replies. No app. No screen.
->
-> **2. Agent Builder (the platform)** — A no-code tool that lets certified partners deploy and customise agent bundles for each shop in under 60 minutes.
->
-> **3. AI Shop Doctors (the network)** — India's existing field sales force, trained and certified, who earn recurring income by deploying and maintaining agents for shops in their area.
+**First, what we build:**
 
-Three paragraphs. One diagram. After reading that, the chairman knows exactly what Rupantar is. The rest of the document provides the evidence.
+> **Rupantar builds two things:**
+>
+> **1. An AI agent product for shopkeepers.** Each shop gets a bundle of 3–5 WhatsApp-native AI agents configured for their vertical — billing, inventory, credit, procurement, daily reports. The shopkeeper interacts entirely through voice notes, photos, and one-word WhatsApp replies. No app. No screen. Revenue: SaaS subscription per shop.
+>
+> **2. A no-code platform for deploying it.** The Agent Builder lets trained partners configure and customise agent bundles for individual shops in under 60 minutes — without writing code. Without it, each shop needs an engineer. With it, India's existing field force can do it. Revenue: platform fees + marketplace royalties.
+
+**Second, how we distribute it:**
+
+> **3. Through India's existing field force, not a new one.** We don't hire salespeople. We convert FMCG distributor reps, pharma MRs, Tally resellers, and bank DSAs into certified "AI Shop Doctors" who use the Agent Builder to deploy the product shop by shop — and earn recurring income from every active shop in their portfolio.
+
+Two categories (what we build, how we distribute), three components, under a page. One diagram. After reading that, the chairman knows exactly what Rupantar is, how it makes money, and how it reaches shops. The rest of the document provides the evidence.
 
 **Right now, the document gives the chairman 775 lines of evidence without first telling him what the evidence is for.**
 
@@ -286,7 +336,7 @@ Three paragraphs. One diagram. After reading that, the chairman knows exactly wh
 
 | Priority | Change | Rationale |
 |---|---|---|
-| **Critical** | Add a "What Rupantar Is" section (three layers) immediately after Core Thesis | Chairman doesn't know what the product is until page 25+ |
+| **Critical** | Add a "What Rupantar Is" section (product + platform + distribution) immediately after Core Thesis | Chairman doesn't know what the product is until page 25+ |
 | **Critical** | Restructure as decision document (What → Why → How → Risks → Ask) | Current structure is a product document, not a decision document |
 | **High** | Reduce vertical depth from 20 deep dives to 5 deep dives + insight paragraphs | 67% of document is vertical analysis; structural repetition creates fluff experience |
 | **High** | Add per-phase capital requirement table | Missing from the economics section; chairman needs total investment, not just per-shop |
