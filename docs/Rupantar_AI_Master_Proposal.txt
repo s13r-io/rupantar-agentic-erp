@@ -1,0 +1,1651 @@
+    Rupantar AI
+
+    Agentic ERP for India's 50 Million SMB Shops
+
+Market Landscape · AI Agent Platform · Build Priorities · Partner Network · Execution Plan
+                                March 2026 | Confidential
+
+
+Core Thesis The Platform The Distribution Model
+80–85% of India's 50M shops We build an AI Agentic ERP We convert India's existing
+run on paper. Not because that runs through WhatsApp B2B field force — 1.5M
+owners don't want and voice. Autonomous FMCG reps, 6L pharma MRs,
+technology, but because no agents handle billing, 50K Tally resellers, 3M bank
+product has met them where inventory, compliance, DSAs — into certified 'AI
+they are: WhatsApp, voice, customer credit, procurement, Shop Doctors' who deploy
+vernacular, and zero UI and operations. No app to and customise agents shop
+complexity. install. No screen to learn. by shop, earning recurring
+        income.
+
+
+
+
+
+
+
+
+
+
+    Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+Part 1 — Executive Summary
+
+
+India has approximately 50 million micro and small businesses — kiranas, restaurants, pharmacies, garages,
+salons, fashion shops, coaching centres, and more. They collectively handle ₹95 lakh crore in annual retail
+and services. Yet 80–85% of them use no operational software at all. The ones that do are underserved by
+legacy desktop tools that were designed for accountants, not shopkeepers.
+
+The opportunity is not incremental. It is a category creation: moving India's unorganised trade from paper and
+memory to AI-native operations — delivered through WhatsApp, configurable without code, and adopted
+without requiring any behavioral change from the shop owner.
+
+ Metric                          Data Point                 Source Basis
+ Total SMB shops in India        ~50 million                MSME Ministry, trade census
+                                                            estimates
+ Shops with no operational       ~80–85% (~40–42M           Penetration data across all
+ software                        shops)                     software categories
+ India domestic software         $25 billion → $61B by      Grand View Research, 2024
+ market (2024)                   2030 (16% CAGR)
+ SMB digitisation opportunity    $13 billion                SaaSBoomi/1Lattice 2025 report
+ within that
+ Average SMB software spend      ₹50,000/year (micro        KenResearch India SMB survey
+ per shop today                  shops: ₹0)                 2025
+ Our target ARPU at launch       ₹299–₹1,499/month          Benchmarked against Petpooja,
+                                 depending on vertical      Vyapar, Marg pricing
+ B2B field workforce in India    >10M across FMCG,          Industry estimates
+ (potential partners)            pharma, fintech, CA,
+                                 DSA
+ Target active partner network   50,000 certified AI Shop   Scaled from Tally TDP model:
+ (Year 2)                        Doctors                    50K dealers for ₹900Cr revenue
+
+  Design principle: The shopkeeper does not serve the software. The software serves the shopkeeper.
+  Every agent runs autonomously through WhatsApp — the shop owner's single interaction is a voice
+  note, a photo, or a one-word reply.
+
+
+
+
+
+
+
+
+
+
+  Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+Part 2 — Market Landscape: 20 Software Areas
+
+The following table summarises software penetration, existing players, and white spaces across all 20 areas.
+Detailed breakdowns and AI agent plans follow for each area.
+
+ #    Software       Penetration   Existing Leaders (est.        Gap / White Space
+      Area                         share among software
+                                   users)
+ 01   Billing &      ~15–20%       Tally (38%), Vyapar (13%),    80M+ shops use paper; no
+      POS                          Marg (11%), Busy (9%),        voice/vernacular billing
+                                   MyBillBook (7%)               product exists
+ 02   Inventory      ~8–12%        Bundled with POS —            Perishables, size-colour
+      Mgmt                         Marg, GoFrugal, Tally         matrix, and loose-weight
+                                   lead. No standalone           inventory completely
+                                   player.                       unaddressed
+ 03   Accounting &   ~18–22%       Tally (47%), Busy (11%),      ~78% of shops file GST via
+      GST                          Zoho Books (7%),              CA manually; no auto-filing
+                                   ClearTax (6%)                 agent
+ 04   Digital        ~60–70%       Paytm (30%), PhonePe          UPI acceptance is solved;
+      Payments                     (30%), BharatPe (12%),        reconciliation and cash-flow
+                                   Google Pay (10%)              intelligence are not
+ 05   Credit         ~20–30%       Khatabook (40%),              30M shops still use paper
+      Ledger /                     OkCredit (25%), Vyapar        khata; no AI-driven
+      Khata                        (20%)                         collection intelligence
+ 06   Restaurant /   ~5–8%         Petpooja (45%), Posist        6M+ dhabas, tea stalls,
+      F&B POS                      (10%), Rista (8%),            street food — zero POS
+                                   GoFrugal (6%)                 penetration
+ 07   Pharmacy       ~30–40%       Marg (38%), GoFrugal          ABDM integration, drug
+      Software                     (13%), Pharmsoft (9%),        interaction checks,
+                                   hCue (5%)                     WhatsApp refill reminders
+                                                                 — absent
+ 08   Salon & Spa    ~3–5%         Zenoti (premium chains),      ~95% of neighbourhood
+                                   Dingg (SMB), MioSalon         salons: no appointment, no
+                                   (SMB), Invoay                 staff commission, no loyalty
+                                                                 software
+ 09   B2B            ~5–8%         Udaan (dominant),             ~85% of retail procurement
+      Procurement                  Ninjacart (agri), Jumbotail   still phone-call based via
+                                   (South India)                 distributor salesmen
+ 10   Online Store   ~5–7%         Shopify (D2C), Dukaan         No zero-effort online store
+      / eComm                      (micro-SMB), Bikayi,          that auto-syncs offline
+                                   ONDC-native apps              inventory and handles
+                                                                 orders
+ 11   Fashion /      ~5–8%         Ginesys (chains), Logic       Size-colour matrix inventory
+      Apparel                      ERP (SME), Unicommerce        for standalone garment
+                                   (online)                      shops — no affordable
+                                                                 product
+ 12   Electronics    <3% IMEI-     No SMB leader. Generic        ⚠ 4M repair shops: zero
+      Repair         specific      billing (Marg, Tally) used    job-card, IMEI tracking, or
+                                   for billing only.             parts inventory software
+ 13   Grocery /      ~8–12%        Vyapar (billing), Khatabook   ⚠ No all-in-one kirana OS
+      Kirana OS                    (ledger), Udaan (supply)      at <₹1,000/yr with
+
+                     Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+#    Software          Penetration   Existing Leaders (est.         Gap / White Space
+     Area                            share among software
+                                     users)
+                                                                    procurement + billing +
+                                                                    credit + delivery
+14   HR & Payroll      ~5–8%         GreytHR, Keka, Kredily —       Daily wage, shift
+                                     all for 10+ employee           attendance, cash payroll for
+                                     organised firms                retail staff — no product
+                                                                    exists
+15   Customer          <2%           Reelo (F&B), WhatsApp          ⚠ No simple loyalty linked
+     Loyalty /                       Business (informal, free)      to UPI payment history
+     CRM                                                            without requiring customer
+                                                                    app
+16   Logistics /       ~3–5%         Shiprocket/Delhivery           No WhatsApp-native last-
+     Delivery                        (ecomm). Hyperlocal            mile delivery OS for
+                                     delivery is entirely manual.   neighbourhood shops
+17   WhatsApp          ~20–30%       WhatsApp Business free         No vernacular, voice-note-
+     Commerce          informal      (dominant). Interakt,          native, full-commerce agent
+                                     AiSensy (API layer).           at <₹500/month
+18   Auto /   Garage   <1%           ⚠ No clear leader. Near-       ⚠ 5M garages: zero digital
+         Repair                      zero penetration.              job cards, parts inventory,
+                                                                    or customer communication
+19   Hardware /        <5%           Tally (generic). No            ⚠ Rate cards per
+     Construction                    dedicated SMB hardware         contractor, site-wise billing,
+     Retail                          product.                       material tracking — all
+                                                                    manual
+20   Education /       ~10–15%       ClassPlus, Teachmint,          7–8M solo home tutors: no
+     Coaching                        SimpliFee, Fedena              fee tracking, attendance, or
+                                                                    parent comms tool
+
+
+
+
+
+
+
+
+
+
+                       Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+  Area 01     Billing, POS & Invoicing
+ Addressable    Current            Existing Market Leaders
+  Shops         Penetration
+   ~50M         15–20%             Tally (38%), Vyapar (13%), Marg (11%), Busy (9%),
+ addressable                       MyBillBook (7%)
+
+Market Reality
+Tally's dominance is accountant-driven, not shopkeeper-driven. Vyapar and MyBillBook have traction on
+mobile but still require a UI interaction for every bill. 80%+ of India's shops remain on paper because no
+product meets them via voice in their own language.
+
+ ⚙ WHAT WE BUILD
+  Voice-first Billing Agent — shopkeeper speaks an order in Hindi/Hinglish, agent generates a GST-compliant
+  bill, identifies the customer, applies pending discounts or credit, and sends it via WhatsApp. Zero screen
+  interaction for the owner.
+
+ KEY AGENT FEATURES
+
+    •   Voice Billing: Parses spoken orders (Hindi/Hinglish/regional) into structured bills — handles local aliases
+        ('parle g', 'adha kilo doodh'), unit variations, and combo deals
+    •   Smart Scan: Photo or barcode of product → auto-identifies SKU, fetches price, adds to bill — no manual
+        catalogue search
+    •   Customer Memory: Recognises returning customers by phone number or UPI ID — auto-applies saved
+        price, outstanding credit, and preferred items
+    •   GST Engine: Auto-assigns HSN codes and tax slabs, generates e-invoice for B2B buyers above threshold,
+        validates bill before print
+    •   Day Close Agent: End-of-day: tallies cash + UPI + credit sales, flags discrepancies, posts to accounting
+        ledger, sends WhatsApp summary to owner
+    •   Offline Sync: Queues all transactions during internet outage, syncs with conflict resolution when
+        connectivity returns
+
+
+
+
+
+
+
+
+
+
+                Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+  Area 02     Inventory Management
+ Addressable        Current       Existing Market Leaders
+ Shops              Penetration
+ ~50M               8–12%         Marg ERP, GoFrugal, Tally — all bundled. No standalone
+ addressable (10–   (bundled      SMB inventory product.
+ 15M with           with POS)
+ meaningful stock)
+
+Market Reality
+Shop owners discover they've run out of stock when a customer asks for it. Inventory is tracked on paper or
+by memory. The AI agent opportunity is to make stockouts predictable 3–5 days in advance — and auto-
+resolve them without owner action.
+
+ ⚙ WHAT WE BUILD
+  Autonomous Stock Intelligence Agent — monitors real-time inventory deducted from every sale, predicts
+  stockouts using sales velocity and seasonality, auto-generates purchase orders confirmed by owner via a
+  single WhatsApp 'haan'.
+
+ KEY AGENT FEATURES
+
+   •     Live Stock Tracker: Deducts inventory on every sale — handles loose-weight items (250g from 1kg),
+         variants (size/colour), and combo packs
+   •     Stockout Predictor: Uses 90-day sales velocity + festival calendar + local events to flag which SKUs will
+         run out in 3–5 days
+   •     Auto-Reorder: Generates purchase order to preferred supplier at reorder level; routes via WhatsApp;
+         owner approves with one reply
+   •     Expiry Watchdog: For pharma, grocery, FMCG — tracks batch expiry, alerts 30/15/7 days in advance,
+         suggests markdown or return to distributor
+   •     Shrinkage Detective: Compares expected vs counted stock after cycle count — categorises variance as
+         theft, breakage, or measurement error
+   •     New Product Intake: Owner photos new delivery — agent extracts product details via vision model,
+         creates catalogue entry with suggested price
+
+
+
+
+
+
+
+
+
+
+                    Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+     Area 03     Accounting & GST Compliance
+    Addressable        Current      Existing Market Leaders
+     Shops             Penetration
+~10M shops with 18–22% for Tally (47%), Busy (11%), Zoho Books (7%), ClearTax
+    GST registration   GST filing   (6%), Vyapar (5%)
+                       software
+
+   Market Reality
+   Tally dominates because CAs use it. Most small shops pay a CA ₹5,000–15,000/year to handle GST filing
+   manually. The AI opportunity is to auto-maintain books from every transaction and auto-file returns — making
+   the CA redundant for routine compliance.
+
+    ⚙ WHAT WE BUILD
+     Autonomous Compliance Agent — silently posts every transaction to the right ledger, prepares GSTR-1 and
+     GSTR-3B at month-end, reconciles purchase data, and files with a single owner confirmation. Owner receives
+     a plain-Hindi monthly P&L via WhatsApp voice note.
+
+    KEY AGENT FEATURES
+
+   • Auto-Bookkeeper: Every sale, purchase, and expense auto-posts to correct ledger from billing/payment
+       data — zero manual entry
+   • GST Filing Agent: Month-end: prepares GSTR-1 + GSTR-3B, reconciles with GSTR-2A, flags
+       mismatches, files with one WhatsApp approval
+   • e-Way Bill Agent: For goods movement above ₹50K — auto-generates e-way bill from purchase order,
+       monitors expiry
+   • Expense Capture: Owner photos any receipt/bill → agent extracts amount, vendor, date, auto-posts to
+       correct expense head
+   • P&L Narrator: Monthly: sends owner a 60-second Hindi voice note — 'aapka is mahine ₹18,500 profit hua,
+       GST ₹2,100 file hoga'
+   • Deadline Agent: Tracks all filing deadlines; sends 7/3/1-day reminders with status 'ready to file' or 'data
+       missing'
+
+
+
+
+
+
+
+
+
+
+                       Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+  Area 04     Digital Payments & UPI
+ Addressable   Current              Existing Market Leaders
+  Shops        Penetration
+ ~50M shops    60–70%               Paytm (30%), PhonePe (30%), BharatPe (12%), Google
+               accept               Pay (10%), Pine Labs (POS terminals)
+               digital
+               payments
+
+Market Reality
+UPI acceptance is largely solved — soundboxes have reached even semi-literate vendors. The gap is
+intelligence on top of payments: reconciling who paid, following up on unpaid balances, and predicting cash
+flow. Building a payment acceptance layer from scratch is not viable against UPI giants.
+
+ ⚙ WHAT WE BUILD
+  Payment Intelligence Layer — not a payment product, but a reconciliation and cash-flow layer that sits on top
+  of existing UPI. Auto-matches every UPI credit to the right order, follows up on unpaid amounts, and forecasts
+  next 14-day cash position.
+
+ KEY AGENT FEATURES
+
+    •   Payment Reconciler: Parses UPI SMS/webhook notifications — matches every credit to open order or
+        customer account automatically
+    •   Collection Agent: For unpaid dues — sends personalised WhatsApp reminders at optimal times (payday,
+        before weekend), escalates tone with days overdue
+    •   Cash Flow Forecast: Projects next 14/30-day cash position from expected collections, supplier dues, and
+        recurring expenses
+    •   Fraud Flag: Detects fake payment screenshots, duplicate transaction IDs, screen-recorded UPI
+        confirmations before goods are released
+    •   Day Settlement: Closes register: matches expected vs received cash + UPI, identifies over/short, auto-
+        transfers surplus to savings
+
+
+
+
+
+
+
+
+
+
+               Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+  Area 05     Credit Ledger (Khata / Udhar)
+ Addressable       Current       Existing Market Leaders
+  Shops            Penetration
+ ~25–30M credit-   20–30%        Khatabook (40%), OkCredit (25%), Vyapar (20%) — all
+ extending shops   use digital   free tiers; monetisation is weak
+                   khata
+
+Market Reality
+Khatabook and OkCredit raised $275M+ combined and couldn't monetise because a free digital ledger
+creates no stickiness. The AI layer converts the khata into an active collection engine — making it worth
+paying for because it actually collects money.
+
+ ⚙ WHAT WE BUILD
+  Intelligent Credit Agent — manages the full credit lifecycle from entry to collection. Records credit via voice,
+  sends smart WhatsApp reminders at the right time, and builds a credit profile that connects the shop to
+  working capital loans.
+
+ KEY AGENT FEATURES
+
+    •   Voice Credit Entry: Owner says 'Ram ne 500 liya' — agent records it, timestamps it, links to Ram's profile
+    •   Smart Reminder: Sends reminders at optimal times based on each customer's known pay cycle — adapts
+        tone from friendly to firm based on days overdue
+    •   Pattern Analyser: Learns when each customer pays (after salary, 1st of month) — auto-schedules
+        reminders for best collection timing
+    •   Credit Limit Advisor: Flags customers approaching unsafe credit levels based on payment history and
+        purchase frequency
+    •   Early Warning: Identifies customers showing deteriorating payment behaviour before they become bad
+        debt
+    •   Loan Connector: Analyses shop's 6-month transaction history to generate creditworthiness score —
+        connects to NBFC partner for pre-approved working capital
+
+
+
+
+
+
+
+
+
+
+                   Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+  Area 06     Restaurant & F&B POS
+ Addressable      Current        Existing Market Leaders
+   Shops          Penetration
+ ~7.5M food       5–8%           Petpooja (45% of software users, 1L+ outlets),
+  service         (~400–         Posist/Restroworks (10%), Rista/DotPe (8%)
+ establishments   600K)
+
+Market Reality
+Petpooja has built strong SMB coverage at ₹10K/year. The AI opportunity goes beyond POS to act as a
+restaurant co-manager: intelligent KOT prioritisation, aggregator reconciliation (Swiggy/Zomato disputes), and
+predictive inventory-to-menu management. 6.5M+ dhabas and tea stalls remain completely unaddressed.
+
+ ⚙ WHAT WE BUILD
+  Restaurant Co-Manager Agent — accepts orders across all channels simultaneously, manages kitchen queue
+  by prep time not order time, auto-reconciles Swiggy/Zomato payouts daily, and sends owner a morning brief
+  on what happened and what to prepare.
+
+ KEY AGENT FEATURES
+
+     •   Multi-Channel Order Hub: Receives counter, Swiggy, Zomato, WhatsApp, and QR orders simultaneously
+         — queues kitchen by actual prep time, not FIFO
+     •   Kitchen Intelligence: Routes items to correct station, batches similar orders, estimates ready-time, alerts
+         server when plate is up
+     •   Aggregator Reconciler: Daily: compares expected vs paid by Swiggy/Zomato — flags commission
+         discrepancies, auto-raises disputes for errors
+     •   Menu Engineer: Weekly: identifies high-profit/low-effort vs low-profit/high-effort dishes — recommends
+         menu changes and pricing
+     •   86 Manager: Cross-references current inventory against menu — auto-marks items unavailable on all
+         platforms when ingredients run out
+     •   Morning Brief: Every morning: sends owner a WhatsApp summary — yesterday's revenue, top dishes,
+         delivery ratings, today's prep list
+
+
+
+
+
+
+
+
+
+
+                  Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+  Area 07     Pharmacy & Chemist Software
+ Addressable         Current    Existing Market Leaders
+ Shops               Penetration
+ ~1.2M registered    30–40%     Marg ERP (38%), GoFrugal (13%), Pharmsoft (9%), hCue
+ chemists + ~300K               (5%), eVitalRx (4%)
+ unregistered
+
+Market Reality
+Pharmacy is the best-penetrated vertical because regulatory complexity (Schedule H, expiry tracking, drug
+licences) forces adoption. The AI layer adds what existing software lacks: clinical safety (drug interactions),
+proactive patient management, and ABDM (Ayushman Bharat) integration.
+
+ ⚙ WHAT WE BUILD
+  Pharmacy Intelligence Agent — handles billing and compliance automatically while adding clinical guardrails:
+  reading prescriptions via WhatsApp photo, checking drug interactions before dispensing, and sending chronic-
+  patient refill reminders 5 days before run-out.
+
+ KEY AGENT FEATURES
+
+   •    Prescription Reader: Customer sends prescription photo → agent extracts drugs + doses, cross-checks
+        against dispensed items, flags brand-to-generic switches needing consent
+   •    Drug Interaction Check: For multi-drug prescriptions — checks against drug interaction database before
+        dispensing, not after
+   •    Expiry Action Agent: 30 days before expiry: auto-generates distributor return request or markdown
+        pricing; 7 days: donation/disposal alert
+   •    Chronic Refill Agent: For BP, diabetes, thyroid patients — sends WhatsApp reminder 5 days before
+        expected run-out; accepts reorder by reply
+   •    Auto-Procurement: Analyses sales velocity + current stock — generates daily purchase order to
+        distributor, routes via WhatsApp
+   •    ABDM Connector: Links dispensing records to patient ABHA ID; enables digital prescription pull; prepares
+        shop for ABDM-mandated compliance
+
+
+
+
+
+
+
+
+
+
+                     Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+  Area 08     Salon, Spa & Beauty
+ Addressable       Current      Existing Market Leaders
+ Shops             Penetration
+ ~2M salons and    3–5% (~60–   Zenoti (premium chains globally), Dingg (Indian SMB,
+ beauty parlours   100K)        ~8K), MioSalon (~10K), Invoay (growing)
+
+Market Reality
+~95% of neighbourhood salons and parlours use paper appointment books, WhatsApp for bookings, and
+mental recall for client preferences. The AI agent's job is to capture and scale the owner's personal memory
+— so even with staff turnover, the client experience stays intimate.
+
+ ⚙ WHAT WE BUILD
+  Client Memory & Revenue Agent — accepts bookings via WhatsApp/voice, maintains each client's complete
+  service history and colour formulas, automatically fills empty slots with targeted outreach, and tracks staff
+  commissions without a spreadsheet.
+
+ KEY AGENT FEATURES
+
+   •    Booking Agent: Accepts appointments via WhatsApp, voice, or Instagram DM — checks stylist availability,
+        confirms, reminds 24 hrs before, handles rescheduling
+   •    Client Memory: Stores full service history, colour formulas, preferred stylist, skin/hair type, product
+        preferences per client
+   •    Empty Slot Filler: Detects gaps in appointment book — sends personalised outreach to clients due for a
+        visit ('Priya, 5 weeks ho gaye, touch-up karein?')
+   •    Staff Commission Tracker: Calculates daily/monthly commission per staff by services rendered, products
+        sold, tips — auto-generates payslip
+   •    Review Generator: Post-service: sends WhatsApp requesting Google/Justdial review — guides the client
+        through it, rewards with next-visit discount
+
+
+
+
+
+
+
+
+
+
+                   Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+  Area 09     B2B Procurement / Supply Chain
+ Addressable          Current    Existing Market Leaders
+ Shops                Penetration
+ ~15M+ shops that     5–8%       Udaan (dominant, ₹5,706 Cr revenue FY24, acquired
+ restock regularly               ShopKirana Jul 2025), Ninjacart (agri), Jumbotail (South)
+ from distributors
+
+Market Reality
+85% of FMCG procurement happens through traditional distribution: salesman visits, phone orders, paper
+invoices. Udaan has built scale in B2B ecommerce but has not yet solved the in-store procurement
+intelligence layer for the shop.
+
+ ⚙ WHAT WE BUILD
+  Smart Procurement Agent — proactively monitors stock levels and places orders with the best-priced
+  distributor before the shop runs out. Tracks active trade schemes, disputes short deliveries, and manages
+  credit limits across multiple suppliers.
+
+ KEY AGENT FEATURES
+
+   •    Smart Ordering: Generates optimal purchase order based on velocity, upcoming events, and available
+        credit — routes to best-priced distributor automatically
+   •    Delivery Verification: At delivery: compares received items against PO — flags shortages, wrong items,
+        damaged goods before delivery person leaves
+   •    Supplier Invoice Checker: Matches invoice to PO and delivery note — flags discrepancies in quantity,
+        rate, or scheme discounts before payment
+   •    Trade Scheme Tracker: Monitors all active buy-X-get-Y schemes from FMCG distributors — ensures shop
+        claims maximum benefit before expiry
+   •    Credit Manager: Tracks credit limit and outstanding per distributor — alerts before any supplier's credit is
+        exhausted
+
+
+
+
+
+
+
+
+
+
+                      Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+  Area 10     Online Store / eCommerce Enablement
+ Addressable       Current       Existing Market Leaders
+ Shops             Penetration
+ ~5–7M shops       5–7% active   Shopify (D2C brands), Dukaan (~3M registered), Bikayi
+ attempting some   online        (~5L), ONDC-native apps
+ online sales      stores
+
+Market Reality
+Most SMBs who 'go online' create a store and abandon it within 60 days — catalog goes stale, orders are
+missed, customer queries go unanswered. The AI agent makes the online channel zero-effort by auto-syncing
+inventory, answering queries 24/7, and processing orders without owner involvement.
+
+ ⚙ WHAT WE BUILD
+  Online Store Manager Agent — auto-syncs offline catalog to online channels (ONDC, WhatsApp catalog,
+  Dukaan), answers all customer queries 24/7, processes orders, and runs targeted promotional campaigns
+  based on excess stock.
+
+ KEY AGENT FEATURES
+
+   •    Catalog Sync: Mirrors offline inventory to online store in real-time — marks items out-of-stock when
+        physical stock hits zero, updates prices
+   •    24/7 Query Agent: Handles all customer questions on WhatsApp, website chat, and Instagram DM —
+        size/stock/delivery/return queries without owner input
+   •    Order Processor: Confirms orders, sends acknowledgment, books courier, generates label, tracks delivery
+        — alerts owner only for exceptions
+   •    Promo Campaign Agent: Designs and executes weekly promotions based on excess stock and local
+        events — creates WhatsApp broadcast content
+   •    ONDC Agent: Maintains seller listings across ONDC buyer apps — updates catalog, manages seller
+        ratings, handles order lifecycle
+
+
+
+
+
+
+
+
+
+
+                   Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+  Area 11     Fashion, Garments & Apparel Retail
+ Addressable     Current          Existing Market Leaders
+  Shops          Penetration
+ ~4–5M garment   5–8%             Ginesys (mid-to-large chains), Logic ERP (~5K SME
+  shops          (mostly          businesses), Unicommerce (online sellers)
+                 chains)
+
+Market Reality
+Fashion retail's core software problem is the size-colour inventory matrix — every design has 12–40 variants
+(style × size × colour). No affordable product solves this for standalone garment shops under ₹25,000/year.
+Dead season-end inventory is the biggest profit killer.
+
+ ⚙ WHAT WE BUILD
+  Fashion Intelligence Agent — manages the size-colour matrix at the variant level, identifies dead stock 3
+  weeks before the season ends, drives targeted markdowns, and advises on next-season buying based on
+  actual sell-through data.
+
+ KEY AGENT FEATURES
+
+    •   Matrix Tracker: Tracks inventory at variant level (style × size × colour) — shows which combinations are
+        running low vs overstocked
+    •   Dead Stock Alert: Identifies designs/variants unsold for 14/21/30 days — recommends markdown timing
+        before season-end deadline
+    •   Season Buying Advisor: Based on previous season's sell-through by category and price range,
+        recommends quantities for next buying cycle
+    •   Bundle Optimizer: Identifies products bought together — creates combos (kurta + dupatta) to move slow-
+        moving companion items
+    •   Returns Analyser: Tracks returns by supplier and style — flags suppliers with high defect rates for next
+        buying decision
+
+
+
+
+
+
+
+
+
+
+                 Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+  Area 12     Electronics Repair & Mobile Shops
+ Addressable       Current      Existing Market Leaders
+ Shops             Penetration
+ ~4–5M mobile      <3% IMEI-    ⚠ No clear SMB leader. Generic Marg/Tally used for billing
+ and electronics   specific     only. No job-card or IMEI product.
+ repair shops
+
+Market Reality
+India's ~4 lakh mobile repair shops operate on handwritten job cards, have no digital record of what was
+repaired, which parts were used, or whether the customer came back. This is a pure white space with no
+incumbent — first-mover owns it.
+
+ ⚙ WHAT WE BUILD
+  Mobile Repair OS — customer WhatsApps a photo of the damaged phone; agent creates a digital job card,
+  identifies the device, tracks the repair, orders parts, and notifies the customer at every stage. Entire workflow
+  via WhatsApp.
+
+ KEY AGENT FEATURES
+
+   •    Job Card Creator: Customer photos broken device → agent identifies make/model via vision, logs fault,
+        creates numbered work order, sends acknowledgment
+   •    IMEI Verifier: Scans IMEI against stolen device database before accepting — protects shop from legal
+        liability, tracks device history
+   •    Parts Inventory: Tracks parts by model compatibility — alerts when critical spares run low, places orders
+        with parts distributor
+   •    Status Communicator: Proactively updates customer via WhatsApp at each stage: received → diagnosed
+        → parts ordered → ready for pickup
+   •    Repair Estimate Agent: Customer describes fault → agent provides price range based on historical data
+        for that model/fault before inspection
+   •    Warranty Handler: Guides customer through brand warranty claim process, tracks claim status with
+        service centre
+
+
+
+
+
+
+
+
+
+
+                   Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+  Area 13     Grocery / Kirana Store OS
+ Addressable   Current             Existing Market Leaders
+  Shops        Penetration
+ ~12M kirana   8–12% for           Vyapar (billing), Khatabook (ledger), Udaan (supply) — all
+ stores        any                 point solutions, no integrated OS
+               software
+
+Market Reality
+The kirana store is simultaneously the largest opportunity and the hardest problem. A typical kirana: single
+owner, 5,000–20,000 SKUs, 50–200 credit customers, ₹15,000–50,000 daily revenue, no staff, no computer.
+The only product that works here must require zero behavioral change — running entirely through WhatsApp
+voice.
+
+ ⚙ WHAT WE BUILD
+  Zero-UI Kirana OS — the entire ERP runs through one WhatsApp number. Owner talks to the AI like a trusted
+  employee. No app to open, no dashboard to check. Billing, khata, stock, ordering, delivery coordination, and
+  daily report — all via voice and WhatsApp.
+
+ KEY AGENT FEATURES
+
+    •      WhatsApp Command Centre: Entire operation via voice notes and WhatsApp — owner speaks
+           transactions, photos invoices, AI handles everything else
+    •      Delivery Coordinator: Manages home delivery orders from regular customers — confirms, assigns slot,
+           sends status to customer
+    •      Customer Relationship Memory: Remembers every customer's buying patterns, credit history, usual
+           items — personalises every interaction
+    •      Festival Stock Agent: Alerts 3–4 weeks before Diwali, Eid, Holi with suggested additional stock quantities
+           based on previous year
+    •      Micro-Lending Connector: Analyses 6–12 months of transactions → generates creditworthiness report →
+           connects to NBFC for ₹50K–5L working capital
+    •      Evening Report: Every evening: 60-second WhatsApp voice summary in Hindi — sales, credit, top
+           products, cash, what to order tomorrow
+
+
+
+
+
+
+
+
+
+
+               Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+  Area 14     HR & Payroll
+ Addressable          Current      Existing Market Leaders
+ Shops                Penetration
+ ~3–5M shops          5–8% of      GreytHR (~25K companies), Keka (5K+), Kredily (20K+,
+ with 5+ paid staff   shops with   free tier), Razorpay Payroll
+                      10+
+                      employees
+
+Market Reality
+For shops with 5–50 staff, payroll is a monthly headache: attendance on paper, salary calculation on
+WhatsApp, PF filing once a year if lucky. The AI agent makes this invisible — attendance from WhatsApp
+check-in, payslip auto-generated, PF challan auto-filed.
+
+ ⚙ WHAT WE BUILD
+  Invisible HR Agent — runs attendance, payroll, and compliance in the background. Surfaces to the owner only
+  for approvals and anomalies. Sends salary to staff on salary day via UPI with zero owner intervention.
+
+ KEY AGENT FEATURES
+
+   •    Smart Attendance: Staff check-in via WhatsApp, QR, or face scan — agent logs attendance, handles late
+        marks, half-days, overtime
+   •    Payroll Calculator: Auto-calculates salary including base, allowances, PF/ESI/TDS deductions, advances
+        — generates Hindi payslip
+   •    Salary Disbursement: On salary day: initiates UPI transfer to each staff member, confirms receipt, flags
+        failures
+   •    PF/ESI Filing: Monthly: auto-generates ECR challan and ESIC challan — files with owner's digital
+        signature, zero manual work
+   •    Compliance Calendar: Tracks all labour law deadlines — minimum wage revisions, bonus payment,
+        annual returns — with advance warnings
+
+
+
+
+
+
+
+
+
+
+                      Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+  Area 15     Customer Loyalty & CRM
+ Addressable          Current    Existing Market Leaders
+  Shops               Penetration
+ ~50M shops with      <2%        Reelo (F&B-focused), WhatsApp Business broadcasts
+ repeat customers                (informal dominant), Capillary (enterprise only)
+
+Market Reality
+Indian shopkeepers are naturally brilliant at loyalty — they know every regular customer's name, preferences,
+and credit history. The problem is scale: beyond 100–200 customers this personal knowledge breaks down.
+The AI agent scales the shopkeeper's natural warmth to 1,000+ customers.
+
+ ⚙ WHAT WE BUILD
+  Hyper-Personalisation Agent — replicates the neighbourhood shopkeeper's memory at scale. Knows each
+  customer's purchase patterns, sends outreach at exactly the right moment, and drives repeat visits through
+  personal (not generic) communication.
+
+ KEY AGENT FEATURES
+
+    •   Customer 360: Builds rich profile per customer from all transactions — purchase history, preferred
+        products, price sensitivity, payment habits
+    •   Intelligent Outreach: Identifies the right moment per customer — 'Meena ji usually orders biryani on
+        Fridays', sends Friday morning message
+    •   Birthday/Occasion Agent: Sends personalised birthday/anniversary offer for the customer's actual
+        favourite product — not a generic blast
+    •   Win-Back Agent: Customers who haven't visited in their usual cycle — personalised 'we miss you' with a
+        relevant offer
+    •   Referral Engine: After positive interaction, sends loyal customers a referral code with reward, tracks chain,
+        auto-credits rewards
+    •   Campaign Analyst: Post-campaign: measures uplift vs baseline by segment — feeds learnings to improve
+        next campaign automatically
+
+
+
+
+
+
+
+
+
+
+                      Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+  Area 16     Logistics & Last-Mile Delivery
+ Addressable   Current            Existing Market Leaders
+ Shops         Penetration
+ ~5–8M shops   3–5%               Shiprocket/Delhivery (ecomm, organised). Hyperlocal
+ doing home                       delivery for neighbourhood shops is entirely manual.
+ delivery
+
+Market Reality
+Most neighbourhood home delivery is coordinated through WhatsApp voice calls and personal bike riders with
+no tracking. Customers call 'kahan hai mera order?' and the shopkeeper doesn't know. The AI agent adds
+professional delivery operations with zero new app required by the customer.
+
+ ⚙ WHAT WE BUILD
+  Hyperlocal Delivery Agent — assigns orders to delivery staff based on route proximity, sends customers
+  WhatsApp-based live tracking (no app), optimises multi-drop routes, and handles failed deliveries with
+  automated rescheduling.
+
+ KEY AGENT FEATURES
+
+   •    Smart Assignment: Assigns each order to the optimal delivery person based on current location, pending
+        orders, and zone expertise
+   •    WhatsApp Tracking: Sends customer a live tracking link via WhatsApp — updates proactively at pickup,
+        enroute, and delivery
+   •    Route Optimizer: For 5–10 simultaneous orders: generates optimal delivery sequence based on
+        addresses and current traffic
+   •    Failed Delivery Handler: When delivery fails — immediately contacts customer via WhatsApp, captures
+        alternative instructions, reschedules same-day
+   •    COD Tracker: Tracks undeposited cash from COD orders per delivery staff — flags overdue deposits,
+        generates daily collection report
+
+
+
+
+
+
+
+
+
+
+               Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+  Area 17     WhatsApp Commerce
+ Addressable    Current              Existing Market Leaders
+ Shops          Penetration
+ ~50M shops —   20–30%               WhatsApp Business free (50M+ Indian business users).
+ WhatsApp is    informal;            Interakt (Reliance-backed), AiSensy, Wati.io for API layer.
+ universal      API layer
+                <2%
+
+Market Reality
+WhatsApp is already India's de facto commerce OS — but only informally (manual messages, personal chats,
+forwards). The AI layer converts WhatsApp from a manual burden into a fully autonomous commerce channel:
+catalog, ordering, payment, tracking, and support — all automated, in the customer's language.
+
+ ⚙ WHAT WE BUILD
+  Full-Stack WhatsApp Commerce Agent — handles the complete commerce lifecycle on WhatsApp
+  autonomously: catalog browsing, order taking (via voice notes), payment, delivery tracking, and post-purchase
+  support — in Hindi/Hinglish/regional language, 24/7.
+
+ KEY AGENT FEATURES
+
+   •    Conversational Catalog: Customer: 'kurta dikhao ₹500 ke neeche' → agent shows relevant products with
+        photos, prices, availability
+   •    Voice Order Agent: Accepts orders via WhatsApp voice notes — transcribes, extracts intent, confirms
+        order in natural language
+   •    Multilingual Agent: Auto-detects customer language (Hindi, Tamil, Telugu, Marathi, Bengali) — responds
+        in kind without manual setup
+   •    Automated FAQ: Handles 90% of common queries (delivery time, return policy, stock availability) without
+        owner involvement
+   •    WhatsApp Payment: Sends UPI payment link post-order confirmation — confirms receipt, updates order
+        to paid, triggers fulfillment
+   •    Broadcast Manager: Designs targeted campaigns — segments customer list, personalises content,
+        chooses optimal send time, tracks opens
+
+
+
+
+
+
+
+
+
+
+                Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+  Area 18     Auto Repair & Garage Management
+ Addressable      Current         Existing Market Leaders
+ Shops            Penetration
+ ~5M automobile   <1%             ⚠ No clear leader. Near-zero penetration. Workshop360,
+ workshops and                    GarageKey — early stage with <500 active garages each.
+ garages
+
+Market Reality
+India's 5 million garages are managed entirely through memory, handwritten job cards, and phone calls. No
+digital record of vehicle history, no parts tracking, no customer communication system. This is a pure white
+space — no incumbent to fight, massive latent demand.
+
+ ⚙ WHAT WE BUILD
+  Garage OS — customer WhatsApps a photo of their vehicle damage or problem description; agent creates a
+  digital job card, tracks repair progress, orders parts, updates customer at every milestone, and generates the
+  bill. Entire flow via WhatsApp, zero paperwork.
+
+ KEY AGENT FEATURES
+
+   •    Digital Job Card: Customer photos vehicle → agent extracts registration number via OCR, identifies
+        make/model, logs issue, creates work order
+   •    Fault Diagnosis Assistant: Mechanic describes symptoms via voice → agent cross-references fault
+        database for that make/model, suggests likely causes
+   •    Parts Ordering: Identifies required spares, checks local suppliers via WhatsApp, places order, tracks
+        expected delivery
+   •    Customer Update Agent: At each milestone (received, diagnosed, parts ordered, under repair, ready) —
+        auto-sends WhatsApp update to customer
+   •    Vehicle History Keeper: Maintains complete service record per registration — surfaces history when same
+        vehicle returns
+   •    Workshop Capacity Manager: Tracks active vs waiting vehicles — prevents over-commitment, gives
+        realistic completion dates
+
+
+
+
+
+
+
+
+
+
+                  Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+  Area 19     Hardware & Construction Retail
+ Addressable      Current    Existing Market Leaders
+ Shops            Penetration
+ ~2–3M hardware   <5%        Tally (generic accounting only). No dedicated affordable
+ and building                SMB hardware product exists.
+ material shops
+
+Market Reality
+Hardware billing is complex: prices vary by customer relationship (contractor vs retail), order quantity, and
+payment mode. A contractor ordering cement, bricks, and wires across 3 active sites — all on credit — is
+impossible to manage on Tally without custom development.
+
+ ⚙ WHAT WE BUILD
+  Contractor Relationship Agent — maintains each contractor's unique price book, tracks outstanding across
+  multiple project sites, manages daily material deliveries with challans, and generates itemised site-wise billing
+  automatically.
+
+ KEY AGENT FEATURES
+
+   •    Dynamic Rate Card: Maintains contractor-specific pricing — applies Ramesh Builder's negotiated rates vs
+        walk-in MRP without manual lookup
+   •    Site-wise Tracker: Tracks materials delivered to each construction site against each project — enables
+        site-wise billing and dispute resolution
+   •    Contractor Credit Manager: Tracks outstanding per contractor across multiple sites — sends monthly
+        statements, flags when limit approaches
+   •    Purchase Bill Digitiser: Owner photos supplier invoice → agent extracts all items, quantities, rates, GST
+        — auto-posts to books
+   •    Material Calculator: Customer describes task ('100 sq ft plastering') → agent calculates required materials
+        and generates quote
+
+
+
+
+
+
+
+
+
+
+                  Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+  Area 20     Education & Coaching Centres
+ Addressable      Current          Existing Market Leaders
+ Shops            Penetration
+ ~3M coaching     10–15% of        ClassPlus (growing), Teachmint/Extramarks (K-12),
+ centres + 7–8M   organised        SimpliFee (micro-tutors), Fedena (school ERP)
+ solo tutors      centres;
+                  <1% of solo
+                  tutors
+
+Market Reality
+The organised coaching market is adequately served. The white space is the 7–8 million solo home tutors and
+small 10-student classes — collecting fees in cash, maintaining registers manually, communicating via
+WhatsApp groups. A ₹199/month tool that handles fee reminders and parent communication would convert
+  millions.
+
+ ⚙ WHAT WE BUILD
+  Tutor OS — manages fee collection, attendance, parent communication, and student progress entirely through
+  WhatsApp. No separate app for parents or students. The tutor WhatsApps marks to the agent; the agent
+  generates reports and sends them to parents.
+
+ KEY AGENT FEATURES
+
+      •   Fee Collection Agent: Monthly reminder to parents, generates receipt on payment, tracks overdue by
+          student, reports to tutor
+      •   Attendance Tracker: Students mark via WhatsApp/location — agent maintains register, alerts parents of
+          absent students
+      •   Parent Broadcast: Distributes homework, test dates, schedule changes to correct parent groups —
+          handles responses
+      •   Progress Report Agent: Tutor sends marks via voice/text → agent updates scorecards, generates parent-
+          facing monthly report in simple language
+      •   Enrollment Agent: Prospective parent inquires via WhatsApp — agent qualifies need, schedules demo
+          class, follows up for conversion
+
+
+
+
+
+
+
+
+
+
+                  Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+Part 3 — Prioritisation: What to Build in What Order
+
+
+Six dimensions scored 1–5. Score = average × 20%. Market Size: addressable shop count. AI Leverage: gap
+vs traditional software. Tech Feasibility: buildability with current LLM tools. White Space: lack of dominant
+incumbent. Monetisation: clarity of willingness to pay. Competition Moat: protection from replication.
+
+ Rank   Area                  Market   AI         Tech    White   Monetise   Moat   Score   Tier
+                              Size     Leverage   Feas.   Space
+ 1      13. Kirana Store OS   5        5          4       5       4          4      90%     T1
+                                                                                            ★
+ 2      18. Auto Garage OS    4        5          4       5       4          5      90%     T1
+                                                                                            ★
+ 3      12. Electronics       4        5          4       5       4          5      90%     T1
+        Repair                                                                              ★
+ 4      15. Customer          5        5          4       5       3          4      87%     T1
+        Loyalty CRM                                                                         ★
+ 5      17. WhatsApp          5        5          4       4       4          3      83%     T1
+        Commerce                                                                            ★
+ 6      06. Restaurant F&B    4        5          4       3       5          3      80%     T1
+        POS
+ 7      19. Hardware Retail   3        4          3       5       4          5      80%     T1
+ 8      01. Billing & POS     5        5          4       2       5          2      77%     T1
+ 9      08. Salon & Spa       3        4          4       4       4          4      77%     T1
+ 10     03. Accounting &      5        4          4       2       5          2      73%     T2
+        GST
+ 11     11. Fashion Apparel   4        4          3       4       4          3      73%     T2
+ 12     10. Online Store      4        4          4       3       3          3      70%     T2
+ 13     20.                   3        4          4       4       3          3      70%     T2
+        Education/Coaching
+ 14     02. Inventory Mgmt    4        4          4       3       3          3      70%     T2
+ 15     07. Pharmacy          4        4          3       2       5          2      67%     T2
+        Software
+ 16     05. Credit Ledger     4        4          4       3       3          2      67%     T2
+ 17     09. B2B               4        4          3       3       4          2      67%     T2
+        Procurement
+ 18     14. HR & Payroll      3        3          4       3       4          3      67%     T2
+ 19     16. Logistics         4        4          3       3       3          2      63%     T2
+        Delivery
+ 20     04. Digital           5        3          3       1       3          1      53%     T3
+        Payments
+
+
+
+
+
+
+        Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+Tier                 Definition                          Action
+
+T1 ★ (Score ≥ 87%)   Near-zero competition +             Build MVP first. First-mover owns
+                     massive white space + clear         the category. Aggressive partner-led
+                     monetisation                        rollout.
+T1 (Score 77–86%)    Some competition but AI layer       Build in Phase 1. Target existing
+                     creates clear 10× differentiation   software users and demonstrate AI
+                                                         upgrade.
+T2 (Score 63–76%)    Valuable but competitive or         Phase 2. Build when Phase 1 shops
+                     harder to monetise at micro         are active; use demand signals to
+                     level                               prioritise within T2.
+T3 (Score <63%)      Incumbent too entrenched or         Partner or integrate. Don't build from
+                     unit economics unclear              scratch — UPI giants own the
+                                                         payment layer.
+
+
+
+
+
+
+
+
+
+
+Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+    Part 4 — The Agent Builder Platform
+
+
+The Agent Builder is the technical infrastructure that makes the entire plan commercially viable. Without it,
+customising agents for each shop requires engineering — making cost-per-deployment prohibitive. With it, a
+trained non-developer partner deploys a working multi-agent system for any shop in under 60 minutes.
+
+
+    Platform Architecture — Four Layers
+
+    Layer        What It Is                           Primary User                Analogous To
+    L1: Agent    160+ pre-built, tested,              Partners: deploy out-       Salesforce
+    Library      production-ready agent nodes         of-the-box bundles for      AppExchange /
+                 organised by vertical and            standard shops. Shop        Zapier templates
+                 function. Each is a working          live in <15 minutes.
+                 agent with standard
+                 inputs/outputs, connectors, and
+                 default prompts.
+    L2: Visual   Drag-and-drop canvas to              Partners: handle 80%        n8n canvas / Dify
+  Flow Builder connect agent nodes, configure of implementations. 2- workflow builder
+                 triggers (WhatsApp message,          day training to             — purpose-built
+                 UPI credit, timer, stock             proficiency.                for Indian SMB
+                 threshold), and set shop-specific                                context
+                 parameters. No code required.
+    L3: Config   Structured mobile wizard for         Partners: fill in on-site   Shopify store
+    Studio       shop-specific data: product          during 60-minute shop       setup wizard /
+                 catalog upload, supplier             visit. Mobile-first,        Zoho CRM
+                 WhatsApp numbers, customer           works on 4G.                onboarding
+                 list, language preference, agent
+                 tone (formal/Hinglish/regional).
+                 Converts raw shop data to
+                 agent context.
+    L4: Pro      Python/JS SDK to build custom        Tier 3–4 technical          n8n community
+    Code SDK     agent nodes, connect non-            partners and ex-            nodes / Dify
+                 standard APIs, and publish           developers building         plugin system
+                 templates to the community           vertical
+                 marketplace. Earns higher            specialisations.
+                 partner margins and 'Master
+                 Builder' certification.
+
+
+    Core Platform Capabilities
+
+    Capability              Description
+    WhatsApp-Native         All agent actions execute through WhatsApp Business API. No
+    Execution               separate app required by shop owner or customer. Supports
+                            text, voice notes, images, buttons, and payment links.
+    Vernacular NLP Engine   Trained on Indian commercial vocabulary across 12 languages
+                            — understands 'adha kilo', 'khokha', 'peti', 'tola', local product
+                            aliases, and regional business idioms that global LLMs miss.
+    Offline-First Queue     All agent actions queue locally during internet outage. Sync with
+                            conflict resolution on reconnect. Critical for Tier 2–4 cities with
+                            patchy connectivity.
+
+                     Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+Capability                  Description
+Planner → Executor →        Each agent: plans the action ('send credit reminder to Ram'),
+Verifier Loop               executes it (sends WhatsApp), verifies outcome (checks if
+                            payment received in 48 hrs, retries with escalated tone if not).
+Confidence Threshold        Every agent has a configurable confidence threshold below
+                            which it asks owner for confirmation before acting. High-stakes
+                            actions (orders >₹500, GST filing) always require explicit
+                            approval.
+Observability               Complete audit trail of every agent decision, input, and action.
+(Langfuse/OpenTelemetry)    Partners and Rupantar can replay any agent run. Full trace
+                            available within 48 hrs for dispute resolution.
+Persistent Shop Memory      Each shop has an isolated memory store (customer profiles,
+                            product catalog, supplier list, transaction history, seasonal
+                            patterns). Memory compounds — agents become more
+                            accurate with every month of usage.
+Multi-Agent Orchestration   Orchestrator agent classifies owner intent, routes to specialist
+                            domain agents, and composes responses across multiple agent
+                            outputs. Handles ambiguous or multi-step requests without
+                            breaking flow.
+
+ Competitive differentiation: n8n, Dify, and Langflow are excellent horizontal platforms. None of them
+ know what 'khokha' means, have WhatsApp Business API baked in, understand Indian GST flows, or
+ are designed for implementation by a pharma MR or Tally reseller with 2 days of training. We are not
+ competing with them — we are building on the same principles for a radically different user and use
+ case.
+
+
+
+
+
+
+
+
+
+
+ Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+    Part 5 — The Partner Network: India's AI Shop Doctor
+    Army
+
+
+Every Indian SMB software company — Tally, Vyapar, Khatabook, OkCredit — has hit the same wall: building
+the product is the easy part; getting it adopted by shops that have never used software is the hard part.
+Khatabook and OkCredit raised $275M+ combined and couldn't monetise 30M downloads because free apps
+have no reason to be set up properly and therefore never become essential.
+
+The insight: India doesn't have a distribution problem. It has an alignment problem. The distribution network
+already exists — millions of field salespeople who visit shops every week. What's missing is a reason for
+those people to become AI implementation partners instead of just product salespeople.
+
+
+    The Existing Field Force — The Untapped Army
+
+    Field Workforce          Est. Count       AI       Why
+    Category                                  Partner
+                                              Potential
+    FMCG Distributor Sales   ~1.5M            Very     Already inside the shop daily, trusted,
+    Reps                                      High     understand stock pain — natural home
+                                                       for procurement + billing agent
+                                                       deployment
+    Pharma Medical           ~600K            Very     Educated, visit chemists daily, already
+    Representatives (MRs)                     High     manage compliance conversations —
+                                                       perfect for pharmacy AI agent
+    Fintech / POS Device     ~300K+           Very     Exact skill overlap — device
+    Reps (Paytm, PhonePe,                     High     onboarding is identical to agent
+    Pine Labs)                                         onboarding. Natural career upgrade
+                                                       path.
+    Tally / Marg / Vyapar    ~50,000+         Very     Already technically trained, already
+    TDPs (Resellers)                          High     have SMB portfolios, already earn from
+                                                       software — AI is their upsell
+    CA Firms & Tax           ~3.5L CAs,       High     Trusted financial advisor, knows each
+    Consultants              ~20L tax                  shop's P&L — billing + GST agent is a
+                             professionals             natural add-on to CA retainer
+    Bank / NBFC DSAs         ~3M+             High     Already handle digital onboarding for
+                                                       financial products — same skill set as
+                                                       agent deployment
+    Business                 ~1.2M            Medium   Unique rural reach; need extra AI
+    Correspondent (BC)                                 literacy training; strong for ABDM and
+    Agents                                             government-adjacent agents
+    B.Tech/MBA graduates     Large pool       High     Motivated, trainable, connected to local
+    in Tier 2–3 cities                                 business community — build portfolio
+                                                       from scratch with deep local
+                                                       commitment
+
+     Conservative target: Convert 2% of FMCG reps, pharma MRs, fintech reps, and Tally/Marg resellers =
+     ~100,000+ certified AI Shop Doctors. Enough to cover every city, town, and major market cluster in
+     India.
+
+
+     Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+Partner Tier Structure
+
+Tier   Name        Entry Criteria        Shop          Technical            Revenue Earning
+                                         Portfolio     Capability
+T0     Referral    Register on app;      Refers        No technical skill   ₹200 one-time per referred
+       Agent       2-hr intro module     only; no      required             shop that activates
+                                         deployment
+T1     AI Shop     2-day certified       5–25 active   Deploys standard     15% recurring commission +
+       Starter     training; 50-         shops         bundles from         ₹500 per new activation
+                   question                            library; no custom
+                   assessment; 5                       flows
+                   deployments
+                   within 60 days
+T2     AI Shop     T1 + 3-day            25–150        Builds custom        22% recurring + ₹1,000 per
+       Builder     Builder training +    active        flows using visual   activation + own-priced
+                   visual flow           shops         builder; multi-      customisation fees
+                   certification; 25+                  agent
+                   active shops                        configurations
+T3     AI Shop     T2 + Pro Code         150–500       Writes custom        30% recurring + ₹2,000 per
+       Architect   certification;        active        agent nodes          activation + template
+                   150+ shops; 3         shops         (Python/JS);         marketplace royalties
+                   community                           builds vertical
+                   templates rated                     solutions; trains
+                   4+                                  T1/T2
+T4     Regional    Invite only; 10+      500+          Full platform        35% own shops + 5%
+       Master      sub-partners;         shops         access; runs         override on sub-partner
+                   500+ network          across sub-   training             revenue + equity discussion
+                   shops; ₹25L           partner       programmes; co-
+                   annual revenue        network       develops vertical
+                                                       solutions with
+                                                       Rupantar
+
+
+Partner Income Model — What AI Shop Doctors Earn
+
+Income Stream           Mechanism                             Example (T2 Partner, 100
+                                                              active shops)
+Subscription            22% of every shop's monthly           100 shops × ₹599 avg ×
+Commission              subscription, every month, as long    22% = ₹13,178/month
+(Recurring)             as the shop is active. This is the    recurring
+                        core compounding income stream.
+New Activation Fee      ₹1,000 per new shop brought live      20 new shops/month ×
+                        and completing first week of active   ₹1,000 = ₹20,000/month
+                        agent usage.
+Customisation Fees      For custom flows beyond standard      5 custom implementations
+                        bundles — partner prices own          × ₹5,000 avg =
+                        work. Rupantar takes 0% cut.          ₹25,000/month
+Template Royalties      ₹50–₹200 per deployment when          2 templates × 100
+                        another partner uses a published      deployments/month × ₹100
+                        template.                             = ₹20,000/month
+AMC (Annual             Partner directly offers shops         30 shops × ₹5,000/yr =
+Maintenance Contract)   ₹3,000–₹8,000/year for monthly        ₹12,500/month additional
+
+                    Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+Income Stream           Mechanism                         Example (T2 Partner, 100
+                                                          active shops)
+                        check-in + priority support.
+                        Rupantar takes 0%.
+Total (T2, 100 shops)   Recurring + activations +         ~₹90,000/month gross —
+                        customisation + templates + AMC   scales to ₹1.5–2L/month at
+                                                          200 shops
+
+
+
+
+
+
+
+
+
+
+Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+    Part 6 — Partner Training & Upskilling Programme
+
+
+Training is the difference between a partner who deploys 5 shops and abandons the programme, and one
+who builds a 200-shop portfolio earning ₹1.5L/month. All training is delivered in Hindi and regional languages,
+mobile-first (accessible between shop visits), heavy on hands-on simulation over text manuals.
+
+    Module              Duration   Format         Content                                 Required For
+    M0: AI Basics for   3 hours    Video + quiz   What AI agents are vs apps. How         All tiers —
+    Shop Doctors                   on mobile      WhatsApp-native agents work.            mandatory before
+                                                  Why shops need them. How to             any deployment
+                                                  explain AI to a semi-literate
+                                                  shopkeeper in 2 minutes without
+                                                  using the word 'AI'.
+    M1: Shop Pain       4 hours    Role-play      The 15-question pain discovery          Tier 1+
+    Discovery                      scenarios +    interview. Mapping pain to agent
+                                   facilitator    type. Prioritising 'first wins'.
+                                                  Handling objections: 'bahut
+                                                  complicated lagta hai', 'pehle se
+                                                  Tally hai', 'internet nahi chalti'.
+    M2: Standard        6 hours    Hands-on lab   Partner mobile app for shop             Tier 1+
+    Bundle                         (sandbox       onboarding. Deploying the 5
+    Deployment                     shops)         starter bundles: Kirana OS,
+                                                  Restaurant Agent, Pharmacy
+                                                  Agent, Salon Agent, Billing+Khata.
+                                                  Configuring WhatsApp number,
+                                                  product catalog, language, tone.
+    M3: Visual Flow     2 days     Workshop       Full builder interface. Connecting      Tier 2+
+    Builder             (14        with hands-    trigger → logic → action nodes.
+                        hours)     on lab         Configuring LLM prompts for shop
+                                                  context. Testing flows. Deploying
+                                                  custom configurations to live
+                                                  shops. Error handling.
+    M4: Vertical        1 day      Vertical-      Pharmacy: drug compliance +             Tier 2+
+    Specialisation      each       specific       ABDM. Restaurant: aggregator
+    (choose 1–3)                   deep-dive      reconciliation. Fashion: matrix
+                                                  inventory. Garage: job card +
+                                                  parts chain. Hardware: rate card +
+                                                  contractor billing.
+    M5: Portfolio       4 hours    Dashboard      Using health dashboard.                 Tier 2+
+    Management                     walkthrough    Identifying upsell signals.
+                                   + mentorship   Handling agent failures. Monthly
+                                                  shop review cadence. Referral
+                                                  mechanics: turning 5 shops into
+                                                  50 via word-of-mouth.
+    M6: Pro Code        3 days     Developer      Building custom agent nodes.            Tier 3+
+    SDK                            workshop       Publishing to marketplace.
+                                   (Python/JS)    Integrating non-standard APIs.
+                                                  Contribution guidelines for
+                                                  community templates.
+    M7: Train the       2 days     Train-the-     Running Tier 1 certification locally.   Tier 4 only
+    Trainer                        trainer        Quality assessment for new
+                                   workshop       partners. Managing a sub-partner
+                                                  network. Regional go-to-market
+                                                  strategy.
+
+                        Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+Certification model: Each tier requires passing a practical assessment — not just a written test. Tier 1
+certification requires deploying 5 live shops with Shop Health Score >70%. Tier 2 requires building and
+deploying one custom flow. Tier 3 requires publishing one community template with 10+ deployments.
+This ensures the partner programme produces competent operators, not certificate holders.
+
+
+
+
+
+
+
+
+
+
+    Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+Part 7 — Phased Implementation Plan
+
+
+
+7.1 Build Sequence
+
+Phase        Timeline   Product Build           Partner Build          Target Metrics
+Phase 0      Months     WhatsApp Agent          Recruit 50–100         500–1,000 live
+Foundation   0–3        Infrastructure          seed partners          shops.
+                        (orchestrator +         from Tally/Marg        Conversational
+                        domain agent            TDP network in         infrastructure
+                        framework +             Ahmedabad and          validated. Agent
+                        WhatsApp Business       Surat. Run first       accuracy >85% on
+                        API integration).       Tier 1 training        voice billing. Partner
+                        Billing Agent + Khata   cohort. Facilitate 5   satisfaction tracked.
+                        Agent + Daily Report    deployments per
+                        Agent. Partner mobile   partner.
+                        onboarding app
+                        (Config Studio).
+                        Offline-sync queue.
+Phase 1      Months     Restaurant POS          Expand to Pune,        5,000–10,000 live
+First        3–6        Agent bundle. Auto      Nashik,                shops. First ₹1Cr
+Revenue                 Garage OS.              Bengaluru. 500–        MRR. Restaurant
+                        Electronics Repair      1,000 Tier 1           and garage verticals
+                        Job Card Agent.         partners. First Tier   live. Revenue
+                        Visual Flow Builder     2 training cohort.     positive per-shop
+                        (Layer 2). Portfolio    Partner earning        unit economics
+                        Health Dashboard for    validation —           confirmed.
+                        partners.               ensure 80%+ of
+                                                active T1 partners
+                                                earn
+                                                >₹15K/month.
+Phase 2      Months     Pharmacy Agent          Hindi belt rollout:    50,000+ live shops.
+Vertical     6–12       (ABDM integration).     Delhi NCR, Jaipur,     ₹10Cr MRR. Cross-
+Depth                   Customer Loyalty        Lucknow, Indore.       vertical retention
+                        CRM Agent. Salon        5,000+ partners.       visible. Loyalty CRM
+                        Agent. Fashion Matrix   First Regional         creating measurable
+                        Inventory Agent.        Masters identified.    repeat visit uplift.
+                        Template                Sub-partner            Marketplace has 50+
+                        Marketplace (Layer 4    network pilot. CA      community
+                        alpha). Pro Code        firm and pharma        templates.
+                        SDK (Layer 4) to Tier   MR recruitment
+                        3 partners.             campaign.
+Phase 3      Months     HR/Payroll Agent.       National rollout:      2,00,000+ live
+Full ERP     12–18      Accounting + GST full   Chennai,               shops. ₹50Cr ARR
+                        auto-filing. B2B        Hyderabad,             trajectory. Full-stack
+                        Procurement Agent.      Kolkata + Tier 3       ERP capability
+                        Hardware Retail         cities via BC agent    available. Shops
+                        Agent. Online Store     network. 10,000+       have no reason to
+                        Manager. Complete       partners. Regional     use any other
+                        20-vertical library.    Master                 software.
+                                                programme fully
+                                                active. Partner
+                                                LMS with video
+                                                library in 8
+                                                languages.
+
+
+             Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+Phase      Timeline   Product Build           Partner Build        Target Metrics
+Phase 4    Month      B2B data intelligence   50,000+ certified    10M+ shops on
+Platform   18+        layer. Embedded         partners. Regional   platform. Multiple
+Economy               financial services      Master ecosystem     revenue streams
+                      (working capital,       self-sustaining.     beyond SaaS. Data
+                      insurance). ONDC        Community            layer monetised with
+                      deep integration.       contributing 100+    FMCG brands and
+                      Voice-first interface   new templates per    banks. IPO-ready
+                      (no WhatsApp            month. Partner       metrics.
+                      required for voice-     conference annual
+                      only shops).            event.
+
+
+7.2 Geographic Rollout
+
+Priority   Geography              Rationale                       Partner Profile to Target
+Seed       Ahmedabad, Surat,      Highest density of business-    Tally/Marg TDPs, fintech
+(M0–3)     Baroda (Gujarat)       savvy SMBs. Petpooja            POS reps, CA firms
+                                  validated the restaurant
+                                  market here. High Tally TDP
+                                  density. Rupantar's existing
+                                  network and language
+                                  comfort.
+Phase 1    Pune, Nashik,          Maharashtra has 8M+ SMBs;       Pharma MRs
+(M3–6)     Nagpur                 large pharma MR network.        (Maharashtra), IT-literate
+           (Maharashtra) +        Bengaluru is early-tech-        ex-startup people
+           Bengaluru              adopter with high willingness   (Bengaluru)
+                                  to pay.
+Phase 2    Delhi NCR, Jaipur,     Hindi belt — highest density    FMCG distributor sales
+(M6–12)    Lucknow, Kanpur,       of undigitised kirana stores.   reps, B.Tech graduates
+           Indore, Bhopal         Densest FMCG distribution       from Tier 2 city
+                                  network.                        engineering colleges
+Phase 3    Chennai,               South India: pharma             Pharma MRs (South), BC
+(M12+)     Hyderabad, Kolkata     (Chennai), tech-literate        agents (rural), local
+           + rural Tier 3–4 via   (Hyderabad). Kolkata: fashion   engineering graduates
+           BC agents              and trading hub. BC agents
+                                  for rural reach.
+
+
+7.3 The Self-Reinforcing Flywheel
+
+Stage       What Happens                      Reinforcement Effect
+① Partner   Partner deploys 10 shops, earns   3–5 new partner inquiries per active earning
+Success     first ₹15K/month recurring.       partner. Network recruitment becomes
+            Success story spreads in local    automatic.
+            B2B community.
+② Shop      Shop owners tell other            Each active shop drives 0.5–1 new shop
+Advocacy    shopkeepers 'meri dukaan ab       referral on average. Acquisition cost drops
+            WhatsApp pe report bhejti hai'.   over time.
+            Organic word-of-mouth in the
+            market.
+
+
+
+            Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+Stage       What Happens                       Reinforcement Effect
+③ Agent     With 10,000+ active shops,         Higher accuracy → higher retention →
+Accuracy    agents learn local product         higher partner income → easier partner
+Compounds   names, regional price norms,       recruitment.
+            and seasonal patterns. Agents
+            become measurably better.
+④           A certified Hyderabad pharma       Marketplace reduces Rupantar's
+Community   partner builds a novel ABDM        engineering requirement for long-tail
+Templates   flow and publishes it. 200 other   verticals. Community self-solves niche
+            pharma partners deploy it within   problems.
+            a week.
+⑤ B2B       Banks, NBFCs, and FMCG             Monetisation expands beyond SaaS
+Ecosystem   brands want to integrate —         subscriptions. Platform becomes
+            lending data from kirana           infrastructure.
+            transactions, brand visibility via
+            AI agent recommendations.
+
+
+
+
+
+
+
+
+
+
+            Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+Part 8 — Unit Economics & Business Model
+
+
+
+Revenue Streams
+
+Revenue Stream       Model                                   Rupantar Net (after partner
+                                                             commission)
+Shop Subscription    ₹299–₹1,499/month per shop              ~75–85% net after partner
+(SaaS)               depending on vertical and agent         commission
+                     count
+Agent Builder        ₹0 for T1 (earn-only). ₹999/month for   100% — no partner cut on
+Platform Fee         T2+ builders                            platform fee
+Marketplace          Rupantar 30% / template author 70%      30% of marketplace revenue
+Royalties            on each community template
+                     deployment
+Vertical Add-on      Premium agents requiring external       ~60–70% gross margin after
+Modules              API costs (ABDM, GST e-invoice,         API costs
+                     aggregator reconciliation)
+B2B Intelligence     Anonymised market data (pricing         100% — second-order
+Layer                trends, category velocity, regional     monetisation after 1L+ active
+                     demand) sold to FMCG brands and         shops
+                     banks
+Embedded Financial   Working capital loans, insurance,       0.5–2% referral commission
+Services             BNPL offered through AI agents.         on disbursals
+                     Commission model with NBFC
+                     partners.
+
+
+Per-Shop Unit Economics (Stabilised, Year 2+)
+
+Metric                             Conservative   Base Case    Optimistic
+Average Monthly Subscription       ₹399           ₹599         ₹899
+Partner Commission (avg 22%)       ₹88            ₹132         ₹198
+Net Revenue to Rupantar            ₹311           ₹467         ₹701
+Cloud / LLM / API costs per shop   ₹80            ₹100         ₹130
+Gross Profit per Shop per Month    ₹231           ₹367         ₹571
+Gross Margin %                     ~58%           ~61%         ~64%
+Customer Acquisition Cost          ₹800           ₹600         ₹400
+(partner model)
+Payback Period                     3.5 months     1.6 months   0.7 months
+12-Month LTV (net of               ₹2,772         ₹4,404       ₹6,852
+commissions + COGS)
+LTV / CAC Ratio                    3.5×           7.3×         17.1×
+
+ The partner-distributed model produces fundamentally better unit economics than digital-first
+ acquisition. Direct app-based SMB SaaS CAC: ₹1,500–3,000. Our partner model CAC: ₹400–800.
+
+     Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+Retention is also higher — shops with a dedicated implementation partner churn 70% less than self-
+service users (benchmark: Tally TDP-supported customers vs self-serve Vyapar users).
+
+
+
+
+
+
+
+
+
+
+Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
+
+Part 9 — Strategic Moat: Why This Is Defensible
+
+
+ Moat Type       How It's Built                      Why Incumbents Can't Replicate
+ Data Flywheel   Every transaction, voice note,      Tally and Vyapar have structured
+                 and WhatsApp exchange trains        records, not conversational context. They
+                 the system — local product          cannot retrain on data they don't have.
+                 names, regional price norms,
+                 supplier networks, customer
+                 behaviour. This is not structured
+                 database data; it is behavioural
+                 context.
+ Behavioural     Once the shop's entire              Legacy software requires screens and
+ Lock-In         operation runs through one          keyboards. Rebuilding as WhatsApp-
+                 WhatsApp number — all               native requires full product rebuild, not a
+                 customer relationships, supplier    feature addition.
+                 contacts, transaction history —
+                 switching cost is enormous.
+                 There is no 'export' that
+                 recreates this context.
+ Vernacular      The system learns Bhojpuri,         Global LLMs and general-purpose
+ Intelligence    Marathi, and Tamil product          platforms have no incentive or data to
+                 aliases, local commercial           learn Indian retail vernacular at this
+                 vocabulary ('khokha', 'peti',       granularity.
+                 'tola', 'adha kilo'), and regional
+                 pricing norms. This takes years
+                 of local data to master.
+ Partner         AI Shop Doctors earn recurring      Partner network creates human lock-in
+ Network         income from their shop portfolio.   that no app-store strategy can fast-follow.
+ Loyalty         Their livelihood depends on         This is why Tally's 50K TDP network has
+                 Rupantar's platform. A              held for 30 years.
+                 competitor would need to match
+                 income, re-train thousands of
+                 partners, and migrate shop
+                 context — simultaneously.
+ Community       Thousands of niche use cases        A competitor would start with zero
+ Template        (garment shop with return-          community content and zero niche
+ Library         weaving integration, Hyderabad      coverage. This moat deepens every
+                 pharmacy with ABDM,                 month.
+                 Rajasthan hardware shop with
+                 Rajasthani unit pricing) are
+                 solved by community
+                 contributors, not Rupantar's
+                 team.
+
+  Final vision: By 2028, Rupantar operates India's largest distributed AI deployment network — 50,000+
+  certified AI Shop Doctors, 10M+ shops on the platform, and a community of 5,000+ template builders
+  solving every niche in Indian retail and services. The network is the product.
+
+Data note: Market share figures are research-based estimates from public disclosures, investor
+announcements, user count statements, and industry reports (SaaSBoomi, KenResearch, Mordor
+Intelligence) as of early 2026. Specific market share data for private Indian SaaS companies is not publicly
+reported; all figures are labelled as estimates. Financial projections are illustrative targets validated against
+comparable channel programme benchmarks (Tally TDP model, Zoho consulting partner economics, fintech
+DSA income structures).
+
+                 Rupantar AI — Agentic ERP for India's 50M SMB Shops | Confidential | March 2026
