@@ -28,17 +28,17 @@ The chairman:
 ## File Structure
 
 ### File 1: Executive Brief (standalone)
-**`Rupantar_AI_Executive_Brief.md`**
+**`docs/draft/01_Rupantar_AI_Executive_Brief.md`**
 **Length:** 4–6 pages max
 **Purpose:** The first thing the chairman reads. Must work as a complete document on its own — not a teaser for the full proposal.
 
 ### File 2: Full Proposal (detailed)
-**`Rupantar_AI_Full_Proposal.md`**
+**`docs/draft/02_Rupantar_AI_Full_Proposal.md`**
 **Length:** 50–60 pages equivalent
 **Purpose:** The complete case. Chairman reads sections of interest after the brief. Clear section numbering enables meeting reference ("let's discuss Part 3, Section 3.1").
 
 ### File 3: Appendices (reference)
-**`Rupantar_AI_Appendices.md`** (or split into multiple appendix files if length warrants)
+**`docs/draft/03_Rupantar_AI_Appendices.md`** (or split into multiple appendix files if length warrants)
 **Purpose:** Full detail for meeting reference. Chairman may never read these; team uses them during discussion.
 
 ---

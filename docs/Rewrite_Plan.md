@@ -2,7 +2,7 @@
 
 **Date**: 2026-03-29
 **Status**: Pending
-**Approach**: Full Proposal first, then Executive Brief (extracted), then Appendices. Original files preserved unmodified.
+**Approach**: Full Proposal first, then Executive Brief (extracted), then Appendices. Master proposal sources in `docs/` preserved unmodified; deliverables live under `docs/draft/`.
 
 ---
 
@@ -10,9 +10,9 @@
 
 | # | File | Purpose | Status |
 |---|---|---|---|
-| 1 | `docs/Rupantar_AI_Full_Proposal.md` | Complete decision document (50-60 pages) | Pending |
-| 2 | `docs/Rupantar_AI_Executive_Brief.md` | Standalone 8-section brief (4-6 pages) | Pending |
-| 3 | `docs/Rupantar_AI_Appendices.md` | Reference material for meeting | Pending |
+| 1 | `docs/draft/02_Rupantar_AI_Full_Proposal.md` | Complete decision document (50-60 pages) | Pending |
+| 2 | `docs/draft/01_Rupantar_AI_Executive_Brief.md` | Standalone 8-section brief (4-6 pages) | Pending |
+| 3 | `docs/draft/03_Rupantar_AI_Appendices.md` | Reference material for meeting | Pending |
 
 ---
 
@@ -89,7 +89,7 @@
 
 > Extract the embedded Executive Brief into its own file.
 
-- [ ] Create `docs/Rupantar_AI_Executive_Brief.md` from Full Proposal Part 1
+- [ ] Create `docs/draft/01_Rupantar_AI_Executive_Brief.md` from Full Proposal Part 1
 - [ ] Verify standalone readability (no forward-references to Full Proposal)
 
 ## Phase 8: Appendices
@@ -119,4 +119,4 @@
 - [ ] Language discipline: no "infrastructure," "DPI," "backbone," "monopoly" in thesis/core content
 - [ ] Executive Brief is standalone-readable
 - [ ] All market data traceable to sources
-- [ ] Original files preserved unmodified
+- [ ] Master proposal sources (`Rupantar_AI_Master_Proposal.*`, analysis docs) preserved unmodified

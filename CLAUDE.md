@@ -6,16 +6,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **Rupantar AI** is a documentation and strategic analysis project for an AI-powered agentic ERP platform targeting India's 50 million SMB shops. This is **not a code repository** — it is a strategic thinking workspace containing proposal documents, framing analyses, risk evaluations, positioning guides, and the completed chairman-level deliverable package.
 
-The project is in its **pre-build documentation phase**. No application code exists yet. All work is in the `docs/` directory. The chairman deliverable package (Full Proposal + Executive Brief + Appendices) is complete.
+The project is in its **pre-build documentation phase**. No application code exists yet. All work is in the `docs/` directory. The chairman deliverable package (Executive Brief, Full Proposal, Appendices) lives under **`docs/draft/`** as numbered working copies.
 
 ## Repository Structure
 
 ```
 docs/
-  # Chairman Deliverable Package (complete)
-  Rupantar_AI_Full_Proposal.md                — Decision document: What → Why → How → Risks → Ask (930 lines)
-  Rupantar_AI_Executive_Brief.md              — Standalone 8-section brief for first read (104 lines)
-  Rupantar_AI_Appendices.md                   — Reference material: all 20 verticals, partner programme, economics, competitive playbook, regulatory framework (685 lines)
+  draft/
+    01_Rupantar_AI_Executive_Brief.md         — Standalone 8-section brief for first read
+    02_Rupantar_AI_Full_Proposal.md           — Decision document: What → Why → How → Risks → Ask
+    03_Rupantar_AI_Appendices.md              — Reference material: all 20 verticals, partner programme, economics, competitive playbook, regulatory framework
 
   # Source Analysis Documents (preserved unmodified)
   Rupantar_AI_Master_Proposal.md              — The original master proposal (775 lines)
@@ -29,7 +29,7 @@ docs/
   Rupantar_AI_Original_Document_Structure_Analysis.md — Section-by-section breakdown + clarity assessment
 
   # Execution Tracking
-  Rewrite_Plan.md                             — Phase-by-phase execution checklist (all phases complete)
+  Rewrite_Plan.md                             — Phase-by-phase execution checklist
 ```
 
 ## Strategic Thinking Progression
@@ -48,15 +48,15 @@ The documents follow a deliberate analytical progression. Future instances shoul
    - Value Compounding Model (staircase of value at each scale milestone)
 5. **Deliverable Structure** — Defines the two-file format (executive brief + full proposal), three-tier vertical depth strategy, decision-document flow (What/Why/How/Risks/Ask), and writing rules for the chairman
 6. **Original Document Analysis** — Complete section-by-section breakdown of the master proposal with line references, clarity assessment, and prioritised rewrite recommendations
-7. **Rewrite Execution** — Full Proposal rewritten as a decision document (Parts 1–6), Executive Brief extracted as standalone file, Appendices A–E created. All phases tracked in `Rewrite_Plan.md`. Verification checklist passed (14/14 items).
+7. **Rewrite Execution** — Full Proposal, Executive Brief, and Appendices drafted as decision-package documents. Progress tracked in `Rewrite_Plan.md`.
 
 ## Chairman Deliverable Package
 
-The three deliverable files form a complete package for chairman review:
+The three deliverable files form a complete package for chairman review (working copies under `docs/draft/`):
 
-- **Executive Brief** (`Rupantar_AI_Executive_Brief.md`) — The first thing the chairman reads. 8 sections, standalone-readable, conclusion-first. Works as a complete document on its own.
-- **Full Proposal** (`Rupantar_AI_Full_Proposal.md`) — The complete decision document. Structured as: Part 1 (embedded brief) → Part 2 (The Proposal) → Part 3 (The Evidence) → Part 4 (The Execution) → Part 5 (The Risks) → Part 6 (The Ask).
-- **Appendices** (`Rupantar_AI_Appendices.md`) — Reference material: all 20 vertical deep dives, partner programme detail, unit economics scenarios, competitive response playbook, regulatory/compliance framework.
+- **Executive Brief** (`docs/draft/01_Rupantar_AI_Executive_Brief.md`) — The first thing the chairman reads. 8 sections, standalone-readable, conclusion-first. Works as a complete document on its own.
+- **Full Proposal** (`docs/draft/02_Rupantar_AI_Full_Proposal.md`) — The complete decision document. Structured as: Part 1 (embedded brief) → Part 2 (The Proposal) → Part 3 (The Evidence) → Part 4 (The Execution) → Part 5 (The Risks) → Part 6 (The Ask).
+- **Appendices** (`docs/draft/03_Rupantar_AI_Appendices.md`) — Reference material: all 20 vertical deep dives, partner programme detail, unit economics scenarios, competitive response playbook, regulatory/compliance framework.
 
 ## What Rupantar Is (Critical Context)
 

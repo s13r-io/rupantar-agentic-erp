@@ -20,7 +20,7 @@
 
 # Part 1 — The Story
 
-This document assumes you have read the **Executive Brief** (`Rupantar_AI_Executive_Brief.md`). It does not repeat the brief’s summary tables. What follows is the full case — written so you can read it in one sitting.
+This document assumes you have read the **Executive Brief** (`01_Rupantar_AI_Executive_Brief.md`). It does not repeat the brief’s summary tables. What follows is the full case — written so you can read it in one sitting.
 
 **You should walk away with six convictions.**
 

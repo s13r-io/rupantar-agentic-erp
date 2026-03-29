@@ -600,10 +600,10 @@ Illustrative ranges holding other assumptions steady; use for scenario planning,
 
 | Analogue | Economics / pricing signal | Source / basis in Rupantar docs |
 | --- | --- | --- |
-| **Tally TDP channel** | Ecosystem-scale revenue **~₹900 Cr** with **~50K** partner footprint — proof of reseller-led SMB attach at national scale | Cited in `Rupantar_AI_Full_Proposal.md` appendix as **Tally Solutions public financials**; same figures in executive materials |
+| **Tally TDP channel** | Ecosystem-scale revenue **~₹900 Cr** with **~50K** partner footprint — proof of reseller-led SMB attach at national scale | Cited in `02_Rupantar_AI_Full_Proposal.md` appendix as **Tally Solutions public financials**; same figures in executive materials |
 | **Zoho** | Profitable India-headquartered SaaS at scale; partner / consulting economics support enterprise and mid-market — **not** a micro-SMB field-certification layer at **50M**-shop granularity | Qualitative benchmark in master proposal “comparable channel programme” note; competitive positioning in full proposal |
-| **Fintech DSA structures** | **~3M+** bank DSAs in India — recurring, activity-linked income for distribution of regulated products; validates “earn on portfolio” field economics | Field-force sizing — `Rupantar_AI_Full_Proposal.md` (Existing Field Force table); economics described as benchmark class in master proposal data note |
-| **Petpooja (restaurant vertical)** | Typical SaaS band **~₹10K/yr** for POS / restaurant stack — vertical SaaS pricing anchor for India SMB | `Rupantar_AI_Full_Proposal.md` competitive / market tables |
+| **Fintech DSA structures** | **~3M+** bank DSAs in India — recurring, activity-linked income for distribution of regulated products; validates “earn on portfolio” field economics | Field-force sizing — `02_Rupantar_AI_Full_Proposal.md` (Existing Field Force table); economics described as benchmark class in master proposal data note |
+| **Petpooja (restaurant vertical)** | Typical SaaS band **~₹10K/yr** for POS / restaurant stack — vertical SaaS pricing anchor for India SMB | `02_Rupantar_AI_Full_Proposal.md` competitive / market tables |
 
 **Narrative:** These analogues do not forecast Rupantar’s outcome; they show that **partner-paid CAC**, **subscription ARPU in the hundreds–low thousands per month**, and **vertical SaaS annual pricing ~₹10K** are already established in India. Rupantar’s differentiation is WhatsApp-native, voice-first delivery and partner income tied to **operational** agents, not a claim of uniqueness in “having a channel.”
 
