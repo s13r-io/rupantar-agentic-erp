@@ -49,7 +49,7 @@ The documents follow a deliberate analytical progression. Future instances shoul
 
 ## What Rupantar Is (Critical Context)
 
-When working on any document in this project, understand that Rupantar AI is **two things you build** and **one way you distribute them:**
+When working on any document in this project, understand that Rupantar company is building 'Rupantar AI' which is **two things you build** and **one way you distribute them:**
 
 - **The Product** — AI agents running on WhatsApp/voice. Each shop gets a vertical-specific bundle of 3–5 agents (billing, inventory, credit, etc.). Revenue: SaaS subscriptions.
 - **The Platform** — Agent Builder (Library + Visual Flow Builder + Config Studio + Pro Code SDK). Lets trained partners deploy agent bundles without code. Revenue: platform fees + marketplace royalties.
