@@ -6,680 +6,689 @@
 
 ---
 
+> **Usage note:** The chairman may never read these. Team members use them during the discussion meeting for reference. The Full Proposal contains all conclusions; these appendices contain the underlying detail.
+
+---
+
 # Appendix A: Full Vertical Deep Dives (All 20)
 
-*Source for all figures and narrative in this appendix: `docs/Rupantar_AI_Master_Proposal.md`, Part 2 — Market Landscape (summary table lines 41–62; vertical sections lines 66–555).*
+> Each vertical below includes: addressable shops, current penetration, market reality, what we build, and key agent features. The 5 T1 ★ verticals receive full treatment in the Full Proposal (Section 4.2). All 20 are reproduced here for meeting reference.
 
 ---
 
-### A.01 — Billing & POS
+## A.01 — Billing, POS & Invoicing
 
-| Addressable Shops | Current Penetration | Existing Leaders |
-|---|---|---|
-| **~50M** addressable | **15–20%** | Tally **38%**, Vyapar **13%**, Marg **11%**, Busy **9%**, MyBillBook **7%** (est. share among software users) |
-
-**Market Reality**  
-Tally's dominance is accountant-driven, not shopkeeper-driven. Vyapar and MyBillBook have traction on mobile but still require a UI interaction for every bill. **80%+** of India's shops remain on paper because no product meets them via voice in their own language.
-
-**What we build**  
-**Voice-first Billing Agent** — shopkeeper speaks an order in Hindi/Hinglish; the agent generates a GST-compliant bill, identifies the customer, applies pending discounts or credit, and sends it via WhatsApp, with zero screen interaction for the owner.
-
-**Key agent features**
-
-- **Voice Billing:** Parses spoken orders (Hindi/Hinglish/regional) into structured bills — local aliases, unit variations, combo deals
-- **Smart Scan:** Photo or barcode → auto-identifies SKU, fetches price, adds to bill
-- **Customer Memory:** Recognises returning customers by phone or UPI ID — saved price, outstanding credit, preferred items
-- **GST Engine:** HSN/tax slabs, e-invoice for B2B above threshold, validation before print
-- **Day Close Agent:** End-of-day cash + UPI + credit tally, discrepancy flags, ledger post, WhatsApp summary
-- **Offline Sync:** Queue during outage; sync with conflict resolution when online
-
----
-
-### A.02 — Inventory
-
-| Addressable Shops | Current Penetration | Existing Leaders |
-|---|---|---|
-| **~50M** addressable (**10–15M** with meaningful stock) | **8–12%** (bundled with POS) | Marg ERP, GoFrugal, Tally — bundled; **no standalone SMB inventory product** |
-
-**Market Reality**  
-Owners discover stockouts when the customer asks. Inventory is on paper or memory. The opportunity is to make stockouts predictable **3–5 days** ahead and auto-resolve them without heavy owner action.
-
-**What we build**  
-**Autonomous Stock Intelligence Agent** — monitors inventory from every sale, predicts stockouts using velocity and seasonality, auto-generates purchase orders confirmed with a single WhatsApp “haan.”
-
-**Key agent features**
-
-- **Live Stock Tracker:** Deducts on sale; loose weight, variants (size/colour), combo packs
-- **Stockout Predictor:** **90-day** velocity + festival calendar + local events → SKUs at risk in **3–5 days**
-- **Auto-Reorder:** PO to preferred supplier at reorder level; WhatsApp routing; one-reply approval
-- **Expiry Watchdog:** Batch expiry; **30 / 15 / 7**-day alerts; markdown or return suggestions
-- **Shrinkage Detective:** Expected vs counted after cycle count — theft, breakage, measurement error
-- **New Product Intake:** Photo of delivery → vision extraction, catalogue entry, suggested price
-
----
-
-### A.03 — Accounting & GST
-
-| Addressable Shops | Current Penetration | Existing Leaders |
-|---|---|---|
-| **~10M** shops with GST registration | **18–22%** (GST filing software) | Tally **47%**, Busy **11%**, Zoho Books **7%**, ClearTax **6%**, Vyapar **5%** |
-
-**Market Reality**  
-Tally dominates because CAs use it. Many small shops pay a CA **₹5,000–15,000/year** for manual GST work. The opportunity is auto-books from every transaction and auto-filed returns, shrinking routine CA dependency.
-
-**What we build**  
-**Autonomous Compliance Agent** — posts transactions to ledgers, prepares GSTR-1 and GSTR-3B, reconciles purchases, files after one owner confirmation; monthly plain-Hindi P&L via WhatsApp voice note.
-
-**Key agent features**
-
-- **Auto-Bookkeeper:** Sale, purchase, expense auto-post from billing/payment — zero manual entry
-- **GST Filing Agent:** GSTR-1 + GSTR-3B; GSTR-2A reconcile; mismatch flags; one WhatsApp approval to file
-- **e-Way Bill Agent:** Above **₹50K** movement — generate from PO, monitor expiry
-- **Expense Capture:** Receipt photo → amount, vendor, date, expense head
-- **P&L Narrator:** Monthly **~60-second** Hindi voice summary of profit, GST, etc.
-- **Deadline Agent:** **7 / 3 / 1**-day reminders with ready-to-file vs data-missing status
-
----
-
-### A.04 — Digital Payments
-
-| Addressable Shops | Current Penetration | Existing Leaders |
-|---|---|---|
-| **~50M** shops accepting digital payments | **60–70%** | Paytm **30%**, PhonePe **30%**, BharatPe **12%**, Google Pay **10%**, Pine Labs (POS terminals) |
-
-**Market Reality**  
-UPI acceptance is largely solved — soundboxes reach many vendors. The gap is reconciliation and cash-flow intelligence: who paid, follow-ups on unpaid balances, forecasts. A new acceptance layer vs UPI giants is not the play.
-
-**What we build**  
-**Payment Intelligence Layer** — reconciliation and cash-flow on top of existing UPI: match credits to orders, follow up on unpaid amounts, forecast **next 14-day** cash position.
-
-**Key agent features**
-
-- **Payment Reconciler:** UPI SMS/webhook → match credit to order or customer
-- **Collection Agent:** Personalised WhatsApp reminders (timing, escalation by days overdue)
-- **Cash Flow Forecast:** **14 / 30-day** projections from collections, supplier dues, recurring expenses
-- **Fraud Flag:** Fake screenshots, duplicate IDs, screen-recorded confirmations before goods release
-- **Day Settlement:** Cash + UPI vs expected; over/short; surplus transfer option
-
----
-
-### A.05 — Credit Ledger
-
-| Addressable Shops | Current Penetration | Existing Leaders |
-|---|---|---|
-| **~25–30M** credit-extending shops | **20–30%** digital khata | Khatabook **40%**, OkCredit **25%**, Vyapar **20%** (free tiers; weak monetisation per proposal) |
-
-**Market Reality**  
-Khatabook and OkCredit raised **$275M+** combined (per proposal) without strong monetisation because a free digital ledger alone lacks stickiness. An AI layer turns khata into an active collection engine worth paying for.
-
-**What we build**  
-**Intelligent Credit Agent** — voice credit entry, smart WhatsApp reminders, credit profiles, and path to working-capital connectivity.
-
-**Key agent features**
-
-- **Voice Credit Entry:** e.g. “Ram ne 500 liya” → recorded, timestamped, linked to profile
-- **Smart Reminder:** Timing by pay cycle; tone adapts to days overdue
-- **Pattern Analyser:** Learns when each customer pays; schedules reminders
-- **Credit Limit Advisor:** Flags unsafe exposure from history and frequency
-- **Early Warning:** Deteriorating payment behaviour before bad debt
-- **Loan Connector:** **6-month** history → score → NBFC pre-approved working capital
-
----
-
-### A.06 — Restaurant F&B
-
-| Addressable Shops | Current Penetration | Existing Leaders |
-|---|---|---|
-| **~7.5M** food service establishments | **5–8%** (**~400–600K**) | Petpooja **45%** of software users (**1L+** outlets), Posist/Restroworks **10%**, Rista/DotPe **8%** |
-
-**Market Reality**  
-Petpooja has SMB coverage around **₹10K/year**. The opportunity extends to co-manager behaviour: KOT prioritisation, Swiggy/Zomato reconciliation, predictive inventory-to-menu. **6.5M+** dhabas and tea stalls remain unaddressed.
-
-**What we build**  
-**Restaurant Co-Manager Agent** — multi-channel orders, kitchen queue by prep time, daily aggregator reconciliation, morning brief on operations and prep.
-
-**Key agent features**
-
-- **Multi-Channel Order Hub:** Counter, Swiggy, Zomato, WhatsApp, QR — kitchen queue by prep time, not FIFO
-- **Kitchen Intelligence:** Station routing, batching, ready-time estimates, server alerts
-- **Aggregator Reconciler:** Daily expected vs paid; commission discrepancies; dispute raises
-- **Menu Engineer:** Weekly high/low profit-effort dish insights; pricing/menu suggestions
-- **86 Manager:** Inventory vs menu — mark unavailable across channels when ingredients out
-- **Morning Brief:** Yesterday revenue, top dishes, delivery ratings, today’s prep list
-
----
-
-### A.07 — Pharmacy
-
-| Addressable Shops | Current Penetration | Existing Leaders |
-|---|---|---|
-| **~1.2M** registered chemists + **~300K** unregistered | **30–40%** | Marg **38%**, GoFrugal **13%**, Pharmsoft **9%**, hCue **5%**, eVitalRx **4%** |
-
-**Market Reality**  
-High penetration driven by regulatory complexity (Schedule H, expiry, licences). The add-on layer is clinical safety (interactions), proactive patient management, and **ABDM (Ayushman Bharat)** integration.
-
-**What we build**  
-**Pharmacy Intelligence Agent** — billing/compliance plus prescription reading, interaction checks, chronic refill reminders **5 days** before run-out.
-
-**Key agent features**
-
-- **Prescription Reader:** Photo → drugs/doses; cross-check; brand-to-generic consent flags
-- **Drug Interaction Check:** Multi-drug vs interaction database before dispensing
-- **Expiry Action Agent:** **30 days** → return/markdown; **7 days** → donation/disposal alert
-- **Chronic Refill Agent:** BP/diabetes/thyroid — reminder **5 days** before run-out; reorder by reply
-- **Auto-Procurement:** Velocity + stock → daily PO to distributor via WhatsApp
-- **ABDM Connector:** ABHA-linked records; digital prescription pull; compliance readiness
-
----
-
-### A.08 — Salon & Spa
-
-| Addressable Shops | Current Penetration | Existing Leaders |
-|---|---|---|
-| **~2M** salons and beauty parlours | **3–5%** (**~60–100K**) | Zenoti (premium chains), Dingg (Indian SMB, **~8K**), MioSalon (**~10K**), Invoay |
-
-**Market Reality**  
-**~95%** of neighbourhood salons use paper appointments, WhatsApp bookings, and recall for preferences. The agent scales the owner’s personal memory so client experience survives staff turnover.
-
-**What we build**  
-**Client Memory & Revenue Agent** — bookings via WhatsApp/voice, service history and colour formulas, empty-slot outreach, staff commissions without spreadsheets.
-
-**Key agent features**
-
-- **Booking Agent:** WhatsApp, voice, Instagram DM — availability, confirm, **24 hr** reminder, reschedule
-- **Client Memory:** History, colour formulas, stylist preference, skin/hair type, product prefs
-- **Empty Slot Filler:** Gaps → personalised outreach (e.g. due-for-visit prompts)
-- **Staff Commission Tracker:** Daily/monthly by services, products, tips → payslip
-- **Review Generator:** Post-service WhatsApp for Google/Justdial review; guided flow; discount hook
-
----
-
-### A.09 — B2B Procurement
-
-| Addressable Shops | Current Penetration | Existing Leaders |
-|---|---|---|
-| **~15M+** shops restocking from distributors | **5–8%** | Udaan (dominant; **₹5,706 Cr** revenue FY24 per proposal; acquired ShopKirana Jul 2025), Ninjacart (agri), Jumbotail (South) |
-
-**Market Reality**  
-**~85%** of FMCG procurement is traditional distribution (salesman, phone, paper). Udaan scaled B2B e-commerce but in-store procurement intelligence for the shop remains under-served.
-
-**What we build**  
-**Smart Procurement Agent** — monitors stock, orders from best-priced distributor before stockout; trade schemes; delivery disputes; multi-supplier credit limits.
-
-**Key agent features**
-
-- **Smart Ordering:** PO from velocity, events, credit — route to best-priced distributor
-- **Delivery Verification:** Received vs PO before delivery person leaves — shortages, wrong items, damage
-- **Supplier Invoice Checker:** Invoice vs PO and delivery note — qty, rate, scheme discrepancies
-- **Trade Scheme Tracker:** Buy-X-get-Y and similar — maximise benefit before expiry
-- **Credit Manager:** Per-distributor limit and outstanding — alerts before exhaustion
-
----
-
-### A.10 — Online Store
-
-| Addressable Shops | Current Penetration | Existing Leaders |
-|---|---|---|
-| **~5–7M** attempting online sales | **5–7%** active online stores | Shopify (D2C), Dukaan (**~3M** registered), Bikayi (**~5L**), ONDC-native apps |
-
-**Market Reality**  
-Many SMBs abandon online within **~60 days** — stale catalog, missed orders, unanswered queries. The agent makes the channel low-effort: sync, **24/7** queries, order handling, promotions from excess stock.
-
-**What we build**  
-**Online Store Manager Agent** — sync offline catalog to ONDC/WhatsApp catalog/Dukaan; answers queries; processes orders; targeted promos from excess stock.
-
-**Key agent features**
-
-- **Catalog Sync:** Real-time mirror; OOS when physical zero; price updates
-- **24/7 Query Agent:** WhatsApp, web chat, Instagram — stock/size/delivery/return without owner
-- **Order Processor:** Confirm, acknowledge, courier, label, track — owner only on exceptions
-- **Promo Campaign Agent:** Weekly promos from excess stock and local events; WhatsApp broadcast content
-- **ONDC Agent:** Listings, catalog, ratings, order lifecycle on buyer apps
-
----
-
-### A.11 — Fashion
-
-| Addressable Shops | Current Penetration | Existing Leaders |
-|---|---|---|
-| **~4–5M** garment shops | **5–8%** (mostly chains) | Ginesys (chains), Logic ERP (**~5K** SME), Unicommerce (online) |
-
-**Market Reality**  
-Core pain is size-colour matrix (**12–40** variants per design). No affordable matrix product for standalone shops under **₹25,000/year** per proposal; dead season-end stock hits margins.
-
-**What we build**  
-**Fashion Intelligence Agent** — variant-level matrix; dead-stock alerts **3 weeks** before season end; markdowns; next-season buying from sell-through.
-
-**Key agent features**
-
-- **Matrix Tracker:** Style × size × colour — low vs overstocked combinations
-- **Dead Stock Alert:** Unsold **14 / 21 / 30** days — markdown timing before season-end
-- **Season Buying Advisor:** Prior season sell-through by category/price → next-cycle quantities
-- **Bundle Optimizer:** Basket analysis → combos to move slow companions
-- **Returns Analyser:** Returns by supplier/style — defect-rate flags for sourcing
-
----
-
-### A.12 — Electronics Repair
-
-| Addressable Shops | Current Penetration | Existing Leaders |
-|---|---|---|
-| **~4–5M** mobile/electronics repair shops | **<3%** IMEI-specific | **No clear SMB leader** — Marg/Tally for billing only; no job-card/IMEI product per proposal |
-
-**Market Reality**  
-**~4 lakh** mobile repair shops (per proposal wording) on handwritten job cards; no durable digital record of repairs, parts, or returns. White space with no dominant incumbent.
-
-**What we build**  
-**Mobile Repair OS** — customer WhatsApps damage photo; digital job card, device ID, repair tracking, parts, stage updates — workflow via WhatsApp.
-
-**Key agent features**
-
-- **Job Card Creator:** Photo → make/model, fault, numbered work order, acknowledgment
-- **IMEI Verifier:** Stolen-device check before accept; device history
-- **Parts Inventory:** By model compatibility; low-stock alerts; distributor orders
-- **Status Communicator:** received → diagnosed → parts ordered → ready — WhatsApp at each stage
-- **Repair Estimate Agent:** Fault description → price range from historical model/fault data
-- **Warranty Handler:** Brand warranty guidance and service-centre tracking
-
----
-
-### A.13 — Kirana Store OS
-
-| Addressable Shops | Current Penetration | Existing Leaders |
-|---|---|---|
-| **~12M** kirana stores | **8–12%** any software | Vyapar (billing), Khatabook (ledger), Udaan (supply) — point solutions; **no integrated OS** per proposal |
-
-**Market Reality**  
-Typical kirana: single owner, **5,000–20,000** SKUs, **50–200** credit customers, **₹15,000–50,000** daily revenue, no computer. Product must minimise behaviour change — **WhatsApp voice**-first.
-
-**What we build**  
-**Zero-UI Kirana OS** — full ERP through one WhatsApp number: billing, khata, stock, ordering, delivery coordination, daily report — voice and WhatsApp only.
-
-**Key agent features**
-
-- **WhatsApp Command Centre:** Voice notes and chat for transactions and invoices
-- **Delivery Coordinator:** Home delivery — confirm, slot, customer status
-- **Customer Relationship Memory:** Patterns, credit, usual items — personalised interactions
-- **Festival Stock Agent:** **3–4 weeks** before major festivals — suggested quantities from prior year
-- **Micro-Lending Connector:** **6–12 months** data → credit report → NBFC **₹50K–5L**
-- **Evening Report:** **~60-second** Hindi voice — sales, credit, top SKUs, cash, tomorrow’s orders
-
----
-
-### A.14 — HR & Payroll
-
-| Addressable Shops | Current Penetration | Existing Leaders |
-|---|---|---|
-| **~3–5M** shops with **5+** paid staff | **5–8%** of shops with **10+** employees | GreytHR (**~25K** companies), Keka (**5K+**), Kredily (**20K+**, free tier), Razorpay Payroll |
-
-**Market Reality**  
-For **5–50** staff shops: paper attendance, informal salary math, sporadic PF compliance. Agent makes attendance and payroll ambient — WhatsApp check-in, auto payslip, PF challan automation.
-
-**What we build**  
-**Invisible HR Agent** — attendance, payroll, compliance in background; owner sees approvals and anomalies; salary disbursement via UPI on pay day.
-
-**Key agent features**
-
-- **Smart Attendance:** WhatsApp, QR, or face scan — late, half-day, overtime
-- **Payroll Calculator:** Base, allowances, PF/ESI/TDS, advances — Hindi payslip
-- **Salary Disbursement:** Pay-day UPI to each staff; receipt confirm; failure flags
-- **PF/ESI Filing:** Monthly ECR/ESIC with digital signature — minimal manual work
-- **Compliance Calendar:** Labour deadlines — min wage, bonus, annual returns — advance warnings
-
----
-
-### A.15 — Customer Loyalty CRM
-
-| Addressable Shops | Current Penetration | Existing Leaders |
-|---|---|---|
-| **~50M** shops with repeat customers | **<2%** | Reelo (F&B), WhatsApp Business broadcasts (informal), Capillary (enterprise) |
-
-**Market Reality**  
-Shopkeepers excel at personal loyalty but scale breaks past **100–200** customers. The agent extends that warmth to **1,000+** customers with timed, personal outreach.
-
-**What we build**  
-**Hyper-Personalisation Agent** — profiles from transactions; right-moment outreach; repeat visits via personal (not generic) messages.
-
-**Key agent features**
-
-- **Customer 360:** History, preferences, price sensitivity, payment habits
-- **Intelligent Outreach:** Per-customer timing (e.g. usual Friday order → Friday morning nudge)
-- **Birthday/Occasion Agent:** Offers on actual favourite products
-- **Win-Back Agent:** Missed usual cycle → personalised “we miss you” + relevant offer
-- **Referral Engine:** Post-positive interaction — code, reward chain, auto-credit
-- **Campaign Analyst:** Uplift vs baseline by segment — feeds next campaigns
-
----
-
-### A.16 — Logistics
-
-| Addressable Shops | Current Penetration | Existing Leaders |
-|---|---|---|
-| **~5–8M** shops doing home delivery | **3–5%** | Shiprocket/Delhivery (e-commerce, organised); **hyperlocal neighbourhood manual** per proposal |
-
-**Market Reality**  
-Most neighbourhood delivery is WhatsApp calls and informal riders — no tracking; “where is my order?” unanswered. Agent adds professional delivery ops **without a new customer app**.
-
-**What we build**  
-**Hyperlocal Delivery Agent** — assign by proximity; WhatsApp live tracking link; multi-drop routes; failed-delivery rescheduling.
-
-**Key agent features**
-
-- **Smart Assignment:** By location, pending orders, zone familiarity
-- **WhatsApp Tracking:** Live link — pickup, en route, delivered updates
-- **Route Optimizer:** **5–10** simultaneous orders — sequence by address/traffic
-- **Failed Delivery Handler:** WhatsApp customer contact; alternatives; same-day reschedule
-- **COD Tracker:** Undeposited COD per rider; overdue flags; daily collection report
-
----
-
-### A.17 — WhatsApp Commerce
-
-| Addressable Shops | Current Penetration | Existing Leaders |
-|---|---|---|
-| **~50M** (WhatsApp universal) | **20–30%** informal; **API layer <2%** | WhatsApp Business free (**50M+** Indian business users per proposal); Interakt, AiSensy, Wati.io (API) |
-
-**Market Reality**  
-WhatsApp is India’s de facto commerce channel informally. AI converts it into an autonomous channel: catalog, order, payment, tracking, support — automated, in the customer’s language.
-
-**What we build**  
-**Full-Stack WhatsApp Commerce Agent** — catalog, voice-note orders, payment, tracking, support — Hindi/Hinglish/regional, **24/7**.
-
-**Key agent features**
-
-- **Conversational Catalog:** Natural-language browse with photos, prices, availability
-- **Voice Order Agent:** Voice notes → transcribe, intent, confirm in natural language
-- **Multilingual Agent:** Auto-detect Hindi, Tamil, Telugu, Marathi, Bengali — respond in kind
-- **Automated FAQ:** **~90%** of common queries without owner
-- **WhatsApp Payment:** UPI link post-confirm → receipt → paid → fulfillment
-- **Broadcast Manager:** Segment, personalise, send time, open tracking
-
----
-
-### A.18 — Auto Garage
-
-| Addressable Shops | Current Penetration | Existing Leaders |
-|---|---|---|
-| **~5M** workshops and garages | **<1%** | **No clear leader**; Workshop360, GarageKey early stage **<500** active garages each per proposal |
-
-**Market Reality**  
-**5 million** garages (per proposal) on memory, handwritten job cards, calls — no durable vehicle history, parts tracking, or customer comms system. Large latent demand, weak incumbent set.
-
-**What we build**  
-**Garage OS** — vehicle photo or problem description → digital job card, progress, parts, milestone WhatsApp updates, billing — minimal paperwork.
-
-**Key agent features**
-
-- **Digital Job Card:** Photo → OCR registration, make/model, issue, work order
-- **Fault Diagnosis Assistant:** Voice symptoms → fault database suggestions by make/model
-- **Parts Ordering:** Identify spares; local supplier WhatsApp; order and ETA tracking
-- **Customer Update Agent:** Milestones — received, diagnosed, parts ordered, under repair, ready
-- **Vehicle History Keeper:** Full service record per registration on return visits
-- **Workshop Capacity Manager:** Active vs waiting — realistic completion dates
-
----
-
-### A.19 — Hardware Retail
-
-| Addressable Shops | Current Penetration | Existing Leaders |
-|---|---|---|
-| **~2–3M** hardware / building material shops | **<5%** | Tally (generic accounting); **no dedicated affordable SMB hardware product** per proposal |
-
-**Market Reality**  
-Pricing varies by relationship (contractor vs retail), quantity, and payment mode. Multi-site contractor orders on credit exceed what generic accounting handles without custom work.
-
-**What we build**  
-**Contractor Relationship Agent** — contractor price books, multi-site outstanding, daily challans, itemised site-wise billing.
-
-**Key agent features**
-
-- **Dynamic Rate Card:** Contractor-specific negotiated rates vs walk-in MRP
-- **Site-wise Tracker:** Deliveries per construction site per project — billing and disputes
-- **Contractor Credit Manager:** Outstanding across sites; monthly statements; limit alerts
-- **Purchase Bill Digitiser:** Supplier invoice photo → line items, qty, rates, GST → books
-- **Material Calculator:** Task description → material quantities and quote
-
----
-
-### A.20 — Education & Coaching
-
-| Addressable Shops | Current Penetration | Existing Leaders |
-|---|---|---|
-| **~3M** coaching centres + **7–8M** solo tutors | **10–15%** organised centres; **<1%** solo tutors | ClassPlus, Teachmint/Extramarks, SimpliFee (micro-tutors), Fedena (school ERP) |
-
-**Market Reality**  
-Organised coaching is relatively served. White space: **7–8M** solo/small tutors — cash fees, manual registers, WhatsApp groups. A **₹199/month**-class tool (per proposal) for reminders and parent comms could scale widely.
-
-**What we build**  
-**Tutor OS** — fees, attendance, parent comms, progress via WhatsApp; tutor sends marks to agent; agent reports to parents — no separate parent/student app required.
-
-**Key agent features**
-
-- **Fee Collection Agent:** Monthly reminders, receipt on payment, overdue by student, tutor report
-- **Attendance Tracker:** WhatsApp/location marks; register; absent alerts to parents
-- **Parent Broadcast:** Homework, tests, schedule changes to correct groups
-- **Progress Report Agent:** Marks via voice/text → scorecards → monthly parent report in simple language
-- **Enrollment Agent:** Prospect on WhatsApp → qualify, demo scheduling, follow-up for conversion
-
----
-
-### Appendix A — Document source
-
-| Claim domain | Primary source |
+| | |
 |---|---|
-| Penetration bands, leader shares, addressable counts, agent names, feature bullets | `Rupantar_AI_Master_Proposal.md`, Part 2 (lines 37–555) |
-| B2B leader revenue / M&A note | Same file, Area 09 table (lines 268–270) |
-| Khatabook + OkCredit funding context (Appendix A.05 cross-ref) | Same file, Part 5 (line 627) — used only where proposal repeats figure |
+| **Addressable Shops** | ~50M |
+| **Current Penetration** | 15–20% |
+| **Existing Leaders** | Tally (38%), Vyapar (13%), Marg (11%), Busy (9%), MyBillBook (7%) |
+
+**Market Reality.** Tally's dominance is accountant-driven, not shopkeeper-driven. Vyapar and MyBillBook have traction on mobile but still require a UI interaction for every bill. 80%+ of India's shops remain on paper because no product meets them via voice in their own language.
+
+**What We Build.** Voice-first Billing Agent — shopkeeper speaks an order in Hindi/Hinglish, agent generates a GST-compliant bill, identifies the customer, applies pending discounts or credit, and sends it via WhatsApp. Zero screen interaction.
+
+**Key Agent Features:**
+- **Voice Billing** — Parses spoken orders (Hindi/Hinglish/regional) into structured bills — handles local aliases, unit variations, combo deals
+- **Smart Scan** — Photo or barcode → auto-identifies SKU, fetches price, adds to bill
+- **Customer Memory** — Recognises returning customers by phone number or UPI ID — auto-applies saved price, credit, preferred items
+- **GST Engine** — Auto-assigns HSN codes and tax slabs, generates e-invoice for B2B buyers, validates bill
+- **Day Close Agent** — Tallies cash + UPI + credit sales, flags discrepancies, sends WhatsApp summary
+- **Offline Sync** — Queues transactions during outage, syncs with conflict resolution on reconnect
+
+---
+
+## A.02 — Inventory Management
+
+| | |
+|---|---|
+| **Addressable Shops** | ~10–15M with meaningful stock |
+| **Current Penetration** | 8–12% (bundled with POS) |
+| **Existing Leaders** | Marg ERP, GoFrugal, Tally — all bundled. No standalone. |
+
+**Market Reality.** Shop owners discover stockouts when a customer asks for something. Inventory is tracked on paper or memory. The AI opportunity is to make stockouts predictable 3–5 days in advance and auto-resolve without owner action.
+
+**What We Build.** Autonomous Stock Intelligence Agent — monitors real-time inventory, predicts stockouts, auto-generates purchase orders confirmed by one WhatsApp reply.
+
+**Key Agent Features:**
+- **Live Stock Tracker** — Deducts on every sale — handles loose-weight items, variants, combo packs
+- **Stockout Predictor** — Uses 90-day velocity + festival calendar + local events to flag items running out in 3–5 days
+- **Auto-Reorder** — Generates PO to preferred supplier at reorder level; owner approves with "haan"
+- **Expiry Watchdog** — For pharma, grocery, FMCG — alerts 30/15/7 days before expiry
+- **Shrinkage Detective** — Compares expected vs counted stock; categorises variance as theft, breakage, or error
+- **New Product Intake** — Owner photos new delivery → agent extracts details via vision, creates catalogue entry
+
+---
+
+## A.03 — Accounting & GST Compliance
+
+| | |
+|---|---|
+| **Addressable Shops** | ~10M GST-registered shops |
+| **Current Penetration** | 18–22% |
+| **Existing Leaders** | Tally (47%), Busy (11%), Zoho Books (7%), ClearTax (6%) |
+
+**Market Reality.** Tally dominates because CAs use it. Most small shops pay a CA ₹5,000–15,000/year for manual GST filing. The AI opportunity is to auto-maintain books from every transaction and auto-file returns — making the CA redundant for routine compliance.
+
+**What We Build.** Autonomous Compliance Agent — silently posts every transaction to the right ledger, prepares GSTR-1 and GSTR-3B, reconciles purchase data, and files with one WhatsApp approval.
+
+**Key Agent Features:**
+- **Auto-Bookkeeper** — Every sale, purchase, expense auto-posts from billing/payment data — zero manual entry
+- **GST Filing Agent** — Month-end: prepares GSTR-1 + GSTR-3B, reconciles with GSTR-2A, files with one approval
+- **e-Way Bill Agent** — Auto-generates for goods movement above ₹50K
+- **Expense Capture** — Owner photos receipt → agent extracts amount, vendor, date, posts to expense head
+- **P&L Narrator** — Monthly 60-second Hindi voice note: "aapka is mahine ₹18,500 profit hua, GST ₹2,100 file hoga"
+- **Deadline Agent** — 7/3/1-day reminders with status "ready to file" or "data missing"
+
+---
+
+## A.04 — Digital Payments & UPI
+
+| | |
+|---|---|
+| **Addressable Shops** | ~50M accept digital payments |
+| **Current Penetration** | 60–70% |
+| **Existing Leaders** | Paytm (30%), PhonePe (30%), BharatPe (12%), Google Pay (10%) |
+
+**Market Reality.** UPI acceptance is solved — soundboxes reached even semi-literate vendors. The gap is intelligence on top of payments: reconciling who paid, following up on unpaid balances, and predicting cash flow.
+
+**What We Build.** Payment Intelligence Layer — reconciliation and cash-flow intelligence sitting on top of existing UPI.
+
+**Key Agent Features:**
+- **Payment Reconciler** — Parses UPI SMS/webhook — matches every credit to open order or customer
+- **Collection Agent** — Sends personalised WhatsApp reminders at optimal times, escalates with days overdue
+- **Cash Flow Forecast** — Projects 14/30-day cash position from expected collections, supplier dues, expenses
+- **Fraud Flag** — Detects fake payment screenshots, duplicate transaction IDs, screen-recorded confirmations
+- **Day Settlement** — Matches expected vs received cash + UPI, identifies over/short
+
+---
+
+## A.05 — Credit Ledger (Khata / Udhar)
+
+| | |
+|---|---|
+| **Addressable Shops** | ~25–30M credit-extending shops |
+| **Current Penetration** | 20–30% |
+| **Existing Leaders** | Khatabook (40%), OkCredit (25%), Vyapar (20%) — all free tiers; weak monetisation |
+
+**Market Reality.** Khatabook and OkCredit raised $275M+ combined and couldn't monetise because a free digital ledger creates no stickiness. The AI layer converts the khata into an active collection engine — making it worth paying for.
+
+**What We Build.** Intelligent Credit Agent — manages the full credit lifecycle from entry to collection. Builds a credit profile connecting the shop to working capital loans.
+
+**Key Agent Features:**
+- **Voice Credit Entry** — "Ram ne 500 liya" → records, timestamps, links to Ram's profile
+- **Smart Reminder** — Sends reminders at optimal times based on customer's known pay cycle
+- **Pattern Analyser** — Learns when each customer pays; auto-schedules reminders
+- **Credit Limit Advisor** — Flags customers approaching unsafe credit levels
+- **Early Warning** — Identifies deteriorating payment behaviour before bad debt
+- **Loan Connector** — Analyses 6-month transaction history → creditworthiness score → NBFC partner
+
+---
+
+## A.06 — Restaurant & F&B POS
+
+| | |
+|---|---|
+| **Addressable Shops** | ~7.5M food service establishments |
+| **Current Penetration** | 5–8% (~400–600K) |
+| **Existing Leaders** | Petpooja (45%), Posist (10%), Rista (8%), GoFrugal (6%) |
+
+**Market Reality.** Petpooja has strong SMB coverage at ₹10K/year. The AI opportunity goes beyond POS: intelligent KOT prioritisation, aggregator reconciliation, and predictive inventory-to-menu management. 6.5M+ dhabas and tea stalls remain completely unaddressed.
+
+**What We Build.** Restaurant Co-Manager Agent — accepts orders across all channels, manages kitchen queue by prep time, auto-reconciles Swiggy/Zomato payouts, sends owner a morning brief.
+
+**Key Agent Features:**
+- **Multi-Channel Order Hub** — Counter, Swiggy, Zomato, WhatsApp, QR — queues by actual prep time
+- **Kitchen Intelligence** — Routes to correct station, batches similar orders, estimates ready-time
+- **Aggregator Reconciler** — Daily: compares expected vs paid, flags commission discrepancies
+- **Menu Engineer** — Weekly: identifies high-profit/low-effort vs low-profit/high-effort dishes
+- **86 Manager** — Cross-references inventory against menu — auto-marks unavailable items on all platforms
+- **Morning Brief** — Yesterday's revenue, top dishes, delivery ratings, today's prep list via WhatsApp
+
+---
+
+## A.07 — Pharmacy & Chemist Software
+
+| | |
+|---|---|
+| **Addressable Shops** | ~1.2M registered + ~300K unregistered chemists |
+| **Current Penetration** | 30–40% |
+| **Existing Leaders** | Marg ERP (38%), GoFrugal (13%), Pharmsoft (9%), hCue (5%) |
+
+**Market Reality.** Pharmacy is best-penetrated because regulatory complexity forces adoption. The AI layer adds clinical safety (drug interactions), proactive patient management, and ABDM integration.
+
+**What We Build.** Pharmacy Intelligence Agent — billing + compliance + clinical guardrails. Prescription reading via WhatsApp photo, drug interaction checking, chronic-patient refill reminders.
+
+**Key Agent Features:**
+- **Prescription Reader** — Customer sends photo → extracts drugs + doses, checks against dispensed items
+- **Drug Interaction Check** — Multi-drug prescriptions — checks database before dispensing, not after
+- **Expiry Action Agent** — 30-day: auto-generates return request; 7-day: donation/disposal alert
+- **Chronic Refill Agent** — BP, diabetes, thyroid patients — WhatsApp reminder 5 days before run-out
+- **Auto-Procurement** — Sales velocity + stock → daily PO to distributor via WhatsApp
+- **ABDM Connector** — Links dispensing to ABHA ID; digital prescription pull; compliance prep
+
+---
+
+## A.08 — Salon, Spa & Beauty
+
+| | |
+|---|---|
+| **Addressable Shops** | ~2M salons and beauty parlours |
+| **Current Penetration** | 3–5% (~60–100K) |
+| **Existing Leaders** | Zenoti (premium), Dingg (SMB, ~8K), MioSalon (~10K) |
+
+**Market Reality.** ~95% of neighbourhood salons use paper appointment books and mental recall. The AI agent captures and scales the owner's personal memory so client experience survives staff turnover.
+
+**What We Build.** Client Memory & Revenue Agent — bookings via WhatsApp/voice, full service history, empty-slot outreach, staff commission tracking.
+
+**Key Agent Features:**
+- **Booking Agent** — WhatsApp, voice, Instagram DM — checks stylist availability, confirms, reminds 24 hrs before
+- **Client Memory** — Service history, colour formulas, preferred stylist, skin/hair type, product preferences
+- **Empty Slot Filler** — Detects gaps → personalised outreach ("Priya, 5 weeks ho gaye, touch-up karein?")
+- **Staff Commission Tracker** — Daily/monthly commission per staff by services + products + tips
+- **Review Generator** — Post-service: WhatsApp request for Google/Justdial review with next-visit discount
+
+---
+
+## A.09 — B2B Procurement / Supply Chain
+
+| | |
+|---|---|
+| **Addressable Shops** | ~15M+ shops that restock regularly |
+| **Current Penetration** | 5–8% |
+| **Existing Leaders** | Udaan (dominant, ₹5,706Cr FY24), Ninjacart (agri), Jumbotail (South) |
+
+**Market Reality.** 85% of FMCG procurement happens through traditional distribution: salesman visits, phone orders, paper invoices. Udaan has B2B ecommerce scale but hasn't solved in-store procurement intelligence.
+
+**What We Build.** Smart Procurement Agent — monitors stock, places orders with best-priced distributor, tracks trade schemes, disputes short deliveries.
+
+**Key Agent Features:**
+- **Smart Ordering** — Optimal PO based on velocity, events, credit — routes to best-priced distributor
+- **Delivery Verification** — Compares received vs PO — flags shortages/wrong items/damage before delivery person leaves
+- **Supplier Invoice Checker** — Matches invoice to PO and delivery note — flags discrepancies
+- **Trade Scheme Tracker** — Monitors active buy-X-get-Y schemes; ensures shop claims maximum benefit
+- **Credit Manager** — Tracks credit limit/outstanding per distributor — alerts before exhaustion
+
+---
+
+## A.10 — Online Store / eCommerce Enablement
+
+| | |
+|---|---|
+| **Addressable Shops** | ~5–7M shops attempting online sales |
+| **Current Penetration** | 5–7% |
+| **Existing Leaders** | Shopify (D2C), Dukaan (~3M registered), Bikayi (~5L), ONDC |
+
+**Market Reality.** Most SMBs create an online store and abandon within 60 days — catalog goes stale, orders missed, queries unanswered. The AI agent makes the online channel zero-effort.
+
+**What We Build.** Online Store Manager Agent — auto-syncs offline catalog, answers queries 24/7, processes orders, runs promotions.
+
+**Key Agent Features:**
+- **Catalog Sync** — Mirrors offline inventory to online; marks out-of-stock in real-time
+- **24/7 Query Agent** — Handles all customer questions on WhatsApp, website, Instagram DM
+- **Order Processor** — Confirms, sends acknowledgment, books courier, generates label, tracks delivery
+- **Promo Campaign Agent** — Weekly promotions based on excess stock and local events
+- **ONDC Agent** — Maintains seller listings across buyer apps, manages ratings, handles lifecycle
+
+---
+
+## A.11 — Fashion, Garments & Apparel
+
+| | |
+|---|---|
+| **Addressable Shops** | ~4–5M garment shops |
+| **Current Penetration** | 5–8% (mostly chains) |
+| **Existing Leaders** | Ginesys (chains), Logic ERP (~5K SME), Unicommerce (online) |
+
+**Market Reality.** The core problem is the size-colour inventory matrix — every design has 12–40 variants. No affordable product solves this for standalone shops under ₹25,000/year. Dead season-end inventory is the biggest profit killer.
+
+**What We Build.** Fashion Intelligence Agent — variant-level tracking, dead stock identification 3 weeks before season-end, targeted markdowns, next-season buying advice.
+
+**Key Agent Features:**
+- **Matrix Tracker** — Variant level (style × size × colour) — low vs overstocked
+- **Dead Stock Alert** — Designs/variants unsold for 14/21/30 days — recommends markdown timing
+- **Season Buying Advisor** — Based on previous season sell-through, recommends next cycle quantities
+- **Bundle Optimizer** — Identifies products bought together — creates combos to move slow items
+- **Returns Analyser** — Tracks returns by supplier and style — flags high-defect suppliers
+
+---
+
+## A.12 — Electronics Repair & Mobile Shops
+
+> Full deep dive in Full Proposal Section 4.2.
+
+| | |
+|---|---|
+| **Addressable Shops** | ~4–5M mobile and electronics repair shops |
+| **Current Penetration** | <3% IMEI-specific |
+| **Existing Leaders** | No SMB leader. Generic billing only. |
+| **Score** | 90% (T1 ★) |
+
+**What We Build.** Mobile Repair OS — customer WhatsApps damaged phone photo → digital job card, device identification, repair tracking, parts ordering, customer updates. Entire workflow via WhatsApp.
+
+---
+
+## A.13 — Grocery / Kirana Store OS
+
+> Full deep dive in Full Proposal Section 4.2.
+
+| | |
+|---|---|
+| **Addressable Shops** | ~12M kirana stores |
+| **Current Penetration** | 8–12% |
+| **Existing Leaders** | Vyapar, Khatabook, Udaan — all point solutions |
+| **Score** | 90% (T1 ★) |
+
+**What We Build.** Zero-UI Kirana OS — entire ERP via one WhatsApp number. Billing, khata, stock, ordering, delivery, daily report — all voice and WhatsApp.
+
+---
+
+## A.14 — HR & Payroll
+
+| | |
+|---|---|
+| **Addressable Shops** | ~3–5M shops with 5+ paid staff |
+| **Current Penetration** | 5–8% (10+ employee firms) |
+| **Existing Leaders** | GreytHR (~25K companies), Keka (5K+), Kredily (20K+) |
+
+**Market Reality.** For shops with 5–50 staff: attendance on paper, salary calculation on WhatsApp, PF filing once a year. The AI agent makes this invisible.
+
+**What We Build.** Invisible HR Agent — runs attendance, payroll, compliance in background. Surfaces only for approvals and anomalies. Salary via UPI on salary day.
+
+**Key Agent Features:**
+- **Smart Attendance** — WhatsApp/QR/face scan check-in — handles late marks, half-days, overtime
+- **Payroll Calculator** — Base, allowances, PF/ESI/TDS, advances — Hindi payslip
+- **Salary Disbursement** — UPI transfer to each staff on salary day, confirms receipt
+- **PF/ESI Filing** — Monthly ECR + ESIC challan — files with digital signature
+- **Compliance Calendar** — Minimum wage, bonus, annual returns — advance warnings
+
+---
+
+## A.15 — Customer Loyalty & CRM
+
+> Full deep dive in Full Proposal Section 4.2.
+
+| | |
+|---|---|
+| **Addressable Shops** | ~50M shops with repeat customers |
+| **Current Penetration** | <2% |
+| **Existing Leaders** | Reelo (F&B), WhatsApp Business (informal), Capillary (enterprise) |
+| **Score** | 87% (T1 ★) |
+
+**What We Build.** Hyper-Personalisation Agent — replicates the shopkeeper's memory at scale. Personal outreach, birthday offers, win-back campaigns, referral tracking.
+
+---
+
+## A.16 — Logistics & Last-Mile Delivery
+
+| | |
+|---|---|
+| **Addressable Shops** | ~5–8M shops doing home delivery |
+| **Current Penetration** | 3–5% |
+| **Existing Leaders** | Shiprocket/Delhivery (ecomm). Hyperlocal entirely manual. |
+
+**Market Reality.** Most neighbourhood delivery is WhatsApp voice calls and personal bike riders with no tracking.
+
+**What We Build.** Hyperlocal Delivery Agent — assigns orders by route proximity, WhatsApp-based customer tracking (no app), multi-drop route optimisation, failed delivery rescheduling.
+
+**Key Agent Features:**
+- **Smart Assignment** — Optimal delivery person by current location, pending orders, zone expertise
+- **WhatsApp Tracking** — Live tracking link via WhatsApp — updates at pickup, enroute, delivery
+- **Route Optimizer** — 5–10 simultaneous orders — optimal sequence by addresses and traffic
+- **Failed Delivery Handler** — Contacts customer via WhatsApp, captures alternative instructions, reschedules
+- **COD Tracker** — Tracks undeposited cash per delivery staff — flags overdue deposits
+
+---
+
+## A.17 — WhatsApp Commerce
+
+> Full deep dive in Full Proposal Section 4.2.
+
+| | |
+|---|---|
+| **Addressable Shops** | ~50M — WhatsApp is universal |
+| **Current Penetration** | 20–30% informal; API <2% |
+| **Existing Leaders** | WhatsApp Business, Interakt, AiSensy |
+| **Score** | 83% (T1 ★) |
+
+**What We Build.** Full-Stack WhatsApp Commerce Agent — complete commerce lifecycle on WhatsApp: catalog, voice ordering, payment, tracking, support — in customer's language, 24/7.
+
+---
+
+## A.18 — Auto Repair & Garage Management
+
+> Full deep dive in Full Proposal Section 4.2.
+
+| | |
+|---|---|
+| **Addressable Shops** | ~5M automobile workshops and garages |
+| **Current Penetration** | <1% |
+| **Existing Leaders** | No clear leader |
+| **Score** | 90% (T1 ★) |
+
+**What We Build.** Garage OS — digital job cards from vehicle photos, fault diagnosis, parts ordering, customer updates at every milestone. Entire flow via WhatsApp.
+
+---
+
+## A.19 — Hardware & Construction Retail
+
+| | |
+|---|---|
+| **Addressable Shops** | ~2–3M hardware and building material shops |
+| **Current Penetration** | <5% |
+| **Existing Leaders** | Tally (generic only) |
+| **Score** | 80% (T1) |
+
+**Market Reality.** Hardware billing is complex: prices vary by customer relationship (contractor vs retail), quantity, payment mode. A contractor ordering across 3 sites on credit is impossible on Tally without custom development.
+
+**What We Build.** Contractor Relationship Agent — contractor-specific rate cards, site-wise material tracking, multi-site billing, purchase bill digitisation, material calculator.
+
+**Key Agent Features:**
+- **Dynamic Rate Card** — Contractor-specific pricing without manual lookup
+- **Site-wise Tracker** — Materials per construction site — enables site-wise billing and dispute resolution
+- **Contractor Credit Manager** — Outstanding per contractor across sites — monthly statements, limit alerts
+- **Purchase Bill Digitiser** — Owner photos supplier invoice → extracts items, quantities, rates, GST
+- **Material Calculator** — "100 sq ft plastering" → required materials + quote
+
+---
+
+## A.20 — Education & Coaching Centres
+
+| | |
+|---|---|
+| **Addressable Shops** | ~3M centres + 7–8M solo tutors |
+| **Current Penetration** | 10–15% organised; <1% solo tutors |
+| **Existing Leaders** | ClassPlus, Teachmint/Extramarks, SimpliFee, Fedena |
+
+**Market Reality.** The organised market is served. The white space is 7–8 million solo tutors and small classes — collecting fees in cash, maintaining registers, communicating via WhatsApp groups.
+
+**What We Build.** Tutor OS — fee collection, attendance, parent communication, student progress via WhatsApp. No separate app for parents.
+
+**Key Agent Features:**
+- **Fee Collection Agent** — Monthly reminder, receipt on payment, overdue tracking
+- **Attendance Tracker** — Students mark via WhatsApp/location — alert parents of absent students
+- **Parent Broadcast** — Homework, test dates, schedule changes to correct parent groups
+- **Progress Report Agent** — Marks via voice/text → scorecards → monthly parent report in simple language
+- **Enrollment Agent** — Prospective parent inquiry via WhatsApp → qualification → demo scheduling → follow-up
 
 ---
 
 # Appendix B: Partner Programme Detail
 
-*Source: `docs/Rupantar_AI_Master_Proposal.md`, Part 5 (lines 625–666) and Part 6 (lines 669–684).*
+## B.1 Full Tier Structure
 
----
-
-### B.1 Partner tier structure (T0–T4)
-
-| Tier | Name | Entry criteria | Shop portfolio | Technical capability | Revenue earning |
+| Tier | Name | Entry Criteria | Shop Portfolio | Technical Capability | Revenue Earning |
 |---|---|---|---|---|---|
-| **T0** | Referral Agent | Register on app; **2-hr** intro module | Refers only; no deployment | None required | **₹200** one-time per referred shop that **activates** |
-| **T1** | AI Shop Starter | **2-day** certified training; **50-question** assessment; **5 deployments** within **60 days** | **5–25** active shops | Standard bundles from library; **no** custom flows | **15%** recurring commission + **₹500** per new activation |
-| **T2** | AI Shop Builder | T1 + **3-day** Builder training + visual flow certification; **25+** active shops | **25–150** active shops | Custom flows (visual builder); multi-agent configs | **22%** recurring + **₹1,000** per activation + **own-priced** customisation fees |
-| **T3** | AI Shop Architect | T2 + Pro Code certification; **150+** shops; **3** community templates rated **4+** | **150–500** active shops | Custom agent nodes (Python/JS); vertical solutions; trains T1/T2 | **30%** recurring + **₹2,000** per activation + **template marketplace royalties** |
-| **T4** | Regional Master | Invite only; **10+** sub-partners; **500+** network shops; **₹25L** annual revenue | **500+** shops across sub-partner network | Full platform access; runs training; co-develops verticals with Rupantar | **35%** own shops + **5%** **override** on sub-partner revenue + **equity discussion** |
+| T0 | Referral Agent | Register on app; 2-hr intro module | Refers only; no deployment | No technical skill | ₹200 one-time per activated referral |
+| T1 | AI Shop Starter | 2-day certified training; 50-question assessment; 5 deployments within 60 days | 5–25 active shops | Deploys standard bundles from library; no custom flows | 15% recurring + ₹500 per new activation |
+| T2 | AI Shop Builder | T1 + 3-day Builder training + visual flow certification; 25+ active shops | 25–150 active shops | Builds custom flows using visual builder; multi-agent configurations | 22% recurring + ₹1,000 per activation + own-priced customisation fees |
+| T3 | AI Shop Architect | T2 + Pro Code certification; 150+ shops; 3 community templates rated 4+ | 150–500 active shops | Writes custom agent nodes (Python/JS); builds vertical solutions; trains T1/T2 | 30% recurring + ₹2,000 per activation + template marketplace royalties |
+| T4 | Regional Master | Invite only; 10+ sub-partners; 500+ network shops; ₹25L annual revenue | 500+ shops across sub-partner network | Full platform access; runs training; co-develops verticals | 35% own shops + 5% override on sub-partner revenue + equity discussion |
 
-**Source:** Part 5, Partner Tier Structure table (lines 648–654).
+## B.2 Complete Income Model Breakdown
 
----
+| Income Stream | Mechanism | T0 | T1 | T2 | T3 | T4 |
+|---|---|---|---|---|---|---|
+| Subscription Commission | 15–30% of shop's monthly subscription | — | 15% | 22% | 30% | 35% |
+| New Activation Fee | Per new shop live + 1 week active | — | ₹500 | ₹1,000 | ₹2,000 | ₹2,000 |
+| Customisation Fees | For custom flows beyond standard bundles | — | — | Partner-priced (0% Rupantar cut) | Partner-priced | Partner-priced |
+| Template Royalties | ₹50–₹200 per deployment of published template | — | — | — | Yes | Yes |
+| AMC | ₹3,000–₹8,000/year per shop (partner keeps 100%) | — | — | Yes | Yes | Yes |
+| Sub-Partner Override | % of sub-partner revenue | — | — | — | — | 5% |
 
-### B.2 Partner income model — streams and worked example (T2, 100 shops)
+**Worked example — T2 Partner with 100 shops:**
 
-| Income stream | Mechanism | Example (T2 partner, **100** active shops) |
+| Stream | Calculation | Monthly Income |
 |---|---|---|
-| **Subscription commission (recurring)** | **22%** of each shop’s monthly subscription while active | **100 × ₹599 × 22% = ₹13,178/month** recurring |
-| **New activation fee** | **₹1,000** per shop live with **first week** of active agent usage | **20** new shops/month × **₹1,000 = ₹20,000/month** |
-| **Customisation fees** | Partner sets price for custom flows; **0%** platform take | **5 × ₹5,000 = ₹25,000/month** |
-| **Template royalties** | **₹50–₹200** per deployment when others use a published template | **2** templates × **100** deployments × **₹100 = ₹20,000/month** |
-| **AMC (annual maintenance contract)** | Partner offers **₹3,000–₹8,000/year** per shop; **0%** platform take | **30** shops × **₹5,000/yr → ₹12,500/month** equivalent |
-| **Total (illustrative)** | Sum of above example lines | **~₹90,000/month gross**; proposal notes scale toward **₹1.5–2L/month** at **200** shops |
+| Subscription Commission | 100 × ₹599 × 22% | ₹13,178 |
+| Activation Fees | 20 new shops × ₹1,000 | ₹20,000 |
+| Customisation | 5 implementations × ₹5,000 avg | ₹25,000 |
+| Template Royalties | 2 templates × 100 deployments × ₹100 | ₹20,000 |
+| AMC | 30 shops × ₹5,000/yr ÷ 12 | ₹12,500 |
+| **Total** | | **₹90,678/month** |
 
-**Source:** Part 5, Partner Income Model table (lines 658–665).
+## B.3 Training Curriculum (8 Modules)
 
----
-
-### B.3 Training curriculum (M0–M7)
-
-| Module | Duration | Format | Content | Required for |
+| Module | Duration | Format | Content | Required For |
 |---|---|---|---|---|
-| **M0:** AI Basics for Shop Doctors | **3 hours** | Video + mobile quiz | Agents vs apps; WhatsApp-native agents; shop need; explain value in **2 minutes** without saying “AI” | **All tiers** — before any deployment |
-| **M1:** Shop Pain Discovery | **4 hours** | Role-play + facilitator | **15-question** pain interview; map pain to agent type; first wins; objections (complexity, existing Tally, connectivity) | **T1+** |
-| **M2:** Standard Bundle Deployment | **6 hours** | Hands-on lab (sandbox) | Partner app onboarding; **5** starter bundles (Kirana OS, Restaurant, Pharmacy, Salon, Billing+Khata); WhatsApp number, catalog, language, tone | **T1+** |
-| **M3:** Visual Flow Builder | **2 days (14 hours)** | Workshop + lab | Builder UI; trigger → logic → action; LLM prompts for shop context; test; deploy; error handling | **T2+** |
-| **M4:** Vertical Specialisation (pick **1–3**) | **1 day** each | Vertical deep-dive | Pharmacy: compliance + ABDM; Restaurant: aggregator reconciliation; Fashion: matrix inventory; Garage: job card + parts; Hardware: rate card + contractor billing | **T2+** |
-| **M5:** Portfolio Management | **4 hours** | Dashboard + mentorship | Health dashboard; upsell signals; agent failures; monthly shop review; referrals (**5 → 50** word-of-mouth) | **T2+** |
-| **M6:** Pro Code SDK | **3 days** | Developer workshop (Python/JS) | Custom nodes; marketplace publish; non-standard APIs; community template guidelines | **T3+** |
-| **M7:** Train the Trainer | **2 days** | Train-the-trainer | Local T1 certification; quality assessment; sub-partner network; regional GTM | **T4 only** |
+| M0: AI Basics for Shop Doctors | 3 hours | Video + quiz on mobile | What AI agents are vs apps. How WhatsApp-native agents work. How to explain AI to a semi-literate shopkeeper in 2 minutes without using the word "AI." | All tiers — mandatory |
+| M1: Shop Pain Discovery | 4 hours | Role-play + facilitator | 15-question pain discovery interview. Mapping pain to agent type. Handling objections: "bahut complicated lagta hai," "pehle se Tally hai." | Tier 1+ |
+| M2: Standard Bundle Deployment | 6 hours | Hands-on lab (sandbox shops) | Partner mobile app. Deploying 5 starter bundles: Kirana OS, Restaurant, Pharmacy, Salon, Billing+Khata. Configuring WhatsApp, catalog, language, tone. | Tier 1+ |
+| M3: Visual Flow Builder | 2 days (14 hours) | Workshop + hands-on lab | Full builder interface. Connecting trigger → logic → action nodes. Configuring LLM prompts for shop context. Testing flows. Deploying to live shops. | Tier 2+ |
+| M4: Vertical Specialisation | 1 day each | Vertical-specific deep-dive | Pharmacy: drug compliance + ABDM. Restaurant: aggregator reconciliation. Fashion: matrix inventory. Garage: job card + parts chain. Hardware: rate card + contractor billing. | Tier 2+ |
+| M5: Portfolio Management | 4 hours | Dashboard + mentorship | Health dashboard. Upsell signals. Handling agent failures. Monthly review cadence. Referral mechanics: turning 5 shops into 50 via word-of-mouth. | Tier 2+ |
+| M6: Pro Code SDK | 3 days | Developer workshop (Python/JS) | Building custom agent nodes. Publishing to marketplace. Non-standard API integrations. Community template contribution guidelines. | Tier 3+ |
+| M7: Train the Trainer | 2 days | Train-the-trainer workshop | Running Tier 1 certification locally. Quality assessment. Managing sub-partner network. Regional go-to-market strategy. | Tier 4 only |
 
-**Source:** Part 6, training table (lines 673–682). Delivery note from proposal: Hindi + regional languages, mobile-first, simulation-heavy (lines 671–672).
+## B.4 Certification Requirements
 
----
+Each tier requires passing a practical assessment — not a written test.
 
-### B.4 Certification requirements
-
-Certification is **practical**, not exam-only. **T1** requires **5 live shops** deployed with **Shop Health Score >70%**. **T2** requires building and deploying **one custom flow**. **T3** requires publishing **one community template** with **10+** deployments. The design intent is competent operators, not certificate-only completion.
-
-**Source:** Part 6, certification model block (line 684).
-
----
-
-### Appendix B — Document source
-
-| Section | Lines in `Rupantar_AI_Master_Proposal.md` |
-|---|---|
-| Partner problem statement, field-force table, **2%** conversion target | 625–644 |
-| Tier structure | 648–654 |
-| Income model + T2 example | 656–665 |
-| Training philosophy + M0–M7 + certification | 669–684 |
+| Tier | Requirement | Assessment |
+|---|---|---|
+| T1 | 5 live shops with Shop Health Score >70% | Deploy 5 shops from sandbox to live; health score measured over 30 days |
+| T2 | One custom flow deployed and active | Build and deploy a custom visual flow for a real shop; verified functional |
+| T3 | One community template with 10+ deployments | Publish a template to the marketplace; achieve 10+ deployments by other partners with ≥4.0 rating |
+| T4 | Invite only | Demonstrated revenue, sub-partner recruitment, regional impact |
 
 ---
 
 # Appendix C: Unit Economics (All Scenarios)
 
-**Purpose:** Reference for chairman discussion — stabilised per-shop economics (Year 2+), revenue composition, sensitivity levers, and external benchmarks. Figures below trace to `Rupantar_AI_Master_Proposal.md` Part 8 unless noted.
+## C.1 Per-Shop Unit Economics — Three Scenarios
 
-## C.1 Per-shop unit economics — three scenarios (full row set)
+| Metric | Conservative | Base Case | Optimistic |
+|---|---|---|---|
+| Average Monthly Subscription | ₹399 | ₹599 | ₹899 |
+| Partner Commission (avg 22%) | ₹88 | ₹132 | ₹198 |
+| Net Revenue to Rupantar | ₹311 | ₹467 | ₹701 |
+| Cloud / LLM / API Costs per shop | ₹80 | ₹100 | ₹130 |
+| Gross Profit per Shop per Month | ₹231 | ₹367 | ₹571 |
+| **Gross Margin %** | **~58%** | **~61%** | **~64%** |
+| Customer Acquisition Cost (partner) | ₹800 | ₹600 | ₹400 |
+| Payback Period | 3.5 months | 1.6 months | 0.7 months |
+| 12-Month LTV (net of commissions + COGS) | ₹2,772 | ₹4,404 | ₹6,852 |
+| **LTV / CAC Ratio** | **3.5×** | **7.3×** | **17.1×** |
 
-| Metric | Conservative | Base case | Optimistic |
-| --- | --- | --- | --- |
-| Average monthly subscription | **₹399** | **₹599** | **₹899** |
-| Partner commission (avg **22%**) | **₹88** | **₹132** | **₹198** |
-| Net revenue to Rupantar | **₹311** | **₹467** | **₹701** |
-| Cloud / LLM / API cost per shop | **₹80** | **₹100** | **₹130** |
-| Gross profit per shop per month | **₹231** | **₹367** | **₹571** |
-| Gross margin % | **~58%** | **~61%** | **~64%** |
-| Customer acquisition cost (partner model) | **₹800** | **₹600** | **₹400** |
-| Payback period | **3.5** months | **1.6** months | **0.7** months |
-| **12-month LTV** (net of commissions + COGS) | **₹2,772** | **₹4,404** | **₹6,852** |
-| **LTV / CAC** | **3.5×** | **7.3×** | **17.1×** |
+## C.2 Revenue Streams
 
-**Context (sourced):** Master proposal notes direct, app-based SMB SaaS CAC **₹1,500–₹3,000** vs partner-model CAC **₹400–₹800**; shops with a dedicated implementation partner churn **~70% less** than self-service users (benchmark framed as Tally TDP-supported vs Vyapar self-serve in master proposal).
+| Revenue Stream | Model | Rupantar Net (after partner commission) |
+|---|---|---|
+| Shop Subscription (SaaS) | ₹299–₹1,499/month per shop | ~75–85% net |
+| Agent Builder Platform Fee | ₹0 (T1) / ₹999/month (T2+) | 100% |
+| Marketplace Royalties | 30% Rupantar / 70% template author | 30% of marketplace revenue |
+| Vertical Add-on Modules | Premium agents (ABDM, GST e-invoice, aggregator reconciliation) | ~60–70% gross margin after API costs |
+| B2B Intelligence Layer | Anonymised market data sold to FMCG brands and banks | 100% (after 1L+ active shops) |
+| Embedded Financial Services | Working capital, insurance, BNPL via NBFC partners | 0.5–2% referral commission |
 
----
+## C.3 Sensitivity Analysis
 
-## C.2 Sensitivity analysis (key variables)
+Key variables that affect unit economics:
 
-Illustrative ranges holding other assumptions steady; use for scenario planning, not as forecasts.
+| Variable | -20% Impact | -10% Impact | +10% Impact | +20% Impact |
+|---|---|---|---|---|
+| **ARPU (₹599 base)** | Gross margin: ~56% | Gross margin: ~59% | Gross margin: ~63% | Gross margin: ~66% |
+| **LLM costs (₹100/shop base)** | Gross margin: ~64% | Gross margin: ~63% | Gross margin: ~60% | Gross margin: ~58% |
+| **Partner commission (22% base)** | Gross margin: ~65% | Gross margin: ~63% | Gross margin: ~60% | Gross margin: ~57% |
+| **Monthly churn (target <5%)** | LTV drops ~20% | LTV drops ~10% | LTV improves ~10% | LTV improves ~20% |
 
-| Variable | Range tested | Impact on gross margin | Impact on LTV / CAC |
-| --- | --- | --- | --- |
-| Average subscription | **₹299**–**₹899**/mo | **58%**–**64%** | **3.5×**–**17.1×** |
-| Partner commission | **15%**–**35%** | Drops **~3 pp** per **+5 pp** commission | LTV drops **~15%** per **+5 pp** commission increase |
-| Cloud / LLM cost per shop | **₹50**–**₹200**/mo | **54%**–**66%** | **2.8×**–**20×** |
-| Monthly churn rate | **5%**–**15%** | Minimal direct (margin on remaining base) | LTV drops **40%+** at **15%** vs **5%** |
-| Activation cost per shop | **₹300**–**₹1,200** | No impact on gross margin | CAC band directly sets payback; higher CAC compresses LTV/CAC |
+**Key takeaway:** The business is profitable across all reasonable scenarios. Even at -20% ARPU and +20% LLM costs simultaneously, gross margin remains >50% and LTV/CAC >2.0×.
 
----
+## C.4 Comparable Benchmarks
 
-## C.3 Revenue streams — model, net take, activation timeline
-
-| Revenue stream | Model | Rupantar net (after partner / variable costs) | Activation timeline |
-| --- | --- | --- | --- |
-| Shop subscription (SaaS) | **₹299–₹1,499**/mo per shop by vertical + agent count | **~75–85%** net after partner commission | **Phase 0+** — core from first paid shops |
-| Agent Builder platform fee | **₹0** Tier 1 (earn-only); **₹999**/mo Tier 2+ builders | **100%** — no partner cut on platform fee | **Phase 1–2** — as builder tiers and certification scale |
-| Marketplace royalties | Rupantar **30%** / author **70%** per community template deployment | **30%** of marketplace revenue | After marketplace + community template volume |
-| Vertical add-on modules | Premium agents with external API cost (e.g. ABDM, GST e-invoice, aggregator reconciliation) | **~60–70%** gross margin after API costs | Rolling — per module GA and partner attach |
-| B2B intelligence layer | Aggregated, anonymised market signals to FMCG / banks | **100%** (second-order; no partner share on this line) | After **1L+** active shops (per master proposal gating) |
-| Embedded financial services | Working capital, insurance, BNPL via NBFC partners; commission on disbursals | **0.5–2%** referral on disbursals | After **6–12 months** transaction history + NBFC integrations *(aligned to full proposal financial-services gating)* |
-
-**Source:** Revenue stream definitions and percentages — `Rupantar_AI_Master_Proposal.md` Part 8 (Revenue Streams table).
-
----
-
-## C.4 Comparable benchmarks (external analogues)
-
-| Analogue | Economics / pricing signal | Source / basis in Rupantar docs |
-| --- | --- | --- |
-| **Tally TDP channel** | Ecosystem-scale revenue **~₹900 Cr** with **~50K** partner footprint — proof of reseller-led SMB attach at national scale | Cited in `02_Rupantar_AI_Full_Proposal.md` appendix as **Tally Solutions public financials**; same figures in executive materials |
-| **Zoho** | Profitable India-headquartered SaaS at scale; partner / consulting economics support enterprise and mid-market — **not** a micro-SMB field-certification layer at **50M**-shop granularity | Qualitative benchmark in master proposal “comparable channel programme” note; competitive positioning in full proposal |
-| **Fintech DSA structures** | **~3M+** bank DSAs in India — recurring, activity-linked income for distribution of regulated products; validates “earn on portfolio” field economics | Field-force sizing — `02_Rupantar_AI_Full_Proposal.md` (Existing Field Force table); economics described as benchmark class in master proposal data note |
-| **Petpooja (restaurant vertical)** | Typical SaaS band **~₹10K/yr** for POS / restaurant stack — vertical SaaS pricing anchor for India SMB | `02_Rupantar_AI_Full_Proposal.md` competitive / market tables |
-
-**Narrative:** These analogues do not forecast Rupantar’s outcome; they show that **partner-paid CAC**, **subscription ARPU in the hundreds–low thousands per month**, and **vertical SaaS annual pricing ~₹10K** are already established in India. Rupantar’s differentiation is WhatsApp-native, voice-first delivery and partner income tied to **operational** agents, not a claim of uniqueness in “having a channel.”
+| Benchmark | Metric | Source |
+|---|---|---|
+| Tally TDP network | 50K dealers → ₹900Cr revenue (₹1.5L revenue/dealer/year) | Tally Solutions public financials |
+| Khatabook | $275M+ raised, 30M downloads, unable to monetise | PitchBook, TechCrunch |
+| Fintech DSA income | ₹15–25K/month at 20 active clients | Industry benchmark |
+| Zoho partner commissions | 15–30% recurring | Zoho partner programme |
+| Petpooja ARPU | ₹10K/year (~₹833/month) | Petpooja public data |
+| Vyapar churn (self-serve) | ~60–70% annual churn (estimate) | Industry observation |
+| Tally TDP churn (partner-supported) | ~15–20% annual churn (estimate) | Tally dealer network analysis |
 
 ---
 
 # Appendix D: Competitive Response Playbook
 
-**Purpose:** Structured reference for “what if they move?” — per-competitor moves, structural constraints, and Rupantar responses. Grounded in `Rupantar_AI_Reframed_Objective_Risks.md` §8 (competitive threats) and expanded per chairman briefing needs.
+## D.1 Framework
 
-## D.1 Per-competitor analysis
+For each potential competitor: what they could do, why it's structurally hard, and what Rupantar does if they try.
 
-| Competitor | What they could do | Why it’s structurally hard | What Rupantar does if they try |
-| --- | --- | --- | --- |
-| **Tally** | Add AI copilot to desktop / cloud accounting | **30-year** desktop product DNA; reseller base is **accounting-trained**, not WhatsApp **operations**-first; retrofitting conversational shop workflows ≠ feature bolt-on | Accelerate **AI Shop Doctor** certification and deployments in **overlapping cities**; win **workflow** proofs (voice billing, daily ops on chat) faster than accounting-centric AI can match |
-| **Vyapar** | Add voice / WhatsApp features to app-led SMB product | **App-first** habit and GTM; **no** field partner income architecture comparable to recurring **per-shop** partner attach | Run **side-by-side** accuracy and time-to-value demos on **vernacular** voice; stress-test **partner economics** (partner earns on portfolio, not one-time app install) |
-| **Zoho** | Deepen WhatsApp / messaging integrations across suite | **Screen-first**, enterprise-leaning DNA; lacks certified **micro-SMB field** layer at national **density** | **Double down** on **vernacular NLP** + **partner density** in **3–4** core verticals **before** a suite player can pivot GTM and UX |
-| **Khatabook / OkCredit** | Expand from free/cheap ledger toward “full ERP” | **Free-product** culture; **$275M+** capital deployed **without** durable monetisation breakthrough at scale *(per executive / full proposal competitive narrative)* | **Convert** engaged users by proving **operational** value (inventory, credit discipline, GST-adjacent flows) **beyond** free ledger — partner-led onboarding reduces self-serve drop-off |
-| **PhonePe** | Leverage merchant base for operational / software tools | **Payments** product org and DNA **≠** operations software; building ERP-grade agents cuts across different talent and roadmap | **Integrate** where possible — e.g. **payment reconciliation** intelligence using PhonePe rails — while owning **ops** layer on WhatsApp |
-| **Google (Gemini)** | Ship India-specific retail AI surfaces | **No** India retail **field distribution**; weak incentive to build **20-vertical**, shop-grade agent templates | **Speed** to **50K+** partners and template library depth so Rupantar becomes the **distribution** partner a horizontal AI vendor would **route through**, not replace |
-| **Reliance / Jio** | Deploy capital; reach **JioPhone** and mass consumer/merchant touchpoints | **Consumer** and connectivity focus **≠** merchant **operations** product depth | **Position** for **partnership** or **strategic combination** if their merchant agenda needs a ready ops-AI layer and certified field network |
-| **Well-funded startup** | Copy WhatsApp + voice + partner model | **18-month** head start in **templates**, **partner contracts**, and **vertical** data flywheels — capital buys code, not overnight field trust | **Compound** **community template** moat + **partner income lock-in** faster than capital alone can recreate **trust + vernacular accuracy + portfolio economics** |
+## D.2 Tally Solutions
 
-## D.2 Living-document note
+**What they could do:** Add WhatsApp integration, voice commands, or AI features to their existing product.
 
-This playbook is a **living document**, updated **quarterly** with competitive intelligence. The product roadmap retains **optionality** to pivot if a large entrant **fundamentally changes** market dynamics.
+**Why it's structurally hard:** Tally's 30-year architecture is accountant-driven and screen-first. Their user base (CAs and accountants) would resist a shift to voice-first, WhatsApp-native interaction. More importantly, their TDP partner network is incentivised to sell Tally licenses — not to become AI implementation specialists. Retraining 50,000 TDPs for a fundamentally different product philosophy would take 24+ months.
+
+**Rupantar's response:** Position as complementary, not competing, in early stages. Target shops that Tally doesn't serve (the 80% on paper). Over time, Tally shops using Rupantar for WhatsApp-native operations alongside Tally for CA-facing compliance creates a dual-use pattern that is sticky for both.
+
+## D.3 Zoho
+
+**What they could do:** Build WhatsApp-native agents for their existing ERP suite (Zoho Books, Zoho Inventory, etc.).
+
+**Why it's structurally hard:** Zoho's DNA is screen-first, English-first, SMB-to-enterprise. Building a zero-UI, vernacular, voice-first product for India's kirana stores is a fundamentally different product philosophy — not a feature addition. Their product-organisational structure optimises for horizontal SMB software across geographies, not deep vertical specialisation for Indian retail.
+
+**Rupantar's response:** Speed. By the time Zoho recognises this market as worth entering, Rupantar has 50,000+ shops and 5,000+ partners. The partner network is the moat — Zoho would need to build one from scratch.
+
+## D.4 PhonePe / Google Pay
+
+**What they could do:** Expand from payments to merchant operations (billing, inventory, CRM).
+
+**Why it's structurally hard:** Their DNA is payments-first. Merchant operations is a different product category with different acquisition, retention, and support dynamics. PhonePe's merchant base is broad but shallow — they know a payment happened, not what was sold, to whom, at what price, on credit or cash. The data depth required for operational AI doesn't exist in their current data model.
+
+**Rupantar's response:** Integration, not competition. Rupantar's payment reconciliation agent sits on top of PhonePe/Google Pay — we make their payment data more valuable to the merchant, not less. Partnership is more likely than direct competition.
+
+## D.5 Google (Gemini + WhatsApp Business API)
+
+**What they could do:** Build a generic "AI agent for businesses" product using Gemini + WhatsApp.
+
+**Why it's structurally hard:** Google builds horizontal platforms, not vertical-specific products for Indian kirana stores. Their strength is technology (Gemini) not distribution (they have no field sales force visiting shops). Even if they built the product, distribution would require the partner network Rupantar is building — and they can't replicate that quickly.
+
+**Rupantar's response:** Use Gemini as one of multiple LLM providers. If Google builds a horizontal agent platform, Rupantar's vertical templates and partner network can run on it. The moat is the data and distribution, not the LLM.
+
+## D.6 Meta (WhatsApp Parent)
+
+**What they could do:** Build native WhatsApp business features that compete with Rupantar's agents.
+
+**Why it's structurally hard:** Meta's WhatsApp Business API is a platform play — they want as many developers building on it as possible. Building their own vertical-specific agents would alienate their developer ecosystem. Their incentive is to make the API more powerful, not to compete with API users.
+
+**Rupantar's response:** Close partnership with WhatsApp Business API team. If Meta builds AI features, they'll be horizontal (like chatbot templates). Rupantar's vertical depth and partner distribution remain differentiated.
+
+## D.7 Reliance / Jio
+
+**What they could do:** Leverage JioPhone user base and Reliance Retail partnerships to build a merchant operations tool.
+
+**Why it's structurally hard:** Reliance's focus is consumer (JioMart, JioPhone) and organised retail (Reliance Retail). The 50M unorganised kirana market requires a field-force distribution model — which Reliance doesn't have for this segment. Their existing retail partnerships are with organised chains, not individual kirana stores.
+
+**Rupantar's response:** If Reliance enters, Rupantar with 50K+ partners and 2L+ shops becomes an acquisition target, not a casualty. The partner network is a distribution asset that Reliance cannot build quickly.
+
+## D.8 A Well-Funded Startup
+
+**What they could do:** Copy the Rupantar model with more capital and a fresh brand.
+
+**Why it's structurally hard:** They start with zero shops, zero partners, zero vernacular NLP data, and zero community templates. Even with unlimited capital, building the vernacular NLP depth takes years of real shop interaction data. The partner network takes 12–18 months to establish at scale. The community template library takes months of organic growth.
+
+**Rupantar's response:** Speed and depth. Rupantar's 18-month head start means a competitor entering in 2028 faces a company with 2L+ shops, 10K+ partners, and NLP trained on millions of real transactions. The data moat compounds every month.
 
 ---
 
 # Appendix E: Regulatory, Compliance & Data Governance Framework
 
-**Purpose:** Show regulatory posture as **architectural**, not reactive — aligned with `Rupantar_AI_Reframed_Objective_Risks.md` §2 (mitigations: fiduciary, GSTN, auditable AI, localisation, industry engagement) and `Rupantar_AI_Deliverable_Structure.md` Appendix E outline.
+## E.1 DPDP Act Compliance
 
-## E.1 DPDP Act 2023 — compliance plan (summary)
+The Digital Personal Data Protection Act (2023) governs how Rupantar handles personal data.
 
-| Requirement | How Rupantar complies |
-| --- | --- |
-| Data fiduciary obligations | Registered as **data fiduciary**; **Data Protection Officer (DPO)** appointed with board-visible accountability |
-| Consent management | **Explicit opt-in** for collection; **granular** consent for any **sharing** or secondary use |
-| Data principal rights | **Deletion**, **correction**, and **portability** supported in-product and via support workflows |
-| Data processing limitations | Processing **limited to stated purpose**; **no** secondary use **without** fresh consent |
-| Breach notification | **72-hour** notification pathway to **Data Protection Board** (and affected principals as required) upon confirmed breach |
+| Requirement | Rupantar's Approach |
+|---|---|
+| **Consent** | Explicit, granular consent for each data processing purpose — not blanket consent |
+| **Data minimisation** | Collect only what is needed for agent functionality; no speculative data collection |
+| **Purpose limitation** | Data collected for billing is not used for marketing without separate consent |
+| **Storage limitation** | Data retained only as long as the shop is an active customer; defined retention periods per data type |
+| **Data deletion** | Shop owners can request full data deletion via WhatsApp; completed within 30 days |
+| **Data portability** | Shops can export their data in structured format at any time |
+| **Grievance redressal** | Dedicated data grievance officer; WhatsApp-based grievance mechanism for shops |
+| **Data fiduciary obligations** | Rupantar acts as data fiduciary, not data owner — this is architecturally embedded, not a policy overlay |
 
-*Note: Obligations apply as rules and Board procedures are notified; legal counsel to align templates and timelines to final subordinate legislation.*
+## E.2 GST Data Handling
 
-## E.2 GST data handling
+| Requirement | Rupantar's Approach |
+|---|---|
+| **GSTN compliance** | All GST filing via official GSTN APIs; no data stored outside GSTN-approved systems |
+| **E-invoice generation** | Compliant with GST e-invoice schema (Version 1.x); IRN generation via GSTN portal |
+| **Record retention** | GST records retained for minimum 8 years as per GST Act |
+| **Audit trail** | Complete agent decision audit trail for GST examinations |
 
-All **GST**-related data is processed in line with **GSTN** requirements. **Auto-filing** and e-filing actions run only with the **shopkeeper’s explicit approval**. **E-invoice** generation and transmission follow **GST Network** specifications and audit expectations.
+## E.3 AI Governance Readiness
 
-## E.3 AI governance readiness
-
-All **agent decisions** are **auditable**. **Confidence thresholds** block **autonomous** action on **high-stakes** operations (e.g. irreversible financial postings, statutory submissions) without human confirmation where policy requires. **Explainability:** agents **log reasoning traces** (tool calls, retrieved context, policy checks) per action so reviews and regulator-facing narratives are possible. Architecture stays compatible with **emerging** India **AI governance** norms as they crystallise.
-
-## E.4 Data localisation
-
-All **Indian shop and transaction data** reside on **servers in India**. **No cross-border transfer** of identifiable shop/transaction data **without** **explicit consent** and **regulatory** clearance where applicable.
-
-## E.5 Data governance framework
+India is drafting AI governance regulations. Rupantar's architecture is designed for compliance:
 
 | Principle | Implementation |
-| --- | --- |
-| Data ownership | All **shop data** belongs to the **shopkeeper**; Rupantar acts as **fiduciary**, not owner |
-| Customer rights | **Deletion**, **consent withdrawal**, **portability** (DPDP-aligned) |
-| Data sharing | Shared outputs are **aggregated** and **anonymised** where used for B2B intelligence; **raw** identifiable records **not sold** |
-| Consent architecture | Every **sharing** decision (brands, NBFC scoring, third-party APIs) requires **explicit shopkeeper opt-in** |
-| Audit trail | **Complete decision log** via **Langfuse** / **OpenTelemetry**-class pipelines; **48-hour** replay capability for investigations |
+|---|---|
+| **Explainability** | Every agent decision is traceable — input, NLP output, action taken, verification result |
+| **Human oversight** | High-stakes actions (GST filing, orders >₹500) require explicit human approval |
+| **Fairness** | Agent pricing and recommendations are not discriminatory; same inputs produce same outputs |
+| **Accountability** | Clear data lineage: which data, from which shop, used for which model training or output |
+| **Safety** | Confidence thresholds prevent agents from taking actions when certainty is below defined levels |
 
-## E.6 Industry engagement strategy
+## E.4 Data Localisation
 
-**Membership** in **IAMAI** and **FICCI** committees (fintech / digital economy tracks as relevant); **participation** in **MeitY** startup and digital policy forums where appropriate; **proactive briefings** with **RBI innovation hub** and analogous regulatory sandboxes. **Rationale:** organisations that **engage early** help **shape** rules; those that defer face **surprise** enforcement and standard-setting driven by others.
+All Indian shop data is stored on Indian servers (AWS Mumbai / GCP Mumbai). No Indian shop data is processed or stored outside India. LLM inference for Indian shops routes through India-hosted API endpoints.
+
+## E.5 Data Governance Framework
+
+### Data Ownership
+
+> **All shop data belongs to the shopkeeper.** Rupantar is a data fiduciary, not a data owner. This is not a policy — it is embedded in the architecture.
+
+### Customer Data Rights
+
+| Right | Mechanism |
+|---|---|
+| **Access** | Shop owner can request a summary of all data held via WhatsApp ("mera data dikao") |
+| **Correction** | Data correction requests processed within 7 days |
+| **Deletion** | Full account and data deletion within 30 days of request |
+| **Portability** | Structured data export (JSON/CSV) available on demand |
+| **Withdrawal of consent** | Consent for any data-sharing purpose can be withdrawn at any time; processing stops within 48 hours |
+
+### Data Sharing Principles
+
+- **Aggregated and anonymised only.** All shared data (brand intelligence, NBFC credit scoring) is aggregated and anonymised. Individual shop or customer data is never sold or shared.
+- **Explicit opt-in required.** Every data-sharing decision (brand intelligence, NBFC partnership) requires explicit shopkeeper opt-in.
+- **Transparency.** Shop owners can see exactly what data is shared, with whom, and for what purpose.
+- **Commercial fairness.** If data generates revenue for Rupantar (brand intelligence, NBFC commissions), the shopkeeper receives a share of that revenue or a corresponding service benefit.
+
+### Consent Architecture
+
+```
+Level 0: Core agent functionality
+  → Billing, inventory, credit — shop data processed by agents
+  → Consent: implicit in service subscription
+
+Level 1: Analytics and reporting
+  → P&L insights, sales trends, stock recommendations
+  → Consent: explicit opt-in (default: on at signup, can be turned off)
+
+Level 2: Data products (brand intelligence)
+  → Anonymised demand signals shared with FMCG brands
+  → Consent: explicit opt-in (default: off, shop opts in for revenue share)
+
+Level 3: Financial services
+  → Transaction data shared with NBFC for credit scoring
+  → Consent: explicit per-transaction opt-in (default: off)
+```
+
+## E.6 Industry Body Engagement Strategy
+
+| Body | Purpose | Status |
+|---|---|---|
+| **IAMAI** (Internet and Mobile Association of India) | AI governance policy input; industry best practices | Planned — Phase 1 |
+| **FICCI** (Federation of Indian Chambers of Commerce) | SMB digitisation policy; retail sector advocacy | Planned — Phase 1 |
+| **MeitY** (Ministry of Electronics and IT) | Startup advisory panel; AI regulation input | Planned — Phase 2 |
+| **RBI Innovation Hub** | Fintech partnership framework; NBFC engagement | Planned — Phase 2 |
+| **NPCI** (National Payments Corporation of India) | UPI integration; payment data standards | Planned — Phase 1 |
+
+Proactive engagement with regulators and industry bodies ensures Rupantar shapes emerging rules rather than being surprised by them.
 
 ---
-
-*Confidential — chairman reference. Internal proposal appendices; figures trace to master proposal and risk/deliverable structure documents unless marked illustrative.*
-
----
-
-*Data note: Market share figures are research-based estimates from public disclosures and industry reports (SaaSBoomi, KenResearch, Mordor Intelligence, MSME Ministry) as of early 2026. All figures are labelled as estimates.*
 
 **March 2026 | Confidential**

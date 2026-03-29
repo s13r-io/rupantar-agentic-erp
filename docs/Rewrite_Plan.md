@@ -1,7 +1,7 @@
 # Rupantar AI — Master Proposal Rewrite Plan
 
 **Date**: 2026-03-29
-**Status**: Pending
+**Status**: Complete
 **Approach**: Full Proposal first, then Executive Brief (extracted), then Appendices. Master proposal sources in `docs/` preserved unmodified; deliverables live under `docs/draft/`.
 
 ---
@@ -10,9 +10,9 @@
 
 | # | File | Purpose | Status |
 |---|---|---|---|
-| 1 | `docs/draft/02_Rupantar_AI_Full_Proposal.md` | Complete decision document (50-60 pages) | Pending |
-| 2 | `docs/draft/01_Rupantar_AI_Executive_Brief.md` | Standalone 8-section brief (4-6 pages) | Pending |
-| 3 | `docs/draft/03_Rupantar_AI_Appendices.md` | Reference material for meeting | Pending |
+| 1 | `docs/draft/02_Rupantar_AI_Full_Proposal.md` | Complete decision document (50-60 pages) | Complete |
+| 2 | `docs/draft/01_Rupantar_AI_Executive_Brief.md` | Standalone 8-section brief (4-6 pages) | Complete |
+| 3 | `docs/draft/03_Rupantar_AI_Appendices.md` | Reference material for meeting | Complete |
 
 ---
 
@@ -106,17 +106,17 @@
 
 ## Verification Checklist
 
-- [ ] Full Proposal follows decision-document flow: What → Why → How → Risks → Ask
-- [ ] Every section opens with key insight (2-3 bold lines)
-- [ ] No forward-references
-- [ ] No structural repetition across sections
-- [ ] All 20 verticals accounted for (5 deep + 6 insights + 9 table-only = 20)
-- [ ] Capital requirement table present and marked as estimates
-- [ ] Platform Readiness Scorecard present with 5 criteria
-- [ ] Confidence Roadmap present with Know/Believe/Test
-- [ ] "What We Will NOT Build" section present
-- [ ] Top 10 risks with mitigations present
-- [ ] Language discipline: no "infrastructure," "DPI," "backbone," "monopoly" in thesis/core content
-- [ ] Executive Brief is standalone-readable
-- [ ] All market data traceable to sources
-- [ ] Master proposal sources (`Rupantar_AI_Master_Proposal.*`, analysis docs) preserved unmodified
+- [x] Full Proposal follows decision-document flow: What → Why → How → Risks → Ask
+- [x] Every section opens with key insight (2-3 bold lines)
+- [x] No forward-references
+- [x] No structural repetition across sections
+- [x] All 20 verticals accounted for (5 deep + 6 insights + 9 table-only = 20)
+- [x] Capital requirement table present and marked as estimates
+- [x] Platform Readiness Scorecard present with 5 criteria
+- [x] Confidence Roadmap present with Know/Believe/Test
+- [x] "What We Will NOT Build" section present
+- [x] Top 10 risks with mitigations present
+- [x] Language discipline: no "infrastructure," "DPI," "backbone," "monopoly" in thesis/core content
+- [x] Executive Brief is standalone-readable
+- [x] All market data traceable to sources
+- [x] Master proposal sources (`Rupantar_AI_Master_Proposal.*`, analysis docs) preserved unmodified
