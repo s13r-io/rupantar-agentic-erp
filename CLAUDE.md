@@ -4,19 +4,16 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-**Rupantar AI** is a documentation and strategic analysis project for an AI-powered agentic ERP platform targeting India's 50 million SMB shops. This is **not a code repository** — it is a strategic thinking workspace containing proposal documents, framing analyses, risk evaluations, positioning guides, and the completed chairman-level deliverable package.
+**Rupantar AI** is a documentation and strategic analysis project for an AI-powered agentic ERP platform targeting India's 50 million SMB shops. This is **not a code repository** — it is a strategic thinking workspace containing proposal documents, framing analyses, risk evaluations, positioning guides, and execution planning for chairman-facing deliverables.
 
-The project is in its **pre-build documentation phase**. No application code exists yet. All work is in the `docs/` directory. The chairman deliverable package (Executive Brief, Full Proposal, Appendices) lives under **`docs/draft/`** as numbered working copies.
+The project is in its **pre-build documentation phase**. No application code exists yet. All work is in the `docs/` directory.
+
+**`docs/draft/` — ignore by default.** Do not read, edit, list, summarise, or assume the contents of this folder unless the user explicitly asks you to work there. It is scratch / working material and is out of scope for routine assistance.
 
 ## Repository Structure
 
 ```
 docs/
-  draft/
-    01_Rupantar_AI_Executive_Brief.md         — Standalone 8-section brief for first read
-    02_Rupantar_AI_Full_Proposal.md           — Decision document: What → Why → How → Risks → Ask
-    03_Rupantar_AI_Appendices.md              — Reference material: all 20 verticals, partner programme, economics, competitive playbook, regulatory framework
-
   # Source Analysis Documents (preserved unmodified)
   Rupantar_AI_Master_Proposal.md              — The original master proposal (775 lines)
   Rupantar_AI_Master_Proposal.pdf             — Original proposal in PDF format
@@ -48,15 +45,7 @@ The documents follow a deliberate analytical progression. Future instances shoul
    - Value Compounding Model (staircase of value at each scale milestone)
 5. **Deliverable Structure** — Defines the two-file format (executive brief + full proposal), three-tier vertical depth strategy, decision-document flow (What/Why/How/Risks/Ask), and writing rules for the chairman
 6. **Original Document Analysis** — Complete section-by-section breakdown of the master proposal with line references, clarity assessment, and prioritised rewrite recommendations
-7. **Rewrite Execution** — Full Proposal, Executive Brief, and Appendices drafted as decision-package documents. Progress tracked in `Rewrite_Plan.md`.
-
-## Chairman Deliverable Package
-
-The three deliverable files form a complete package for chairman review (working copies under `docs/draft/`):
-
-- **Executive Brief** (`docs/draft/01_Rupantar_AI_Executive_Brief.md`) — The first thing the chairman reads. 8 sections, standalone-readable, conclusion-first. Works as a complete document on its own.
-- **Full Proposal** (`docs/draft/02_Rupantar_AI_Full_Proposal.md`) — The complete decision document. Structured as: Part 1 (embedded brief) → Part 2 (The Proposal) → Part 3 (The Evidence) → Part 4 (The Execution) → Part 5 (The Risks) → Part 6 (The Ask).
-- **Appendices** (`docs/draft/03_Rupantar_AI_Appendices.md`) — Reference material: all 20 vertical deep dives, partner programme detail, unit economics scenarios, competitive response playbook, regulatory/compliance framework.
+7. **Rewrite Execution** — Deliverable shape and checklist in `Rewrite_Plan.md` and `Rupantar_AI_Deliverable_Structure.md`.
 
 ## What Rupantar Is (Critical Context)
 
@@ -70,6 +59,7 @@ Do NOT describe these as "three layers" or "three-tier architecture." That frami
 
 ## Key Constraints for Document Work
 
+- **`docs/draft/`** — Treat as **ignored** unless the user explicitly opens it or asks for changes there. Do not proactively use or describe what is inside.
 - **Do not modify existing content** when adding to analysis documents unless explicitly asked. Use new sections, subsections, or new files.
 - **Audience**: The chairman of the company — the highest decision maker. He reads thoroughly and alone before calling a meeting. He does not tolerate fluff and does not like being strung along. Key insights go first, not last.
 - **Language discipline**: When writing in the hybrid framing voice, avoid "infrastructure," "DPI," "backbone," "monopoly" in thesis/core content. Use "platform," "foundation," "digital layer," "ecosystem." These trigger words may appear in comparison tables or when explicitly contrasting framings.
