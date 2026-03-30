@@ -8,7 +8,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 The project is in its **pre-build documentation phase**. No application code exists yet. All work is in the `docs/` directory.
 
-**`docs/draft/` — ignore by default.** Do not read, edit, list, summarise, or assume the contents of this folder unless the user explicitly asks you to work there. It is scratch / working material and is out of scope for routine assistance.
+**`docs/draft/`** — Contains the current deliverable documents (Executive Brief, Full Proposal, Appendices). These are the active working files. When the user asks to work on a document, read from this folder.
 
 ## Repository Structure
 
@@ -27,6 +27,12 @@ docs/
 
   # Execution Tracking
   Rewrite_Plan.md                             — Phase-by-phase execution checklist
+
+  # Deliverable Documents (active)
+  01_Rupantar_AI_Executive_Brief.md          — Standalone 9-section executive brief
+  02_Rupantar_AI_Full_Proposal.md            — Full proposal (6 parts)
+  03_Rupantar_AI_Appendices.md               — Reference material (verticals, partner programme, economics, competitive playbook, regulatory)
+  Content_Audit_Source_vs_Drafts.md         — Audit mapping source proposal to draft deliverables
 ```
 
 ## Strategic Thinking Progression
@@ -46,16 +52,16 @@ The documents follow a deliberate analytical progression. Future instances shoul
 5. **Deliverable Structure** — Defines the two-file format (executive brief + full proposal), three-tier vertical depth strategy, decision-document flow (What/Why/How/Risks/Ask), and writing rules for the chairman
 6. **Original Document Analysis** — Complete section-by-section breakdown of the master proposal with line references, clarity assessment, and prioritised rewrite recommendations
 7. **Rewrite Execution** — Deliverable shape and checklist in `Rewrite_Plan.md` and `Rupantar_AI_Deliverable_Structure.md`.
+8. **Platform Restructuring (March 2026)** — Full Proposal Part 2 restructured: opportunity before solution (§2.1–§2.4 reordered), "two things we build" replaced with "Agentic Operations Platform" (one composable system), "Platform Readiness Scorecard" renamed to "Ecosystem Readiness Scorecard." Applied across Executive Brief, Full Proposal, Content Audit, and CLAUDE.md.
 
 ## What Rupantar Is (Critical Context)
 
-When working on any document in this project, understand that Rupantar company is building 'Rupantar AI' which is **two things you build** and **one way you distribute them:**
+When working on any document in this project, understand that Rupantar company is building **Rupantar AI** — an **Agentic Operations Platform**. This is one system, not two:
 
-- **The Product** — AI agents running on WhatsApp/voice. Each shop gets a vertical-specific bundle of 3–5 agents (billing, inventory, credit, etc.). Revenue: SaaS subscriptions.
-- **The Platform** — Agent Builder (Library + Visual Flow Builder + Config Studio + Pro Code SDK). Lets trained partners deploy agent bundles without code. Revenue: platform fees + marketplace royalties.
-- **The Distribution** — Partner network (AI Shop Doctors). India's existing field force trained and certified to deploy the product using the platform. NOT a software product — a go-to-market channel.
+- **The Agentic Operations Platform** — A composable system of 160+ pre-built AI agents covering every aspect of shop operations (billing, inventory, credit, compliance, etc.). Partners use the platform's four-layer architecture (Agent Library → Visual Flow Builder → Config Studio → Pro Code SDK) to select and combine agents into bespoke solutions for each shop. Each shop subscribes to its composed solution. Revenue: solution subscriptions + platform fees + marketplace royalties.
+- **The Distribution** — Partner network (AI Shop Doctors). India's existing field force trained and certified to compose and deploy solutions using the platform. NOT a software product — a go-to-market channel.
 
-Do NOT describe these as "three layers" or "three-tier architecture." That framing incorrectly implies the partner network is a technical component. Use "product + platform + distribution."
+Do NOT describe this as "product + platform" or "two things we build." The agents are components within the platform, not a separate product. Use "the platform" or "Agentic Operations Platform."
 
 ## Key Constraints for Document Work
 

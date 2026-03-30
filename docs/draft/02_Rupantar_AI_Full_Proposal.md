@@ -13,7 +13,7 @@ This document is structured as a decision document, not a product document. The 
 | Part | Title | Purpose | Read If |
 |---|---|---|---|
 | **1** | Executive Brief | Standalone 8-section summary | Time-constrained; this alone is sufficient for discussion |
-| **2** | The Proposal | What Rupantar AI is, the opportunity, the product, the platform, and the long-term vision | Understanding the full argument before the evidence |
+| **2** | The Proposal | The opportunity, what Rupantar AI is, how the platform works, and the long-term vision | Understanding the full argument before the evidence |
 | **3** | The Evidence | Economics, distribution model, competitive positioning, and moats | Evaluating the business case |
 | **4** | The Execution | Phased plan, vertical depth, platform architecture | Assessing feasibility and timeline |
 | **5** | The Risks | Top 10 risks with mitigations; what we will not build | Understanding what could go wrong |
@@ -27,11 +27,11 @@ This document is structured as a decision document, not a product document. The 
 
 ## Section 1: What We're Proposing
 
-**Rupantar AI is an AI-powered operational platform for India's retail and services economy — delivered through WhatsApp and voice, deployed by India's existing field force, and monetised through SaaS subscriptions that are profitable from the first shop.**
+**Rupantar AI is an Agentic Operations Platform — a composable system to build, configure, and run AI agents for real-world business workflows.**
 
-We build two things: (1) AI agents that handle a shopkeeper's entire daily operation — billing, inventory, credit, compliance — through voice notes and one-word WhatsApp replies; and (2) a no-code Agent Builder that lets trained partners deploy customised agent bundles for any shop in under 60 minutes. We distribute through India's existing 10M+ field sales force — FMCG reps, pharma MRs, Tally resellers — converted into certified "AI Shop Doctors" who earn recurring income from every active shop.
+The platform contains 160+ pre-built AI agents for shop operations — billing, inventory, credit, compliance, and more. Partners use the platform to select and combine these agents into a bespoke solution for each shop, deployed through WhatsApp and voice in under 60 minutes. The shopkeeper interacts entirely through voice notes, photos, and one-word WhatsApp replies. We distribute through India's existing 10M+ field sales force — FMCG reps, pharma MRs, Tally resellers — converted into certified "AI Shop Doctors" who earn recurring income from every active shop.
 
-**We are starting with a highly profitable SaaS product. We are building toward a platform that becomes indispensable to India's retail economy.** The worst case — stopping after Phase 2 — is a ₹50Cr+ ARR SaaS business with 60%+ margins. The best case is the operational digital layer that India's 50M shops run on.
+**We are starting as a platform that serves individual shops profitably from day one. We are building toward a self-sustaining ecosystem that becomes indispensable to India's retail economy.** The worst case — stopping after Phase 2 — is a ₹50Cr+ ARR SaaS business with 60%+ margins. The best case is the operational digital layer that India's 50M shops run on.
 
 ---
 
@@ -51,26 +51,21 @@ We build two things: (1) AI agents that handle a shopkeeper's entire daily opera
 
 ## Section 3: What We Build
 
-**The Product — AI Agent Bundles.** Each shop gets a vertical-specific bundle of 3–5 AI agents running on one WhatsApp number — billing, inventory, credit, compliance, and more. The shopkeeper interacts entirely through voice notes, photos, and one-word WhatsApp replies. No app to install. No screen to learn. Revenue: SaaS subscriptions at ₹299–₹1,499/month per shop.
-
-**The Platform — Agent Builder.** A four-layer no-code system (Agent Library → Visual Flow Builder → Config Studio → Pro Code SDK) that lets trained partners configure, customise, and deploy agent bundles for individual shops in under 60 minutes. Without it, each shop needs an engineer. With it, India's existing field force can do it. Revenue: platform subscription fees (₹999/month for T2+ builders) + marketplace royalties (30/70 split).
+**The Agentic Operations Platform.** A composable system of 160+ pre-built AI agents covering every aspect of shop operations — billing, inventory, credit, compliance, and more. Partners select and combine agents into a bespoke solution for each shop, deployed through WhatsApp and voice in under 60 minutes. The shopkeeper interacts entirely through voice notes, photos, and one-word WhatsApp replies. No app to install. No screen to learn. Revenue: solution subscriptions at ₹299–₹1,499/month per shop, plus platform fees and marketplace royalties from the partner ecosystem.
 
 ```
 ┌──────────────────────────────────────────────────────────┐
-│                     THE PRODUCT                           │
-│  AI agents on WhatsApp/voice — 3–5 agents per shop       │
-│  Revenue: SaaS subscriptions    Cost: Product development │
-├──────────────────────────────────────────────────────────┤
-│                     THE PLATFORM                          │
-│  Agent Builder (Library + Flow + Config + SDK)            │
-│  Partners deploy custom bundles in <60 minutes            │
-│  Revenue: Platform fees + marketplace royalties           │
-│  Cost: Product development                                │
+│              THE AGENTIC OPERATIONS PLATFORM              │
+│  160+ pre-built AI agents on WhatsApp/voice               │
+│  Partners compose bespoke solutions per shop              │
+│  Revenue: Solution subscriptions + platform fees +        │
+│           marketplace royalties                            │
+│  Cost: Platform development                               │
 ├──────────────────────────────────────────────────────────┤
 │                    THE DISTRIBUTION                       │
 │  AI Shop Doctor partner network                           │
 │  India's existing field force, trained & certified        │
-│  Revenue: Indirectly — enables product sales              │
+│  Revenue: Indirectly — enables solution sales             │
 │  Cost: Sales & marketing                                  │
 └──────────────────────────────────────────────────────────┘
 ```
@@ -79,7 +74,7 @@ We build two things: (1) AI agents that handle a shopkeeper's entire daily opera
 
 ## Section 4: How We Distribute It
 
-**India's 10M+ field salespeople — FMCG reps, pharma MRs, Tally resellers, bank DSAs — become certified "AI Shop Doctors" who use the Agent Builder to deploy and maintain AI agents for shops in their area.**
+**India's 10M+ field salespeople — FMCG reps, pharma MRs, Tally resellers, bank DSAs — become certified "AI Shop Doctors" who use the Agentic Operations Platform to compose and maintain bespoke AI solutions for shops in their area.**
 
 The distribution network already exists. What we build is the training, tools, and incentive structure. Partners earn 15–30% recurring commission on every active shop's subscription, plus activation fees, customisation fees, and template royalties. A T2 partner with 100 active shops earns approximately **₹90,000/month**. This is the Tally TDP model — proven for 30 years — applied to AI.
 
@@ -149,41 +144,7 @@ The distribution network already exists. What we build is the training, tools, a
 
 ---
 
-## 2.1 What Rupantar AI Is
-
-**Rupantar builds two things and distributes them through one channel.** Everything in this document — the economics, the verticals, the implementation plan — flows from this structure.
-
-### The Two Things We Build
-
-**1. The Product — AI Agents for Shopkeepers.** Each shop receives a vertical-specific bundle of 3–5 AI agents running on one WhatsApp number. A kirana gets billing + inventory + credit + procurement + daily report. A garage gets job card + parts inventory + customer update + vehicle history. A pharmacy gets prescription reader + drug interaction check + expiry watch + refill reminder.
-
-The shopkeeper's entire interface is voice notes, photos, and one-word WhatsApp replies. No app. No screen. No behavioural change required. Revenue: SaaS subscriptions at ₹299–₹1,499/month per shop.
-
-**2. The Platform — Agent Builder for Partners.** A four-layer no-code system that enables non-developer partners to configure, customise, and deploy agent bundles for individual shops in under 60 minutes:
-- **Layer 1: Agent Library** — 160+ pre-built, tested agent nodes organised by vertical and function
-- **Layer 2: Visual Flow Builder** — Drag-and-drop canvas to connect agents, configure triggers, set shop parameters
-- **Layer 3: Config Studio** — Mobile wizard for shop-specific data: product catalog, supplier contacts, customer list, language preference
-- **Layer 4: Pro Code SDK** — Python/JS for custom agent nodes and non-standard API integrations
-
-Without the Agent Builder, each shop needs an engineer — making per-shop deployment cost prohibitive and the business model unworkable. With it, a trained partner deploys a working multi-agent system in one site visit. Revenue: platform subscription fees + marketplace royalties on community templates.
-
-### The One Distribution Channel
-
-**3. The Distribution — AI Shop Doctor Partner Network.** India's existing field sales force — 1.5M FMCG reps, 600K pharma MRs, 50K Tally resellers, 3M bank DSAs, and more — trained and certified as implementation partners. They use the Agent Builder to deploy agents shop by shop, maintain shop portfolios, and earn recurring income from every active shop.
-
-This is a go-to-market channel, not a software product. The people already exist; Rupantar builds the training, tools, and incentive structure.
-
-### Summary Table
-
-| | What We Build | Revenue | Cost Category |
-|---|---|---|---|
-| **Product** | AI agent bundles on WhatsApp/voice | SaaS subscriptions per shop | Product development |
-| **Platform** | Agent Builder (4-layer no-code tool) | Platform fees + marketplace royalties | Product development |
-| **Distribution** | AI Shop Doctor partner network | Indirectly — enables product sales | Sales & marketing |
-
----
-
-## 2.2 The Opportunity
+## 2.1 The Opportunity
 
 **India's unorganised retail economy — ₹95 lakh crore across 50 million shops — operates on paper, memory, and phone calls. No digital operational layer exists for these shops.**
 
@@ -226,7 +187,40 @@ The ones that do are underserved by legacy desktop tools designed for accountant
 
 ---
 
-## 2.3 The Product (AI Agents)
+## 2.2 What Rupantar AI Is
+
+**Rupantar AI is an Agentic Operations Platform — a composable system to build, configure, and run AI agents for real-world business workflows.**
+
+### The Platform
+
+The platform contains 160+ pre-built AI agents covering every aspect of shop operations — billing, inventory, credit, compliance, procurement, and more. Each shop receives a bespoke solution composed from these agents, running on one WhatsApp number. A kirana gets billing + inventory + credit + procurement + daily report. A garage gets job card + parts inventory + customer update + vehicle history. A pharmacy gets prescription reader + drug interaction check + expiry watch + refill reminder.
+
+The shopkeeper's entire interface is voice notes, photos, and one-word WhatsApp replies. No app. No screen. No behavioural change required. Revenue: solution subscriptions at ₹299–₹1,499/month per shop.
+
+Partners use the platform to select and combine agents for each shop — configuring triggers, setting parameters, and deploying a working solution in a single site visit. The platform's four-layer architecture makes this possible without engineers:
+- **Layer 1: Agent Library** — 160+ pre-built, tested agent nodes organised by vertical and function
+- **Layer 2: Visual Flow Builder** — Drag-and-drop canvas to connect agents, configure triggers, set shop parameters
+- **Layer 3: Config Studio** — Mobile wizard for shop-specific data: product catalog, supplier contacts, customer list, language preference
+- **Layer 4: Pro Code SDK** — Python/JS for custom agent nodes and non-standard API integrations
+
+Revenue from the partner ecosystem: platform subscription fees (₹999/month for T2+ partners using Visual Flow Builder) + marketplace royalties (30% Rupantar / 70% template author per deployment).
+
+### The Distribution
+
+**AI Shop Doctor Partner Network.** India's existing field sales force — 1.5M FMCG reps, 600K pharma MRs, 50K Tally resellers, 3M bank DSAs, and more — trained and certified as implementation partners. They use the platform to compose solutions shop by shop, maintain shop portfolios, and earn recurring income from every active shop.
+
+This is a go-to-market channel, not a software product. The people already exist; Rupantar builds the training, tools, and incentive structure.
+
+### Summary
+
+| | What It Is | Revenue | Cost Category |
+|---|---|---|---|
+| **Platform** | Agentic Operations Platform — composable system of 160+ AI agents, deployed via WhatsApp and voice | Solution subscriptions per shop + platform fees + marketplace royalties | Platform development |
+| **Distribution** | AI Shop Doctor partner network | Indirectly — enables solution sales | Sales & marketing |
+
+---
+
+## 2.3 How It Works
 
 **AI agents handle a shopkeeper's entire daily operation through WhatsApp — the same app they already use 50 times a day.** The shopkeeper speaks a voice note. The AI agent parses the intent, takes action, and sends a WhatsApp response. Zero screen interaction. Zero behavioural change required.
 
@@ -240,11 +234,11 @@ Shopkeeper's voice note → WhatsApp → AI Agent (NLP + domain logic)
 
 This is not a chatbot. Each agent follows a **Planner → Executor → Verifier loop**: it plans the action ("create bill for Ram, apply credit, check stock"), executes it (generates bill, posts to ledger, deducts inventory), and verifies the outcome (confirms bill sent, checks for errors). If confidence falls below a configurable threshold, it asks the owner before acting. **High-stakes actions — orders above ₹500, GST filing — always require explicit approval.**
 
-### Vertical-Specific Agent Bundles
+### Vertical-Specific Solutions
 
 Each shop does not get a generic "ERP." It gets agents configured for its vertical:
 
-| Vertical | Agent Bundle | Key Differentiation |
+| Vertical | Solution (Agent Composition) | Key Differentiation |
 |---|---|---|
 | Kirana Store | Billing + Inventory + Credit + Procurement + Daily Report | Voice-only operation for 20,000 SKUs, 50–200 credit customers |
 | Auto Garage | Job Card + Parts Inventory + Customer Update + Vehicle History | Digital job cards from vehicle photos; parts compatibility tracking |
@@ -275,21 +269,17 @@ Example: "Ram ka bill banao aur uska credit update karo, agar basmati stock kam 
 
 The AI must understand Indian commercial vocabulary that no global LLM is trained on: "khokha" (credit ledger), "peti" (case of 12), "tola" (11.66 grams), "adha kilo" (half kilogram), "satta" (wholesale rate) — plus thousands of local product aliases, regional price norms, and business idioms across 12+ Indian languages.
 
-This takes years of domain-specific training data to master. It is not a feature you bolt on — it is the product. And it is the deepest competitive moat in Indian retail AI.
+This takes years of domain-specific training data to master. It is not a feature you bolt on — it is the platform's deepest competitive moat.
 
----
-
-## 2.4 The Platform (Agent Builder)
-
-**The Agent Builder is the reason the business model works. Without it, customising AI agents for each shop requires an engineer — at ₹50K–₹2L per deployment, the unit economics collapse. With it, a trained partner deploys a working system in 60 minutes.**
+### The Platform Architecture — Why Partners, Not Engineers
 
 India has 50 million shops, and every shop is different. A kirana in Surat has 15,000 SKUs and 200 credit customers. A salon in Indore has 3 staff members and 500 client records. A garage in Pune handles 20 vehicles a day across 8 bays. No one-size-fits-all product can serve all of them.
 
-### The Four-Layer System
+The platform's four-layer architecture makes bespoke solutions possible without engineers:
 
 | Layer | What It Is | Primary User | Proficiency Time |
 |---|---|---|---|
-| **L1: Agent Library** | 160+ pre-built, tested agent nodes organised by vertical and function | All partners | Immediate — deploy standard bundles in <15 minutes |
+| **L1: Agent Library** | 160+ pre-built, tested agent nodes organised by vertical and function | All partners | Immediate — deploy standard solutions in <15 minutes |
 | **L2: Visual Flow Builder** | Drag-and-drop canvas to connect agents, configure triggers, set shop-specific parameters | T1+ partners | 2-day training |
 | **L3: Config Studio** | Mobile wizard for shop-specific data: catalog, supplier contacts, customer list, language, tone | All partners (on-site) | 60 minutes per shop visit |
 | **L4: Pro Code SDK** | Python/JS SDK for custom agent nodes and non-standard API integrations | T3+ technical partners | 3-day developer workshop |
@@ -298,14 +288,15 @@ India has 50 million shops, and every shop is different. A kirana in Surat has 1
 
 | Stream | Mechanism | Rupantar Share |
 |---|---|---|
-| Platform subscription fee | ₹999/month for T2+ builders who use Visual Flow Builder and Config Studio | 100% |
+| Solution subscription fee | ₹299–₹1,499/month per shop depending on vertical and agent count | ~75–85% net after partner commission |
+| Platform subscription fee | ₹999/month for T2+ partners who use Visual Flow Builder and Config Studio | 100% |
 | Marketplace royalties | Partners publish custom templates; 30% Rupantar / 70% template author per deployment | 30% |
 
 ### Why This Is Not n8n, Dify, or Langflow
 
-n8n, Dify, and Langflow are excellent horizontal platforms for developers building automation workflows. Rupantar's Agent Builder is purpose-built for India's retail context:
+n8n, Dify, and Langflow are excellent horizontal platforms for developers building automation workflows. Rupantar's Agentic Operations Platform is purpose-built for India's retail context:
 
-| Dimension | Horizontal Platforms (n8n, Dify, Langflow) | Rupantar Agent Builder |
+| Dimension | Horizontal Platforms (n8n, Dify, Langflow) | Rupantar Agentic Operations Platform |
 |---|---|---|
 | Domain knowledge | Generic workflows | Knows "khokha," handles GST e-invoice flows |
 | Channel | Web-based, multi-channel | WhatsApp Business API baked in |
@@ -315,13 +306,13 @@ n8n, Dify, and Langflow are excellent horizontal platforms for developers buildi
 
 ---
 
-## 2.5 The Long-Term Vision
+## 2.4 The Long-Term Vision
 
-**Rupantar starts with a highly profitable SaaS product. It builds toward a platform that becomes indispensable to India's retail economy.** This section is explicitly aspirational — the north star, not a current claim.
+**Rupantar starts as an Agentic Operations Platform serving individual shops profitably from day one. It grows into a self-sustaining ecosystem that becomes indispensable to India's retail economy.** This section is explicitly aspirational — the north star, not a current claim.
 
 ### The Two-Horizon Framework
 
-**Horizon 1 — Build the Product (Months 0–12).** AI agents across 20 verticals, a partner network of certified AI Shop Doctors, and a SaaS subscription business.
+**Horizon 1 — Establish the Platform (Months 0–12).** AI agents across 20 verticals, a partner network of certified AI Shop Doctors, and a solution subscription business.
 
 **Horizon 1 success metrics:**
 - 50,000+ active shops with >85% 30-day retention
@@ -330,27 +321,27 @@ n8n, Dify, and Langflow are excellent horizontal platforms for developers buildi
 - First ₹10Cr MRR — profitable per-shop unit economics confirmed
 - Cross-vertical retention visible (shops using 2+ agents churn less)
 
-**What this proves:** The product works. The distribution model works. The economics work. A standalone SaaS business with ₹50Cr+ ARR is viable.
+**What this proves:** The platform works. The distribution model works. The economics work. A standalone solution business with ₹50Cr+ ARR is viable.
 
-**Horizon 2 — Become the Platform (Months 12–36).** As the shop base scales, the data, relationships, and network effects that accumulate create value beyond SaaS:
+**Horizon 2 — Become the Ecosystem (Months 12–36).** As the shop base scales, the data, relationships, and network effects that accumulate create value beyond solution subscriptions:
 
 - **At 50,000+ shops:** anonymised demand signals ("In Surat, printed kurti demand is up 23% this quarter") become valuable to FMCG brands seeking real-time retail data
 - **At 2 lakh+ shops:** 6–12 months of digitised transaction history enables NBFC partnerships for working capital loans (₹50K–₹5L per shopkeeper)
-- **At 10 lakh+ shops:** the Agent Builder ecosystem becomes self-sustaining — community templates, third-party developers, platform API integrations for delivery companies, logistics providers, e-commerce platforms
+- **At 10 lakh+ shops:** the platform ecosystem becomes self-sustaining — community templates, third-party developers, platform API integrations for delivery companies, logistics providers, e-commerce platforms
 
 **Horizon 2 does not require a separate product or a pivot.** It requires the shop base, data volume, and partner network that Horizon 1 produces. It emerges from scale, not from a strategy change.
 
 ### The Critical Distinction
 
-**Horizon 1 is not a stepping stone to be discarded.** It is the foundation that generates revenue, data, and distribution from day one. Horizon 2 does not replace Horizon 1 — it layers on top of it. If the company stops after Horizon 1, it has a ₹50Cr+ ARR SaaS business with 60%+ gross margins. That is a remarkable outcome on its own. **Horizon 2 is upside, not dependency.**
+**Horizon 1 is not a stepping stone to be discarded.** It is the foundation that generates revenue, data, and distribution from day one. Horizon 2 does not replace Horizon 1 — it layers on top of it. If the company stops after Horizon 1, it has a ₹50Cr+ ARR solution business with 60%+ gross margins. That is a remarkable outcome on its own. **Horizon 2 is upside, not dependency.**
 
 ### The Precedent
 
-Every platform company started as a focused product that solved one problem well. Amazon started as an online bookstore and became the infrastructure of global e-commerce. UPI started as a simple payment rail and became the backbone of India's digital economy. The platform emerged from scale, not from the initial vision. Rupantar starts with AI agents for shopkeepers. Where it goes depends on what the evidence supports — not what we claim today.
+Every platform company started as a focused product that solved one problem well. Amazon started as an online bookstore and became the infrastructure of global e-commerce. UPI started as a simple payment rail and became the backbone of India's digital economy. The ecosystem emerged from scale, not from the initial vision. Rupantar starts with AI agents for shopkeepers. Where it goes depends on what the evidence supports — not what we claim today.
 
-### Why Agents First
+### Why the Platform Starts with Shops
 
-The platform vision requires shops to be digitised first. A data product without shops has no data. A financial services layer without transaction history has no creditworthiness to assess. The AI agents are the digitisation mechanism — the tool that takes a paper-based shop and makes it digitally legible. Starting with agents is not a detour from the platform; it is the only path to it.
+The ecosystem vision requires shops to be digitised first. A data product without shops has no data. A financial services layer without transaction history has no creditworthiness to assess. The AI agents are the digitisation mechanism — the tool that takes a paper-based shop and makes it digitally legible. Starting with agents is not a detour from the ecosystem; it is the only path to it.
 
 ### Value Compounding — The Staircase
 
@@ -376,7 +367,7 @@ Each scale milestone adds a new revenue layer. Nothing is replaced. Nothing is p
    └──────┬───────┘
           │
    ┌──────┴───────┐
-   │  10K+ shops  │   SaaS revenue funds the company.
+   │  10K+ shops  │   Solution subscription revenue funds the company.
    │  SaaS        │   Voice NLP trained on real shop data.
    │  revenue     │   Partner network economics validated.
    └──────┬───────┘
@@ -388,16 +379,16 @@ Each scale milestone adds a new revenue layer. Nothing is replaced. Nothing is p
    └──────────────┘
 ```
 
-**Every step generates revenue.** A company with 10,000 shops at ₹599/month generates ₹60 lakh MRR. At 50,000 shops, ₹3Cr MRR. The platform opportunities — brand intelligence, financial services, ecosystem — are upside. They don't need to exist for the business to be valuable. But unlike a pure SaaS company, Rupantar's revenue compounds non-linearly because the data and network effects at each level create revenue streams that don't exist in traditional SaaS.
+**Every step generates revenue.** A company with 10,000 shops at ₹599/month generates ₹60 lakh MRR. At 50,000 shops, ₹3Cr MRR. The ecosystem opportunities — brand intelligence, financial services, network effects — are upside. They don't need to exist for the business to be valuable. But unlike a pure SaaS company, Rupantar's revenue compounds non-linearly because the data and network effects at each level create revenue streams that don't exist in traditional SaaS.
 
 ### Revenue Evolution Timeline
 
 | Timeline | Shop Base | Revenue Composition |
 |---|---|---|
-| Year 1 | 10,000 | 100% SaaS subscriptions |
-| Year 2 | 50,000 | 85% SaaS, 10% vertical add-ons (ABDM, GST e-invoice), 5% data/analytics pilots |
-| Year 3 | 2,00,000 | 65% SaaS, 15% add-ons, 10% data/analytics, 10% financial services commissions |
-| Year 4+ | 10L+ | 50% SaaS, 15% add-ons, 20% data/analytics, 15% financial services + ecosystem |
+| Year 1 | 10,000 | 100% solution subscriptions |
+| Year 2 | 50,000 | 85% subscriptions, 10% vertical add-ons (ABDM, GST e-invoice), 5% data/analytics pilots |
+| Year 3 | 2,00,000 | 65% subscriptions, 15% add-ons, 10% data/analytics, 10% financial services commissions |
+| Year 4+ | 10L+ | 50% subscriptions, 15% add-ons, 20% data/analytics, 15% financial services + ecosystem |
 
 ---
 
@@ -596,15 +587,15 @@ Thousands of niche use cases — garment shop with return-weaving integration, H
 
 ### Build Sequence
 
-| Phase | Timeline | Product Build | Platform Contribution | Partner Build | Target Metrics |
-|---|---|---|---|---|---|
-| **Phase 0 Foundation** | M0–3 | WhatsApp agent infrastructure (orchestrator + domain agent framework). Billing Agent + Khata Agent + Daily Report Agent. Partner mobile onboarding app (Config Studio). Offline-sync queue. | First vernacular retail transaction data stream | Recruit 50–100 seed partners from Tally/Marg TDP network in Ahmedabad/Surat. First Tier 1 training cohort. | **500–1,000 live shops.** Voice billing accuracy >85%. Partner satisfaction tracked. |
-| **Phase 1 First Revenue** | M3–6 | Restaurant POS Agent. Garage OS. Electronics Repair Job Card. Visual Flow Builder (Layer 2). Portfolio Health Dashboard. | Multi-vertical operational data. First partner network density. | Expand to Pune, Nashik, Bengaluru. 500–1,000 T1 partners. First T2 training cohort. | **10,000 shops. ₹1Cr MRR.** 80%+ active partners earning >₹15K/month. |
-| **Phase 2 Vertical Depth** | M6–12 | Pharmacy (ABDM integration). Loyalty CRM. Salon Agent. Fashion Matrix Inventory. Template Marketplace (alpha). Pro Code SDK for T3 partners. | Regional market intelligence data. First brand pilot. | Hindi belt: Delhi NCR, Jaipur, Lucknow, Indore. 5,000+ partners. Regional Master pilot. | **50,000 shops. ₹10Cr MRR.** Cross-vertical retention visible. 50+ community templates. |
-| **Phase 3 Full ERP** | M12–18 | HR/Payroll. Accounting + GST auto-filing. B2B Procurement. Hardware Retail. Online Store. Complete 20-vertical library. | Platform API for ecosystem integrations. Financial services pilots. | National: Chennai, Hyderabad, Kolkata + Tier 3 via BC agents. 10,000+ partners. Regional Masters fully active. | **2,00,000 shops. ₹50Cr ARR trajectory.** Shops have no reason to use other software. |
-| **Phase 4 Platform Economy** | M18+ | B2B data intelligence layer. Embedded financial services. ONDC deep integration. Voice-only interface (no WhatsApp required). | Self-sustaining platform ecosystem. Community-driven template marketplace. | 50,000+ certified partners. Regional Master ecosystem self-sustaining. 100+ new templates/month. | **10L+ shops. Multi-stream revenue.** Data layer monetised. IPO-ready metrics. |
+| Phase | Timeline | Platform Build | Partner Build | Target Metrics |
+|---|---|---|---|---|
+| **Phase 0 Foundation** | M0–3 | WhatsApp agent infrastructure (orchestrator + domain agent framework). Billing Agent + Khata Agent + Daily Report Agent. Partner mobile onboarding app (Config Studio). Offline-sync queue. | Recruit 50–100 seed partners from Tally/Marg TDP network in Ahmedabad/Surat. First Tier 1 training cohort. | **500–1,000 live shops.** Voice billing accuracy >85%. Partner satisfaction tracked. |
+| **Phase 1 First Revenue** | M3–6 | Restaurant POS Agent. Garage OS. Electronics Repair Job Card. Visual Flow Builder (Layer 2). Portfolio Health Dashboard. | Expand to Pune, Nashik, Bengaluru. 500–1,000 T1 partners. First T2 training cohort. | **10,000 shops. ₹1Cr MRR.** 80%+ active partners earning >₹15K/month. |
+| **Phase 2 Vertical Depth** | M6–12 | Pharmacy (ABDM integration). Loyalty CRM. Salon Agent. Fashion Matrix Inventory. Template Marketplace (alpha). Pro Code SDK for T3 partners. | Hindi belt: Delhi NCR, Jaipur, Lucknow, Indore. 5,000+ partners. Regional Master pilot. | **50,000 shops. ₹10Cr MRR.** Cross-vertical retention visible. 50+ community templates. |
+| **Phase 3 Full ERP** | M12–18 | HR/Payroll. Accounting + GST auto-filing. B2B Procurement. Hardware Retail. Online Store. Complete 20-vertical library. | National: Chennai, Hyderabad, Kolkata + Tier 3 via BC agents. 10,000+ partners. Regional Masters fully active. | **2,00,000 shops. ₹50Cr ARR trajectory.** Shops have no reason to use other software. |
+| **Phase 4 Platform Economy** | M18+ | B2B data intelligence layer. Embedded financial services. ONDC deep integration. Voice-only interface (no WhatsApp required). | 50,000+ certified partners. Regional Master ecosystem self-sustaining. 100+ new templates/month. | **10L+ shops. Multi-stream revenue.** Data layer monetised. IPO-ready metrics. |
 
-The **Platform Contribution** column connects every product milestone to the platform vision — making the execution plan and the long-term vision tell the same story.
+Each platform build milestone directly expands the ecosystem — the agent library, the data layer, the partner network, and the revenue streams all compound with every phase.
 
 ### Geographic Rollout
 
@@ -810,11 +801,11 @@ Six dimensions scored 1–5. Score = average × 20%.
 
 **We know what could fail. This section is not hedging — it is the discipline of a team that has thought about failure modes before spending capital.**
 
-### Risk 1: Credibility Gap — Vision vs. Early Execution Reality
+### Risk 1: Credibility Gap — Ecosystem Vision vs. Early Execution Reality
 
-**Risk.** The long-term vision describes a platform serving millions of shops. Phase 0 deploys 1,000 shops in Ahmedabad. If the chairman expects platform-scale progress and sees a voice billing pilot, the contrast creates a credibility gap regardless of actual progress.
+**Risk.** The long-term vision describes ecosystem effects — network effects, multi-sided revenue, community self-sustainability. Phase 0 delivers a deployed platform serving 1,000 shops in Ahmedabad. If the chairman expects ecosystem-scale progress and sees a single-city deployment, the contrast creates a credibility gap regardless of actual progress.
 
-**Mitigation.** The Platform Readiness Scorecard (Section 6.3) defines exactly when we describe ourselves as a "platform company" — only when all five measurable criteria are met. Until then, we describe ourselves as "building toward platform status." Every phase milestone is framed as both product progress and platform progress (the "Platform Contribution" column in Section 4.1), so the chairman sees that each product milestone also builds the foundation for the larger vision.
+**Mitigation.** The Ecosystem Readiness Scorecard (Section 6.3) defines exactly when ecosystem effects are real — only when all five measurable criteria are met. Until then, we describe the platform's value in shop-level terms: per-shop unit economics, partner income, and retention metrics. Every phase milestone is tracked against both shop-level outcomes and ecosystem-building progress, so the chairman sees that each deployment milestone also builds the foundation for the larger vision.
 
 ### Risk 2: WhatsApp / Meta Dependency
 
@@ -956,7 +947,7 @@ Rupantar will not build:
 |---|---|---|
 | ARR trajectory | On track for ₹50Cr ARR within 6 months | Go: on track / No-Go: off by >40% |
 | Partner network | 8,000+ active partners across 10+ states | Go: ≥8K / Review: 5K–8K |
-| Platform Readiness | At least 3 of 5 scorecard criteria met | Go: ≥3 / No-Go: <2 |
+| Ecosystem Readiness | At least 3 of 5 scorecard criteria met | Go: ≥3 / No-Go: <2 |
 
 ---
 
@@ -999,9 +990,9 @@ Rupantar will not build:
 | Partner-led distribution works beyond Gujarat | Expand to Pune/Nashik, track deployment velocity | Same deployment velocity as Gujarat within 60 days | Phase 1 |
 | Shopkeepers trust AI agents for financial decisions | Offer GST auto-filing to 100 shops, measure adoption and CA pushback | >60% adoption, <20% CA override rate | Phase 1 |
 
-### Platform Readiness Scorecard
+### Ecosystem Readiness Scorecard
 
-> Rupantar becomes a platform when it satisfies all five criteria below. Until then, we describe ourselves as "building toward platform status." This scorecard appears here — in The Ask — because it defines when the chairman's investment has produced platform-grade outcomes, not because we are making a platform claim today.
+> Rupantar's platform becomes a self-sustaining ecosystem when it satisfies all five criteria below. Until then, we describe ourselves as a "deployed platform building toward ecosystem status." This scorecard appears here — in The Ask — because it defines when the chairman's investment has produced ecosystem-grade outcomes, not because we are making an ecosystem claim today.
 
 | # | Criterion | Threshold | What It Proves |
 |---|---|---|---|
@@ -1013,11 +1004,11 @@ Rupantar will not build:
 
 | Phase | Shops | Criteria Met | Status Label |
 |---|---|---|---|
-| Phase 0 (M0–3) | 1,000 | None — product validation | Product company |
-| Phase 1 (M3–6) | 10,000 | None — distribution validation | Product company |
-| Phase 2 (M6–12) | 50,000 | Criteria 1–3 approaching | Building toward platform |
-| Phase 3 (M12–18) | 2,00,000 | Criteria 1–3 met; 4–5 in pilot | Platform in formation |
-| Phase 4 (M18+) | 5,00,000+ | All 5 criteria met | Platform company |
+| Phase 0 (M0–3) | 1,000 | None — platform validation | Deployed Platform |
+| Phase 1 (M3–6) | 10,000 | None — distribution validation | Deployed Platform |
+| Phase 2 (M6–12) | 50,000 | Criteria 1–3 approaching | Platform with growing ecosystem |
+| Phase 3 (M12–18) | 2,00,000 | Criteria 1–3 met; 4–5 in pilot | Ecosystem in formation |
+| Phase 4 (M18+) | 5,00,000+ | All 5 criteria met | Self-sustaining ecosystem |
 
 ---
 
@@ -1027,9 +1018,9 @@ Rupantar will not build:
 
 ## Closing Vision
 
-By 2028, Rupantar operates India's largest distributed AI-powered operational platform for retail and services — 50,000+ certified AI Shop Doctors, 10 lakh+ shops, and a community of 5,000+ template builders. The platform generates revenue from SaaS subscriptions, data intelligence, financial services commissions, and ecosystem partnerships. Each shop that joins makes every other shop's agents more accurate, every partner's deployment faster, and every data insight more valuable.
+By 2028, Rupantar operates India's largest Agentic Operations Platform for retail and services — 50,000+ certified AI Shop Doctors, 10 lakh+ shops, and a community of 5,000+ template builders. The platform generates revenue from solution subscriptions, data intelligence, financial services commissions, and ecosystem partnerships. Each shop that joins makes every other shop's agents more accurate, every partner's deployment faster, and every data insight more valuable.
 
-**We did not set out to build a platform. We built a product that shops loved, partners could deploy, and the market pulled into becoming one. That is the difference between ambition and evidence.**
+**We did not set out to build an ecosystem. We built a platform that shops needed, partners could deploy, and the market pulled into becoming one. That is the difference between ambition and evidence.**
 
 ---
 

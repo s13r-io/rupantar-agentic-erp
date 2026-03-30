@@ -12,11 +12,11 @@
 
 ## Section 1: What We're Proposing
 
-**Rupantar AI is an AI-powered operational platform for India's retail and services economy — delivered through WhatsApp and voice, deployed by India's existing field force, and monetised through SaaS subscriptions that are profitable from the first shop.**
+**Rupantar AI is an Agentic Operations Platform — a composable system to build, configure, and run AI agents for real-world business workflows.**
 
-We build two things: (1) AI agents that handle a shopkeeper's entire daily operation — billing, inventory, credit, compliance — through voice notes and one-word WhatsApp replies; and (2) a no-code Agent Builder that lets trained partners deploy customised agent bundles for any shop in under 60 minutes. We distribute through India's existing 10M+ field sales force — FMCG reps, pharma MRs, Tally resellers — converted into certified "AI Shop Doctors" who earn recurring income from every active shop.
+The platform contains 160+ pre-built AI agents for shop operations — billing, inventory, credit, compliance, and more. Partners use the platform to select and combine these agents into a bespoke solution for each shop, deployed through WhatsApp and voice in under 60 minutes. The shopkeeper interacts entirely through voice notes, photos, and one-word WhatsApp replies. We distribute through India's existing 10M+ field sales force — FMCG reps, pharma MRs, Tally resellers — converted into certified "AI Shop Doctors" who earn recurring income from every active shop.
 
-**We are starting with a highly profitable SaaS product. We are building toward a platform that becomes indispensable to India's retail economy.** The worst case — stopping after Phase 2 — is a ₹50Cr+ ARR SaaS business with 60%+ margins. The best case is the operational digital layer that India's 50M shops run on.
+**We are starting as a platform that serves individual shops profitably from day one. We are building toward a self-sustaining ecosystem that becomes indispensable to India's retail economy.** The worst case — stopping after Phase 2 — is a ₹50Cr+ ARR SaaS business with 60%+ margins. The best case is the operational digital layer that India's 50M shops run on.
 
 ---
 
@@ -38,26 +38,21 @@ We build two things: (1) AI agents that handle a shopkeeper's entire daily opera
 
 ## Section 3: What We Build
 
-**The Product — AI Agent Bundles.** Each shop gets a vertical-specific bundle of 3–5 AI agents running on one WhatsApp number — billing, inventory, credit, compliance, and more. The shopkeeper interacts entirely through voice notes, photos, and one-word WhatsApp replies. No app to install. No screen to learn. Revenue: SaaS subscriptions at ₹299–₹1,499/month per shop.
-
-**The Platform — Agent Builder.** A four-layer no-code system (Agent Library → Visual Flow Builder → Config Studio → Pro Code SDK) that lets trained partners configure, customise, and deploy agent bundles for individual shops in under 60 minutes. Without it, each shop needs an engineer. With it, India's existing field force can do it. Revenue: platform subscription fees (₹999/month for T2+ builders) + marketplace royalties (30/70 split).
+**The Agentic Operations Platform.** A composable system of 160+ pre-built AI agents covering every aspect of shop operations — billing, inventory, credit, compliance, and more. Partners select and combine agents into a bespoke solution for each shop, deployed through WhatsApp and voice in under 60 minutes. The shopkeeper interacts entirely through voice notes, photos, and one-word WhatsApp replies. No app to install. No screen to learn. Revenue: solution subscriptions at ₹299–₹1,499/month per shop, plus platform fees and marketplace royalties from the partner ecosystem.
 
 ```
 ┌──────────────────────────────────────────────────────────┐
-│                     THE PRODUCT                           │
-│  AI agents on WhatsApp/voice — 3–5 agents per shop       │
-│  Revenue: SaaS subscriptions    Cost: Product development │
-├──────────────────────────────────────────────────────────┤
-│                     THE PLATFORM                          │
-│  Agent Builder (Library + Flow + Config + SDK)            │
-│  Partners deploy custom bundles in <60 minutes            │
-│  Revenue: Platform fees + marketplace royalties           │
-│  Cost: Product development                                │
+│              THE AGENTIC OPERATIONS PLATFORM              │
+│  160+ pre-built AI agents on WhatsApp/voice               │
+│  Partners compose bespoke solutions per shop              │
+│  Revenue: Solution subscriptions + platform fees +        │
+│           marketplace royalties                            │
+│  Cost: Platform development                               │
 ├──────────────────────────────────────────────────────────┤
 │                    THE DISTRIBUTION                       │
 │  AI Shop Doctor partner network                           │
 │  India's existing field force, trained & certified        │
-│  Revenue: Indirectly — enables product sales              │
+│  Revenue: Indirectly — enables solution sales             │
 │  Cost: Sales & marketing                                  │
 └──────────────────────────────────────────────────────────┘
 ```
@@ -66,7 +61,7 @@ We build two things: (1) AI agents that handle a shopkeeper's entire daily opera
 
 ## Section 4: How We Distribute It
 
-**India's 10M+ field salespeople — FMCG reps, pharma MRs, Tally resellers, bank DSAs — become certified "AI Shop Doctors" who use the Agent Builder to deploy and maintain AI agents for shops in their area.**
+**India's 10M+ field salespeople — FMCG reps, pharma MRs, Tally resellers, bank DSAs — become certified "AI Shop Doctors" who use the Agentic Operations Platform to compose and maintain bespoke AI solutions for shops in their area.**
 
 The distribution network already exists. What we build is the training, tools, and incentive structure. Partners earn 15–30% recurring commission on every active shop's subscription, plus activation fees, customisation fees, and template royalties. A T2 partner with 100 active shops earns approximately **₹90,000/month**. This is the Tally TDP model — proven for 30 years — applied to AI.
 
@@ -169,7 +164,7 @@ The distribution network already exists. What we build is the training, tools, a
 
 By 2028, Rupantar operates India's largest distributed AI-powered operational platform for retail and services — 50,000+ certified AI Shop Doctors, 10 lakh+ shops, and a community of 5,000+ template builders. The platform generates revenue from SaaS subscriptions, data intelligence, financial services commissions, and ecosystem partnerships. Each shop that joins makes every other shop's agents more accurate, every partner's deployment faster, and every data insight more valuable.
 
-**We did not set out to build a platform. We built a product that shops loved, partners could deploy, and the market pulled into becoming one. That is the difference between ambition and evidence.**
+**We did not set out to build an ecosystem. We built a platform that shops needed, partners could deploy, and the market pulled into becoming one. That is the difference between ambition and evidence.**
 
 ---
 
